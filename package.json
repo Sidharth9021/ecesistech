@@ -8,10 +8,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
+    "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css",
+    "deploy": "gh-pages -d dist",
+    "export": "next build && next export"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.1.1",
     "next": "14.0.1",
     "react": "18.2.0",
     "react-curved-text": "^3.0.0",

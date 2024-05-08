@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    basePath: "/ecesistech",
+    output: "export",  // <=== enables static exports
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
