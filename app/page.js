@@ -8,7 +8,7 @@ import Choose3 from "@/components/sections/Choose3"
 import Counter3 from "@/components/sections/Counter3"
 import Project3 from "@/components/sections/Project3"
 import Request3 from "@/components/sections/Request3"
-import Services3 from "@/components/sections/Services3"
+import Services5 from "@/components/sections/Services5"
 import Team3 from "@/components/sections/Team3"
 import Testimonial3 from "@/components/sections/Testimonial3"
 import './globals.css'
@@ -21,14 +21,14 @@ export default function Home() {
                 <Banner2 />
                 {/* <Brand3 /> */}
                 <About3 />
-                <Services3 />
+                <Services5 />
                 <Choose3 />
                 <Project3 />
                 <Counter3 />
                 <Request3 />
-                <Team3 />
+                {/* <Team3 />
                 <Testimonial3 />
-                <Callback2 />
+                <Callback2 /> */}
                 <BlogPost3 />
             </Layout>
         </>

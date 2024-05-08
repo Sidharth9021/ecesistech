@@ -9,7 +9,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
         <>
             <header className="tg-header__style-three transparent-header">
                 <div id="sticky-header" className={`tg-header__area  tg-header__area-three ${scroll ? "sticky-menu" : ""}`}>
-                    <div className="container custom-container">
+                    <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="tgmenu__wrap">
@@ -33,7 +33,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
 
                                                     </a>
                                                 </li> */}
-                                                <li className="offCanvas-menu" onClick={handleOffcanvus}>
+                                                {/* <li className="offCanvas-menu" onClick={handleOffcanvus}>
                                                     <a className="menu-tigger">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
                                                             <path d="M0 2C0 0.895431 0.895431 0 2 0C3.10457 0 4 0.895431 4 2C4 3.10457 3.10457 4 2 4C0.895431 4 0 3.10457 0 2Z" fill="currentcolor" />
@@ -47,7 +47,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                                             <path d="M14 16C14 14.8954 14.8954 14 16 14C17.1046 14 18 14.8954 18 16C18 17.1046 17.1046 18 16 18C14.8954 18 14 17.1046 14 16Z" fill="currentcolor" />
                                                         </svg>
                                                     </a>
-                                                </li>
+                                                </li> */}
                                             </ul>
                                         </div>
                                         <div className="mobile-nav-toggler mobile-nav-toggler-two" onClick={handleMobileMenu}>
