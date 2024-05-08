@@ -6,19 +6,20 @@ import Link from "next/link"
 import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"
 
-export default function BlogDetails() {
-    const { id } = useParams();  // Destructure to get `id` directly.
-    const [blogPost, setBlogPost] = useState(null);
+export async function getStaticPaths() {
+    const paths = data.map(post => ({
+      params: { id: post.id.toString() },
+    }));
+    return { paths, fallback: false };
+  }
+  
+  export async function getStaticProps({ params }) {
+    const blogPost = data.find(post => post.id.toString() === params.id);
+    return { props: { blogPost } };
+  }
 
-    useEffect(() => {
-        // Ensure both `id` and `data.id` are compared as the same type.
-        const post = data.find(post => post.id.toString() === id);
-        setBlogPost(post);
-    }, [id]);
-
-    if (!blogPost) {
-        return <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Blog Details">Post not found</Layout>;
-    }
+export default function BlogDetails({blogPost}) {
+  
 
     return (
         <>
