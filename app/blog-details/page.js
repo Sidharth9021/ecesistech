@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Home() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Blog Details">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Blog Details">
                 <div>
                     <section className="blog__details-area">
                         <div className="container">
