@@ -5,9 +5,9 @@ export default function Menu() {
     return (
         <>
             <ul className="navigation">
-                <li className="active"><Link href="/">Home</Link>
+                <li className="active"><Link href="#">Home</Link>
                 </li>
-                <li className=""><Link href="/about">About Us</Link>
+                <li className=""><Link href="#">About Us</Link>
                     {/* <ul className="sub-menu">
                         <li><Link href="/about">Business About</Link></li>
                         <li><Link href="/about-2">Finance About</Link></li>
@@ -42,7 +42,7 @@ export default function Menu() {
                         <li><Link href="/blog-details">Blog Details</Link></li>
                     </ul>
                 </li> */}
-                <li><Link href="/contact">contacts</Link></li>
+                <li><Link href="#">contacts</Link></li>
             </ul>
         </>
     )
