@@ -73,12 +73,12 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                             <Link href="/">
                                                 <img src="/assets/img/logo/Logo.png" alt="Logo" /></Link>
                                         </div>
-                                        <div className="tgmobile__search">
+                                        {/* <div className="tgmobile__search">
                                             <form action="#">
                                                 <input type="text" placeholder="Search here..." />
                                                 <button><i className="fas fa-search" /></button>
                                             </form>
-                                        </div>
+                                        </div> */}
                                         <div className="tgmobile__menu-outer">
                                             <MobileMenu />
                                         </div>
