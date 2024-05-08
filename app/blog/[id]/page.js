@@ -3,17 +3,30 @@ import Layout from "@/components/layout/Layout"
 import VideoPopup from "@/components/elements/PopupVideo"
 import data from "@/util/blog.json"
 import Link from "next/link"
-import { useParams } from "next/navigation"
 import { useEffect, useState } from "react"
 
-export default function BlogDetails() {
-    let Router = useParams()
-    const [blogPost, setBlogPost] = useState(null)
-    const id = Router.id
+// Function to generate paths based on the blog data
+export async function getStaticPaths() {
+    const paths = data.map(post => ({
+        params: { id: post.id.toString() },
+    }));
+    return { paths, fallback: false };
+}
 
-    useEffect(() => {
-        setBlogPost(data.find((data) => data.id == id))
-    }, [id])
+// Function to fetch blog data for each static path
+export async function getStaticProps({ params }) {
+    const blogPost = data.find((data) => data.id.toString() === params.id);
+    return { props: { blogPost } };
+}
+
+export default function BlogDetails({ blogPost }) {
+    // let Router = useParams()
+    // const [blogPost, setBlogPost] = useState(null)
+    // const id = Router.id
+
+    // useEffect(() => {
+    //     setBlogPost(data.find((data) => data.id == id))
+    // }, [id])
 
     return (
         <>
