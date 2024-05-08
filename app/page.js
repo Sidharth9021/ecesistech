@@ -19,7 +19,7 @@ export default function Home() {
 
             <Layout headerStyle={3} footerStyle={3}>
                 <Banner2 />
-                <Brand3 />
+                {/* <Brand3 /> */}
                 <About3 />
                 <Services3 />
                 <Choose3 />

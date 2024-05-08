@@ -44,12 +44,12 @@ export default function Menu() {
                         <li><Link href="/forgot-password">Forgot password Page</Link></li>
                     </ul>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Blog</Link>
+                {/* <li className="menu-item-has-children"><Link href="#">Blog</Link>
                     <ul className="sub-menu">
                         <li><Link href="/blog">Our Blog</Link></li>
                         <li><Link href="/blog-details">Blog Details</Link></li>
                     </ul>
-                </li>
+                </li> */}
                 <li><Link href="/contact">contacts</Link></li>
             </ul>
         </>
