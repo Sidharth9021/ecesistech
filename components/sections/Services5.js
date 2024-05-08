@@ -19,7 +19,7 @@ export default function Services5() {
                     <div className="services__item-wrap-two">
                         <div className="row justify-content-center gutter-24 flex-1">
                             <div className="col-xl-2 col-lg-2 col-md-6">
-                            <Link href="/services-details">
+                            <Link href="#">
                                 <div className="services__item-five px-4 py-5">
                                     <div className="services__icon-five">
                                         <i className="flaticon-profit" />
@@ -45,13 +45,13 @@ export default function Services5() {
                                     {/* <div className="services__content-five hidden">
                                         
                                         <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <Link href="#" className="btn">Read More</Link>
                                     </div> */}
                                 </div>
                                 </Link>
                             </div>
                             <div className="col-xl-2 col-lg-2 col-md-6">
-                            <Link href="/services-details">
+                            <Link href="#">
                                 <div className="services__item-five px-4 py-5">
                                     <div className="services__icon-five">
                                         <i className="flaticon-light-bulb" />
@@ -77,13 +77,13 @@ export default function Services5() {
                                     {/* <div className="services__content-five hidden">
                                         
                                         <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <Link href="#" className="btn">Read More</Link>
                                     </div> */}
                                 </div>
                                 </Link>
                             </div>
                             <div className="col-xl-2 col-lg-2 col-md-6">
-                            <Link href="/services-details">
+                            <Link href="#">
                                 <div className="services__item-five px-4 py-5">
                                     <div className="services__icon-five">
                                         <i className="flaticon-startup" />
@@ -109,13 +109,13 @@ export default function Services5() {
                                     {/* <div className="services__content-five hidden">
                                         
                                         <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <Link href="#" className="btn">Read More</Link>
                                     </div> */}
                                 </div>
                                 </Link>
                             </div>
                             <div className="col-xl-2 col-lg-2 col-md-6">
-                            <Link href="/services-details">
+                            <Link href="#">
                                 <div className="services__item-five px-4 py-5">
                                     <div className="services__icon-five">
                                         <i className="flaticon-target" />
@@ -141,13 +141,13 @@ export default function Services5() {
                                     {/* <div className="services__content-five hidden">
                                         
                                         <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <Link href="#" className="btn">Read More</Link>
                                     </div> */}
                                 </div>
                                 </Link>
                             </div>
                             <div className="col-xl-2 col-lg-2 col-md-6">
-                            <Link href="/services-details">
+                            <Link href="#">
                                 <div className="services__item-five px-4 py-5">
                                     <div className="services__icon-five">
                                         <i className="flaticon-light-bulb" />
@@ -173,7 +173,7 @@ export default function Services5() {
                                     {/* <div className="services__content-five hidden">
                                         
                                         <p>Beauis utter enim amet lacus ornare ullamcorper Praesent neque purus rhoncus.</p>
-                                        <Link href="/services-details" className="btn">Read More</Link>
+                                        <Link href="#" className="btn">Read More</Link>
                                     </div> */}
                                 </div>
                                 </Link>

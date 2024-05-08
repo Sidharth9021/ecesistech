@@ -14,12 +14,12 @@ export default function Request3() {
                                     <div className="icon">
                                         <i className="flaticon-phone-call" />
                                     </div>
-                                    <div className="content">
+                                    {/* <div className="content">
                                         <span>Toll Free Call</span>
                                         <Link href="tel:0123456789">+ 88 ( 9600 ) 6002</Link>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <Link href="tel:0123456789" className="btn">Request a Free Call</Link>
+                                {/* <Link href="tel:0123456789" className="btn">Request a Free Call</Link> */}
                             </div>
                         </div>
                     </div>

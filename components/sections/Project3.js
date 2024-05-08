@@ -38,9 +38,9 @@ export default function Project3() {
                                         <div className="project__item-three shine-animate-item">
                                             <div className="project__content-three">
                                                 <span>Inventory Tracking</span>
-                                                <h2 className="title"><Link href="/project-details">Inventory Management</Link></h2>
+                                                <h2 className="title"><Link href="#">Inventory Management</Link></h2>
                                                 <p>when anner unknown printer took type and scramble to make specimen book.</p>
-                                                <Link href="/project-details" className="btn btn-two">See Details</Link>
+                                                <Link href="#" className="btn btn-two">See Details</Link>
                                             </div>
                                             <div className="project__thumb-three shine-animate">
                                                 <img src="/assets/img/project/h3_project_img01.jpg" alt="" />
@@ -51,9 +51,9 @@ export default function Project3() {
                                         <div className="project__item-three shine-animate-item">
                                             <div className="project__content-three">
                                                 <span>Inventory Tracking</span>
-                                                <h2 className="title"><Link href="/project-details">Inventory Management</Link></h2>
+                                                <h2 className="title"><Link href="#">Inventory Management</Link></h2>
                                                 <p>when anner unknown printer took type and scramble to make specimen book.</p>
-                                                <Link href="/project-details" className="btn btn-two">See Details</Link>
+                                                <Link href="#" className="btn btn-two">See Details</Link>
                                             </div>
                                             <div className="project__thumb-three shine-animate">
                                                 <img src="/assets/img/project/h3_project_img01.jpg" alt="" />

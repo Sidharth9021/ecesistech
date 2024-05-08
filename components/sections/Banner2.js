@@ -27,7 +27,7 @@ export default function Banner2() {
                             <div className="banner__content-two mb-24">
                                 <h2 className="text-5xl font-bold" data-aos="fade-up" data-aos-delay={100}>Empowering Global Innovation</h2>
                                 <h3 className='text-3xl text-black col-lg-10'>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
-                                <Link href="/contact" className="btn border-btn mt-3" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                <Link href="#" className="btn border-btn mt-3" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
                             </div>
                         </div>
                     </div>
