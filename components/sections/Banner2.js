@@ -18,8 +18,8 @@ export default function Banner2() {
     }, []);
     return (
         <>
-            <section className="banner__area-two banner__bg-two object-cover" style={{
-                    backgroundImage: `url(${isMobile ? "/assets/img/banner/mbanner.png" : "/assets/img/banner/banner.png"})`
+            <section className={`banner__area-two banner__bg-two object-cover ${isMobile ? "object-right" : ""}`} style={{
+                    backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/banner.png"})`
                 }}>
                 <div className="container">
                     <div className="row">

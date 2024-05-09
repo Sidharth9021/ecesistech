@@ -1,6 +1,22 @@
+'use client'
 import Link from 'next/link'
+import React, { useEffect, useState } from 'react';
+
 
 export default function About3() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     return (
         <>
             <section className="about__area-three about__bg-two">
@@ -8,7 +24,8 @@ export default function About3() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-8">
                             <div className="about__img-wrap-three">
-                                <img src="/assets/img/images/about3.png" className='w-full' alt="" />
+                                {isMobile ? <div /> : <img src="/assets/img/images/about3.png" className='w-full' alt="" />
+                                }
                                 {/* <img src="/assets/img/images/h3_about_img02.jpg" alt="" data-parallax="{&quot;x&quot; : 50 }" /> */}
                                 <div className="shape">
                                     <img src="/assets/img/images/h3_about_img_shape.png" alt="" className="alltuchtopdown" />
@@ -27,7 +44,7 @@ export default function About3() {
                                         <div className="title px-3 py-3">
                                             <span>14+</span>
                                         </div>
-                                        <p className='ml-3'>Years of<span>Experience</span></p>
+                                        <p className='ml-5'>Years of<span>Experience</span></p>
                                     </div>
                                     <div className="about__list-box about__list-box-two">
                                         <ul className="list-wrap">
@@ -37,13 +54,13 @@ export default function About3() {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="about-bottom sm:text-lg about-bottom-two text-justify">
+                                <div className={`about-bottom sm:text-lg about-bottom-two ${isMobile ? "" : "text-justify"}`}>
                                     <div className="author-wrap">
                                         <h4 className='title'>Mission</h4>
                                         <p>
                                             Young, agile, and customer-centric is who we are, and this paradigm is ingrained in our DNA. Our mission, enhanced by AI, is to stay value-driven and growth-focused, and deeply involve in our customers' evolutionary journey as a strategic transformation partner.
                                         </p>
-                                      
+
                                     </div>
                                     <div className="about__phone">
                                         <h4 className='title'>Vision</h4>

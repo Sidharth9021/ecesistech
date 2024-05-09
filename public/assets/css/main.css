@@ -2332,7 +2332,7 @@ textarea {
 @media (max-width: 991.98px) {
   .banner__bg-two {
     min-height: 600px;
-    padding: 150px 0 100px;
+    padding: 100px 0 100px;
   }
 }
 @media (max-width: 767.98px) {
@@ -3200,7 +3200,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .about__bg-two {
-    padding: 100px 0;
+    padding: 0px 0;
   }
 }
 .about__area-four {
@@ -4451,7 +4451,6 @@ textarea {
   -ms-border-radius: 16px;
   border-radius: 16px;
   margin-bottom: 0;
-  padding: 30px 28px;
 }
 @media (max-width: 1199.98px) {
   .experience__box-three .title {
@@ -4485,7 +4484,6 @@ textarea {
   text-transform: uppercase;
   font-weight: 700;
   font-family: var(--tg-heading-font-family);
-  margin-left: -15px;
 }
 @media (max-width: 1199.98px) {
   .experience__box-three p {
