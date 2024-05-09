@@ -21,9 +21,9 @@ export default function Banner2() {
             <section className="banner__area-two banner__bg-two object-cover" style={{
                     backgroundImage: `url(${isMobile ? "/assets/img/banner/mbanner.png" : "/assets/img/banner/banner.png"})`
                 }}>
-                <div className="container">
+                <div className="container ">
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className={`col-lg-8 ${isMobile ? "mt-12" : ""}`}>
                             <div className="banner__content-two mb-24">
                                 <h2 className="text-5xl font-bold" data-aos="fade-up" data-aos-delay={100}>Empowering Global Innovation</h2>
                                 <h3 className='text-3xl text-black col-lg-10'>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
