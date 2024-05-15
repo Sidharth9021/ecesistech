@@ -5209,7 +5209,7 @@ textarea {
   font-weight: 600;
   font-family: var(--tg-heading-font-family);
   color: var(--tg-color-white-default);
-  padding: 15px 55px 15px 25px;
+  padding: 15px 55px 15px 15px;
   position: relative;
   width: 330px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -5222,7 +5222,7 @@ textarea {
   .services__tab-wrap .nav-link {
     width: 270px;
     font-size: 18px;
-    padding: 15px 45px 15px 20px;
+    padding: 15px 45px 15px 15px;
   }
 }
 .services__tab-wrap .nav-link i {
@@ -5234,6 +5234,7 @@ textarea {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  display: none;
 }
 @media (max-width: 1199.98px) {
   .services__tab-wrap .nav-link i {
