@@ -21767,3 +21767,10 @@ white-space: normal;}
 .bg-lyellow{
   background-color: #f9ba00;
 }
+
+.text-lblue{
+  color: #0A1D3D;
+  display: block;
+  line-height: normal;
+  margin-bottom: 12px;
+}

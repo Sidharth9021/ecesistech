@@ -4776,7 +4776,7 @@ textarea {
   -o-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
-  height: 615px;
+  height: 656px;
 }
 @media (max-width: 1199.98px) {
   .services__item-four {
@@ -5191,7 +5191,7 @@ textarea {
 }
 .services__tab-wrap .nav-link {
   border: none;
-  background: linear-gradient(90deg, #3B3D9A 13.19%, rgba(44, 46, 143, 0.54) 100%);
+  background: #3B3D9A;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;

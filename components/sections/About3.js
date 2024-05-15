@@ -24,7 +24,7 @@ export default function About3() {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-8">
                             <div className="about__img-wrap-three">
-                                {isMobile ? <div /> : <img src="/assets/img/images/about3.png" className='w-full' alt="" />
+                                {isMobile ? <div /> : <img src="/assets/img/images/about_3.png" className='w-full' alt="" />
                                 }
                                 {/* <img src="/assets/img/images/h3_about_img02.jpg" alt="" data-parallax="{&quot;x&quot; : 50 }" /> */}
                                 <div className="shape">
