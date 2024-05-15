@@ -8,10 +8,9 @@ import Choose3 from "@/components/sections/Choose3"
 import Counter3 from "@/components/sections/Counter3"
 import Project3 from "@/components/sections/Project3"
 import Request3 from "@/components/sections/Request3"
-import Services5 from "@/components/sections/Services5"
 import Team3 from "@/components/sections/Team3"
 import Testimonial3 from "@/components/sections/Testimonial3"
-import './globals.css'
+import MainService from "@/components/sections/MainService"
 
 export default function Home() {
     return (
@@ -21,7 +20,7 @@ export default function Home() {
                 <Banner2 />
                 {/* <Brand3 /> */}
                 <About3 />
-                <Services5 />
+                <MainService/>
                 <Choose3 />
                 <Project3 />
                 <Counter3 />

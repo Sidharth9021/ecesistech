@@ -52,8 +52,8 @@
   --tg-heading-line-height: 1.2;
   --tg-body-color: #3E4073;
   --tg-heading-color: #14176C;
-  --tg-theme-primary: #F7A400;
-  --tg-theme-secondary: #191D88;
+  --tg-theme-primary: #f9ba00;
+  --tg-theme-secondary: #00235f;
   --tg-color-dark-blue: #0E104B;
   --tg-color-yellow-light: #FEF6E6;
   --tg-color-yellow-light-2: #FFFBF3;
@@ -1063,6 +1063,13 @@ textarea {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 600;
+  line-height: normal;
+  color: var(--tg-theme-primary);
+  margin-bottom: 12px;
+}
+.subtitle {
+  display: block;
+  text-transform: uppercase;
   line-height: normal;
   color: var(--tg-theme-primary);
   margin-bottom: 12px;
@@ -4769,6 +4776,7 @@ textarea {
   -o-border-radius: 15px;
   -ms-border-radius: 15px;
   border-radius: 15px;
+  height: 615px;
 }
 @media (max-width: 1199.98px) {
   .services__item-four {
@@ -4809,13 +4817,13 @@ textarea {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-.services__item-five:hover {
+/* .services__item-five:hover {
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
   transform: translateY(-5px);
-}
+} */
 .services__item-top {
   display: -webkit-box;
   display: -moz-box;
@@ -7712,6 +7720,38 @@ textarea {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
+.project__nav-wrap .project-next {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  z-index: 3;
+  font-size: 28px;
+  color: var(--tg-theme-secondary);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
 @media (max-width: 991.98px) {
   .project__nav-wrap .project-button-next {
     width: 50px;
@@ -7730,6 +7770,10 @@ textarea {
   }
 }
 .project__nav-wrap .project-button-next:hover {
+  background: var(--tg-theme-secondary);
+  color: var(--tg-color-white-default);
+}
+.project-next:hover {
   background: var(--tg-theme-secondary);
   color: var(--tg-color-white-default);
 }

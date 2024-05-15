@@ -3853,6 +3853,9 @@ margin-bottom: auto;}
 .max-w-screen-2xl
 {max-width: 1536px;}
 {/*----Height----*/}
+.h_50{
+  height: 50%;
+}
 .h-0
 {height: 0px;}
 .h-px
@@ -18079,6 +18082,8 @@ transition-duration: 150ms;}
 {transform: translateY(25%);}
 .translate-y-2\/4
 {transform: translateY(50%);}
+.-translate-y-2\/4
+{transform: translateY(-50%);}
 .translate-y-3\/4
 {transform: translateY(75%);}
 .translate-y-full
@@ -21758,3 +21763,7 @@ white-space: normal;}
 .bg-lblue{
 	background-color: #0A1D3D;
   }
+
+.bg-lyellow{
+  background-color: #f9ba00;
+}
