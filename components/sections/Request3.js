@@ -9,15 +9,14 @@ export default function Request3() {
                     <div className="row justify-content-end">
                         <div className="col-xl-5 col-lg-6">
                             <div className="request__content-two">
-                                <h2 className="title">Offering The Best <span>Experience Of</span> Finance Services</h2>
+                                <h2 className="title font-semibold">We want to hear about what you're building</h2>
                                 <div className="request__phone">
                                     <div className="icon">
                                         <i className="flaticon-phone-call" />
                                     </div>
-                                    {/* <div className="content">
-                                        <span>Toll Free Call</span>
-                                        <Link href="tel:0123456789">+ 88 ( 9600 ) 6002</Link>
-                                    </div> */}
+                                    <div className="content">
+                                        <Link href="#" className='but'>Let's Connect</Link>
+                                    </div>
                                 </div>
                                 {/* <Link href="tel:0123456789" className="btn">Request a Free Call</Link> */}
                             </div>

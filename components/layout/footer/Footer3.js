@@ -9,13 +9,14 @@ export default function Footer3() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5 col-md-8">
-                                    <div className="footer-widget">
-                                        <div className="footer__newsletter-three">
-                                            <h2 className="title">Never Miss out on a Moment <br /> Apexa us</h2>
+                                    <div className="footer-widget text-lb">
+                                        <div className="">
+                                            <img src="/assets/img/logo/Logo.png" className="h-20 mb-5" alt="logo"/>
+                                            {/* <h2 className="title">Never Miss out on a Moment <br /> Apexa us</h2>
                                             <form action="#">
                                                 <input type="email" placeholder="e-mail Type . . ." />
                                                 <button className="btn" type="submit">Subscribe</button>
-                                            </form>
+                                            </form> */}
                                         </div>
                                         <div className="footer__social-three">
                                             <span className="title">Follow Us on:</span>
@@ -96,18 +97,18 @@ export default function Footer3() {
                     </div>
                     <div className="footer__bottom-three">
                         <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-md-6">
+                            
+                                {/* <div className="col-md-6">
                                     <div className="fw-logo">
-                                        <Link href="/"><img src="/assets/img/logo/w_logo.png" alt="" /></Link>
+                                        <Link href="/"><img src="/assets/img/logo/Logo.png" alt="" /></Link>
                                     </div>
-                                </div>
-                                <div className="col-md-6">
+                                </div> */}
+                                <div className="mr-10">
                                     <div className="copyright-text">
-                                        <p>Copyright © <Link href="/">Apexa</Link> | All Right Reserved</p>
+                                        <p>Copyright © <Link href="/">ECESIS Care Pvt Ltd.</Link> | All Right Reserved</p>
                                     </div>
                                 </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

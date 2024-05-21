@@ -11,6 +11,8 @@ import Request3 from "@/components/sections/Request3"
 import Team3 from "@/components/sections/Team3"
 import Testimonial3 from "@/components/sections/Testimonial3"
 import MainService from "@/components/sections/MainService"
+import Services4 from "@/components/sections/Services4"
+import Marquee2 from "@/components/sections/Marquee2"
 
 export default function Home() {
     return (
@@ -18,17 +20,19 @@ export default function Home() {
 
             <Layout headerStyle={3} footerStyle={3}>
                 <Banner2 />
+                <Marquee2 />
                 {/* <Brand3 /> */}
                 <About3 />
-                <MainService/>
-                <Choose3 />
-                <Project3 />
                 <Counter3 />
+                <MainService/>
+                {/* <Services4/> */}
+                {/* <Choose3 /> */}
+                {/* <Project3 /> */}
                 <Request3 />
                 {/* <Team3 />
                 <Testimonial3 />
                 <Callback2 /> */}
-                <BlogPost3 />
+                {/* <BlogPost3 /> */}
             </Layout>
         </>
     )

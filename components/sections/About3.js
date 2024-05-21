@@ -38,9 +38,9 @@ export default function About3() {
                                     <span className="sub-title">About Our Company</span>
                                     <h2 className="title tg-element-title">Digital Transformation for Global Impact</h2>
                                 </div>
-                                <p>We are leveraging advanced digital technologies such as artificial intelligence to expand our global presence and enhance our market impact. By integrating these innovative tools, we aim to optimize operations and drive growth, strengthening our competitive edge.</p>
+                                <p className='text-lb'>We are leveraging advanced digital technologies such as artificial intelligence to expand our global presence and enhance our market impact. By integrating these innovative tools, we aim to optimize operations and drive growth, strengthening our competitive edge.</p>
                                 <div className="about__content-inner about__content-inner-two">
-                                    <div className="experience__box-three">
+                                    <div className="experience__box-three ">
                                         <div className="title px-3 py-3">
                                             <span>14+</span>
                                         </div>
@@ -56,15 +56,15 @@ export default function About3() {
                                 </div>
                                 <div className={`about-bottom sm:text-lg about-bottom-two ${isMobile ? "" : "text-justify"}`}>
                                     <div className="author-wrap">
-                                        <h4 className='title'>Mission</h4>
-                                        <p>
+                                        <h4 className='title text-lb'>Mission</h4>
+                                        <p className='text-lb'>
                                             Young, agile, and customer-centric is who we are, and this paradigm is ingrained in our DNA. Our mission, enhanced by AI, is to stay value-driven and growth-focused, and deeply involve in our customers' evolutionary journey as a strategic transformation partner.
                                         </p>
 
                                     </div>
                                     <div className="about__phone">
-                                        <h4 className='title'>Vision</h4>
-                                        <p>Become a proven market leader in AI-enhanced, technology- and data-driven solutions, while staying true to our commitment to deliver transformative solutions that accelerate and empower the customer journey</p>
+                                        <h4 className='title text-lb'>Vision</h4>
+                                        <p className='text-lb'>Become a proven market leader in AI-enhanced, technology- and data-driven solutions, while staying true to our commitment to deliver transformative solutions that accelerate and empower the customer journey</p>
                                         {/* <div className="icon">
                                             <i className="flaticon-phone-call" />
                                         </div>
