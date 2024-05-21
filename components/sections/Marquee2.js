@@ -1,5 +1,6 @@
 import Marquee from 'react-fast-marquee';
 
+
 export default function Marquee2() {
     return (
         <div className="marquee__area-two">
@@ -13,6 +14,7 @@ export default function Marquee2() {
                 <img src="/assets/img/brand/Enchanteur.png" className="w-32 h-24 object-contain mr-16" alt="Enchanteur" />
                 <img src="/assets/img/brand/Hera.png" className="w-32 h-24 object-contain mr-16" alt="Hera" />
                 <img src="/assets/img/brand/EDS.png" className="w-32 h-20 object-contain mr-16" alt="EDS" />
+
                 <img src="/assets/img/brand/Kimball.png" className="w-32 h-24 object-contain mr-16" alt="Kimball" />
                 <img src="/assets/img/brand/ONDC.png" className="w-32 h-24 object-contain mr-16" alt="ONDC" />
                 <img src="/assets/img/brand/Safely.png" className="w-32 h-24 object-contain mr-10" alt="Safely" />
