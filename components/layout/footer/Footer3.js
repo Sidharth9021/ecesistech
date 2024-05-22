@@ -105,7 +105,7 @@ export default function Footer3() {
                                 </div> */}
                                 <div className="mr-10">
                                     <div className="copyright-text">
-                                        <p>Copyright © <Link href="/">ECESIS Care Pvt Ltd.</Link> | All Right Reserved</p>
+                                        <p>Copyright ©<Link href="/">ECESIS 2024</Link> | All Right Reserved</p>
                                     </div>
                                 </div>
                            

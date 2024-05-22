@@ -9832,12 +9832,12 @@ textarea {
   }
 }
 .marquee__area-two {
-  padding: 50px 0 60px;
+  padding: 40px 0 30px;
   overflow: hidden;
 }
 @media (max-width: 767.98px) {
   .marquee__area-two {
-    padding: 30px 0 40px;
+    padding: 10px 0 30px;
   }
 }
 /* .marquee__wrap {
@@ -12204,11 +12204,11 @@ blockquote p {
   }
 }
 .footer__top-three {
-  padding: 110px 0 70px;
+  padding: 50px 0 10px;
 }
 @media (max-width: 767.98px) {
   .footer__top-three {
-    padding: 90px 0 40px;
+    padding: 50px 0 10px;
   }
 }
 .footer__top-three .fw-title {
@@ -12450,7 +12450,7 @@ blockquote p {
 }
 .footer__bottom-three {
   border-top: 1px solid #272A68;
-  padding: 40px 0;
+  padding: 25px 0;
 }
 @media (max-width: 767.98px) {
   .footer__bottom-three {
