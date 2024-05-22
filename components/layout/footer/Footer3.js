@@ -11,7 +11,7 @@ export default function Footer3() {
                                 <div className="col-lg-5 col-md-8">
                                     <div className="footer-widget text-lb">
                                         <div className="">
-                                            <img src="/assets/img/logo/Logo.png" className="h-20 mb-5" alt="logo"/>
+                                            <img src="/assets/img/logo/Logo.png" className="h-14 mb-5" alt="logo"/>
                                             {/* <h2 className="title">Never Miss out on a Moment <br /> Apexa us</h2>
                                             <form action="#">
                                                 <input type="email" placeholder="e-mail Type . . ." />
