@@ -24,7 +24,7 @@ const outfit = Outfit({
 })
 
 export const metadata = {
-    title: 'Apexa - Business Consulting NextJS Template',
+    title: 'EcesisTech',
 }
 
 

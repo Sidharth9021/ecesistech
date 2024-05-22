@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function NotFound() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Error page">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Error page">
                 <section className="error-area">
                     <div className="container">
                         <div className="row">

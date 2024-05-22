@@ -443,6 +443,7 @@ textarea {
   -ms-border-radius: 10px;
   border-radius: 10px;
   color: var(--tg-color-white-default);
+  font-family: var(--tg-heading-font-family);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -453,7 +454,6 @@ textarea {
   margin-bottom: 0;
   padding: 14px 20px;
   text-align: center;
-  text-transform: uppercase;
   touch-action: manipulation;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -8529,7 +8529,6 @@ textarea {
 }
 .request__content-two {
   background: var(--tg-heading-color);
-  padding: 60px 60px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -o-border-radius: 15px;
@@ -8549,12 +8548,11 @@ textarea {
 .request__content-two .title {
   color: var(--tg-color-white-default);
   margin-bottom: 20px;
-  font-size: 40px;
-  text-transform: capitalize;
+  font-size: 24px;
 }
 @media (max-width: 767.98px) {
   .request__content-two .title {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 .request__content-two .title span {

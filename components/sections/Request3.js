@@ -24,7 +24,7 @@ export default function Request3() {
                 <div className="container">
                     <div className="row justify-content-end">
                         <div className="col-xl-5 col-lg-6">
-                            <div className="request__content-two">
+                            <div className="request__content-two px-4 pt-4 pb-2">
                                 <h2 className="title font-semibold">We want to hear about what you're building</h2>
                                 <div className="request__phone">
                                     {/* <div className="icon">

@@ -4,6 +4,7 @@ const PageHead = ({ headTitle }) => {
     return (
         <>
             <Head>
+            {/* <link rel="icon" href="/public/" /> */}
                 <title>
                     {headTitle ? headTitle : "EcesisTech"}
                 </title>
