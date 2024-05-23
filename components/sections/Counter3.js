@@ -8,11 +8,9 @@ export default function Counter3() {
                     <div className="row justify-content-center">
                         <div className="col-xl-3 col-lg-4 col-sm-6 ">
                             <div className="counter-item">
-
                                 <div className="icon">
                                     <i className="flaticon-time" />
                                 </div>
-
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={14} />+</h2>
                                     <p>Years of Experience in the Industry</p>
@@ -21,12 +19,9 @@ export default function Counter3() {
                         </div>
                         <div className="col-xl-3 col-lg-4 col-sm-6">
                             <div className="counter-item">
-
                                 <div className="icon">
                                     <i className="flaticon-handshake"></i>
                                 </div>
-
-
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={150} />+</h2>
                                     <p>Satisfied Clients</p>
@@ -47,13 +42,9 @@ export default function Counter3() {
                         </div>
                         <div className="col-xl-3 col-lg-4 col-sm-6">
                             <div className="counter-item">
-
                                 <div className="icon">
                                     <i className="flaticon-happy" />
                                 </div>
-
-
-
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={100} />%</h2>
                                     <p>Client Satisfaction</p>
