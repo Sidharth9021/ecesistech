@@ -21849,6 +21849,11 @@ white-space: normal;}
   width: 415px;
 }
 
+.font28{
+  font-size: 28px;
+  line-height: 2rem;
+}
+
 .typewriter {
   width: fit-content;
   border-right: 2px solid;
