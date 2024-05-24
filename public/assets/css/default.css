@@ -21840,3 +21840,32 @@ white-space: normal;}
 .mb_19{
   margin-bottom: 19px;
 }
+
+.max-w-1350{
+  max-width:1350px;
+}
+
+.typewriter {
+  width: fit-content;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: .02em; /* Adjust as needed */
+  animation: typing 4.2s steps(22, end), blink-caret .75s step-end infinite;
+}
+
+.typewriter-text {
+  font-size: 20px;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black ;}
+  100% { border-color: transparent; }
+}

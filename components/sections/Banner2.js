@@ -26,8 +26,8 @@ export default function Banner2() {
                         <div className={`col-lg-8 ${isMobile ? "mt-10" : ""}`}>
                             <div className="banner__content-two mb-24">
                                 <h2 className="text-5xl font-bold mb-6" data-aos="fade-up" data-aos-delay={100}>Empowering Global Innovation</h2>
-                                <h3 className='text-3xl text-black col-lg-10'>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
-                                <Link href="#" className="btn border-btn mt-14" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                <h3 className='text-3xl text-black col-lg-10' data-aos="fade-up" data-aos-delay={200}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
+                                <Link href="#" className="btn border-btn mt-14" data-aos="fade-up" data-aos-delay={400}>Get Started</Link>
                                 {/* {isMobile ?
                                     <Link href="#" className="btn border-btn mt-40" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
                                     :

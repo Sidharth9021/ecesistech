@@ -4,9 +4,9 @@ import Marquee from 'react-fast-marquee';
 export default function Marquee2() {
     return (
         <div className="marquee__area-two">
-            <div className='items-center justify-center flex text-lb font-extrabold text-2xl uppercase' >
-                Our Clients
-            </div>
+
+            <h2 className='justify-center flex font-bold text-4xl mb-4'>Our Clients</h2>
+
             <Marquee className="marquee__wrap max-h-40 overflow-hidden" gradient={false} speed={100}>
                 <img src="/assets/img/brand/Papa John.png" className="w-32 h-24 object-contain mr-16 mb-3" alt="Papa John" />
                 <img src="/assets/img/brand/Claruz.png" className="w-32 h-24 object-contain mr-16 mb-3" alt="Claruz" />

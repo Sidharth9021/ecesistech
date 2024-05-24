@@ -1,95 +1,65 @@
-import Link from "next/link"
+import React, { useState, useEffect } from 'react';
+import Link from "next/link";
+import Request3 from "@/components/sections/Request3";
+import LazyLoad from 'react-lazyload';
 
 export default function Footer3() {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <>
             <footer>
                 <div className="footer__area-three">
                     <div className="footer__top-three">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-5 col-md-8">
-                                    <div className="footer-widget text-lb">
-                                        <div className="">
-                                            <img src="/assets/img/logo/Logo.png" className="h-14 mb-5" alt="logo"/>
-                                            {/* <h2 className="title">Never Miss out on a Moment <br /> Apexa us</h2>
-                                            <form action="#">
-                                                <input type="email" placeholder="e-mail Type . . ." />
-                                                <button className="btn" type="submit">Subscribe</button>
-                                            </form> */}
-                                        </div>
-                                        <div className="footer__social-three">
-                                            <span className="title">Follow Us on:</span>
-                                            <ul className="list-wrap">
-                                                <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                                <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                                <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                                <li><Link href="#"><i className="fab fa-pinterest-p" /></Link></li>
-                                                <li><Link href="#"><i className="fab fa-youtube" /></Link></li>
-                                            </ul>
-                                        </div>
+                        <div className="container mx-auto px-4">
+                            <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row justify-between items-start"}`}>
+                                <div className={`${isMobile ? "mt-5" : "mt-2"} footer-widget text-lb flex-1`}>
+                                    <img src="/assets/img/logo/Logo.png" className="h-12 mb-5" alt="logo" />
+                                    <div className="footer__social-three">
+                                        <span className="title">Follow Us on:</span>
+                                        <ul className="list-wrap">
+                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                                            <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                            {/* <li><Link href="#"><i className="fab fa-youtube" /></Link></li> */}
+                                        </ul>
+                                    </div>
+                                    <div className='footer-link-list w-fit flex mt-14'>
+                                        <ul className='list-wrap'>
+                                            <li className=''><Link href="#"><h5>Privacy & Cookies Policy</h5></Link></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div className="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                                    <div className="footer-widget">
-                                        <h4 className="fw-title">Information</h4>
-                                        <div className="footer-link-list">
-                                            <ul className="list-wrap">
-                                                <li><Link href="/about">Information</Link></li>
-                                                <li><Link href="/about">About us</Link></li>
-                                                <li><Link href="/team">Meet our team</Link></li>
-                                                <li><Link href="/contact">Case stories</Link></li>
-                                                <li><Link href="/blog">Latest news</Link></li>
-                                                <li><Link href="/contact">Contact us</Link></li>
-                                            </ul>
-                                        </div>
+                                <div className="">
+                                    <LazyLoad height={200} offset={100} once>
+                                        <h3 className={`${isMobile ? "text-3xl text-center" : "text-4xl text-left"} typewriter mb-2`} style={{ fontSize: '34px', lineHeight: '36px' }}>
+                                            <span className='text-blue-400'>Evolve.</span>
+                                            <span className='text-pink-400'>Transform.</span>
+                                            <span>Grow.</span>
+                                        </h3>
+                                    </LazyLoad>
+                                    <div className="">
+                                        <Request3 />
                                     </div>
-                                </div>
-                                <div className="col-xl-2 col-lg-4 col-sm-6 col-sm-6">
-                                    <div className="footer-widget">
-                                        <h4 className="fw-title">Top Links</h4>
-                                        <div className="footer-link-list">
-                                            <ul className="list-wrap">
-                                                <li><Link href="/about">How it’s Work</Link></li>
-                                                <li><Link href="/contact">Partners</Link></li>
-                                                <li><Link href="/contact">Testimonials</Link></li>
-                                                <li><Link href="/contact">Case Studies</Link></li>
-                                                <li><Link href="/contact">Pricing</Link></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6">
-                                    <div className="footer-widget">
-                                        <h4 className="fw-title">Location</h4>
-                                        <div className="footer-info-list">
-                                            <ul className="list-wrap">
-                                                <li>
-                                                    <div className="icon">
-                                                        <i className="flaticon-phone-call" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <Link href="tel:0123456789">+123 888 9999</Link>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="icon">
-                                                        <i className="flaticon-envelope" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <Link href="mailto:info@apexa.com">info@apexa.com</Link>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="icon">
-                                                        <i className="flaticon-pin" />
-                                                    </div>
-                                                    <div className="content">
-                                                        <p>Sydney Harbour Bridge Circular City of Sydney, Australia.</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div className="footer-link-list mt-6">
+                                        <ul className={`list-wrap ${isMobile ? "" : "flex ml-auto"}`}>
+                                            <li className='mr-5'><Link href="#"><h5>Careers</h5></Link></li>
+                                            <li className='mr-5'><Link href="#"><h5>About Us</h5></Link></li>
+                                            <li className='mr-5'><Link href="#"><h5>Contact Us</h5></Link></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -97,22 +67,15 @@ export default function Footer3() {
                     </div>
                     <div className="footer__bottom-three">
                         <div className="container">
-                            
-                                {/* <div className="col-md-6">
-                                    <div className="fw-logo">
-                                        <Link href="/"><img src="/assets/img/logo/Logo.png" alt="" /></Link>
-                                    </div>
-                                </div> */}
-                                <div className="mr-10">
-                                    <div className="copyright-text">
-                                        <p>Copyright ©<Link href="/">ECESIS 2024</Link> | All Right Reserved</p>
-                                    </div>
+                            <div className="">
+                                <div className="copyright-text">
+                                    <p>Copyright ©<Link href="/">ECESIS 2024</Link> | All Right Reserved</p>
                                 </div>
-                           
+                            </div>
                         </div>
                     </div>
                 </div>
             </footer>
         </>
-    )
+    );
 }

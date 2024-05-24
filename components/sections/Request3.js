@@ -20,10 +20,10 @@ export default function Request3() {
     return (
         <>
             <section className="request__area-two">
-                <div className="request__bg-two" data-background="/assets/img/bg/h2_request_bg.jpg" />
-                <div className="container">
-                    <div className="row justify-content-end">
-                        <div className="col-xl-5 col-lg-6">
+                <div className="request__bg-two"/>
+                <div className="" style={{width: '400px'}}>
+                    <div className="row">
+                        <div className="flex flex-col">
                             <div className="request__content-two px-4 pt-4 pb-2">
                                 <h2 className="title font-semibold">We want to hear about what you're building</h2>
                                 <div className="request__phone">

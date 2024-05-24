@@ -4,6 +4,7 @@ import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import { useState, useEffect } from "react";
 import Marquee2 from "./Marquee2";
+import Request3 from "./Request3";
 
 
 export default function MainService() {
@@ -292,6 +293,7 @@ export default function MainService() {
                         <img src="/assets/img/project/h3_project_shape01.png" alt="" data-aos="fade-left" data-aos-delay={400} />
                         <img src="/assets/img/project/h3_project_shape02.png" alt="" className="alltuchtopdown" />
                     </div> */}
+                    {/* <Request3/> */}
                 </section>
                 {/* services-area-end */}
                 {/* brand-area */}
