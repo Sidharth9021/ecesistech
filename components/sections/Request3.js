@@ -21,7 +21,7 @@ export default function Request3() {
         <>
             <section className="request__area-two">
                 <div className="request__bg-two"/>
-                <div className="" style={{width: '400px'}}>
+                <div className={`${isMobile ? "w-full" : "w415"}`}>
                     <div className="row">
                         <div className="flex flex-col">
                             <div className="request__content-two px-4 pt-4 pb-2">

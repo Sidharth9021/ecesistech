@@ -23,7 +23,7 @@ export default function Footer3() {
             <footer>
                 <div className="footer__area-three">
                     <div className="footer__top-three">
-                        <div className="container mx-auto px-4">
+                        <div className={`${isMobile ? "w-full" : "container"} mx-auto px-4`}>
                             <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row justify-between items-start"}`}>
                                 <div className={`${isMobile ? "mt-5" : "mt-2"} footer-widget text-lb flex-1`}>
                                     <img src="/assets/img/logo/Logo.png" className="h-12 mb-5" alt="logo" />
@@ -45,7 +45,7 @@ export default function Footer3() {
                                 </div>
                                 <div className="">
                                     <LazyLoad height={200} offset={100} once>
-                                        <h3 className={`${isMobile ? "text-3xl text-center" : "text-4xl text-left"} typewriter mb-2`} style={{ fontSize: '34px', lineHeight: '36px' }}>
+                                        <h3 className={`${isMobile ? "text-3xl text-left" : "text-4xl text-left"} typewriter mb-2`} >
                                             <span className='text-blue-400'>Evolve.</span>
                                             <span className='text-pink-400'>Transform.</span>
                                             <span>Grow.</span>

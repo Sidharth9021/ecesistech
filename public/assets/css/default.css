@@ -21845,6 +21845,10 @@ white-space: normal;}
   max-width:1350px;
 }
 
+.w415{
+  width: 415px;
+}
+
 .typewriter {
   width: fit-content;
   border-right: 2px solid;
