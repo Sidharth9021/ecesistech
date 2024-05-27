@@ -18,12 +18,12 @@ export default function Banner2() {
     }, []);
 
     const hstyle = {
-        fontSize: isMobile ? '44px' : '48px', 
-        lineHeight: isMobile ? '2.85rem': '3.05rem'
+        fontSize: isMobile ? '48px' : '48px', 
+        lineHeight: isMobile ? '3.05rem': '3.05rem'
     }
     const tstyle = {
-        fontSize: isMobile ? '28px' : '32px', 
-        lineHeight: isMobile ? '2.25rem': '2.5rem'
+        fontSize: isMobile ? '32px' : '32px', 
+        lineHeight: isMobile ? '2.5rem': '2.5rem'
     }
     return (
         <>
@@ -34,8 +34,8 @@ export default function Banner2() {
                     <div className="row">
                         <div className={`col-lg-8 ${isMobile ? "mt-10" : ""}`}>
                             <div className="banner__content-two mb-24">
-                                <h2 className={` font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
-                                <h3 className={`  text-black col-lg-10`} data-aos="fade-up" data-aos-delay={200} style={tstyle}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
+                                <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
+                                <h3 className={`text-black col-lg-10`} data-aos="fade-up" data-aos-delay={200} style={tstyle}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
                                 <div>
                                     <Link href="#" className="btn border-btn mt-1" data-aos="fade-up" data-aos-delay={200}>Get Started</Link>
                                 </div>
