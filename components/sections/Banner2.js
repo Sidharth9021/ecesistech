@@ -4,7 +4,12 @@ import Banner from '../../public/assets/img/banner/banner.png'
 import React, { useEffect, useState } from 'react';
 
 export default function Banner2() {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return window.innerWidth <= 768;
+        }
+        return false;
+    });
 
     useEffect(() => {
         const handleResize = () => {
