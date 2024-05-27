@@ -25,13 +25,16 @@ export default function Banner2() {
         fontSize: isMobile ? '28px' : '32px', 
         lineHeight: isMobile ? '2.25rem': '2.5rem'
     }
+    const space={
+        marginTop: isMobile ? '-70px' : ''
+    }
     return (
         <>
-            <section className={`banner__area-two h-screen banner__bg-two object-cover ${isMobile ? "object-right" : ""}`} style={{
-                backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/banner.png"})`
+            <section className={`banner__area-two  banner__bg-two object-cover ${isMobile ? "object-right h-screen" : "h-full"}`} style={{
+                backgroundImage: `url(${isMobile ? "/assets/img/bg/services_1.jpeg" : "/assets/img/banner/banner.png"})`
             }}>
                 <div className="container">
-                    <div className={`row ${isMobile ? "mb-16" : ""}`}>
+                    <div className={`row`} style={space}>
                         <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
                             <div className="banner__content-two mb-24">
                                 <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
