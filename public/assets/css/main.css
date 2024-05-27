@@ -14713,3 +14713,12 @@ blockquote p {
 .rfm-child img {
   transform-origin: center;
 }
+
+.normal-text{
+  font-family: var(--tg-heading-font-family);
+  color: var(--tg-heading-color);
+  margin-top: 0px;
+  line-height: var(--tg-heading-line-height);
+  text-transform: unset;
+
+}

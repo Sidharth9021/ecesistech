@@ -13,7 +13,7 @@ export default function Counter3() {
                                 </div>
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={14} />+</h2>
-                                    <p>Years of Experience in the Industry</p>
+                                    <p>Years of Service Exellence</p>
                                 </div>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ export default function Counter3() {
                                 </div>
                                 <div className="content">
                                     <h2 className="count"><CounterUp count={150} />+</h2>
-                                    <p>Satisfied Clients</p>
+                                    <p>Satisfied Customers</p>
                                 </div>
                             </div>
                         </div>

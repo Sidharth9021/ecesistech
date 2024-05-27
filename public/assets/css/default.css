@@ -21845,8 +21845,8 @@ white-space: normal;}
   max-width:1350px;
 }
 
-.w415{
-  width: 415px;
+.footer-connect{
+  width: 425px;
 }
 
 .font28{
@@ -21864,17 +21864,27 @@ white-space: normal;}
   animation: typing 4.2s steps(22, end), blink-caret .75s step-end infinite;
 }
 
+.typewriter-none {
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 auto; /* Centers the text */
+  letter-spacing: .02em; /* Adjust as needed */
+  animation: typing 4.2s steps(22, end), blink-caret .75s step-end infinite;
+}
+
+
 .typewriter-text {
   font-size: 20px;
 }
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 100%;}
+  to { width: 100%; }
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: black ;}
+  50% { border-color: black; }
   100% { border-color: transparent; }
 }

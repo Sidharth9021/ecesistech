@@ -15,7 +15,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                 <div className="tgmenu__wrap">
                                     <nav className="tgmenu__nav">
                                         <div className="logo">
-                                            <Link href="/"><img src="/assets/img/logo/Logo.png" alt="Logo" className="h-12 ml-3" /></Link>
+                                            <Link href="/"><img src="/assets/img/logo/Logo.png" alt="Logo" className="h-14 ml-3" /></Link>
                                         </div>
                                         <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex mr-5">
                                             <Menu />

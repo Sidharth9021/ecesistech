@@ -9,26 +9,28 @@ import Request3 from "./Request3";
 
 export default function MainService() {
     const [activeIndex, setActiveIndex] = useState(1);
-    const handleOnClick = (index) => {
-        setActiveIndex(index);
-    };
-
     const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        handleResize();
-        window.addEventListener('resize', handleResize);
-
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
     const [isOpen, setIsOpen] = useState(false);
-    const toggleRing = () => {
-        setIsOpen(!isOpen);
+  
+    const handleOnClick = (index) => {
+      setActiveIndex(index);
     };
+  
+    const handleResize = () => {
+      const mobileView = window.innerWidth <= 768;
+      setIsMobile(mobileView);
+      if (mobileView) {
+        setActiveIndex(0);
+      }
+    };
+  
+    useEffect(() => {
+      handleResize(); // Check initial size
+      window.addEventListener('resize', handleResize);
+  
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <>
             <div>
