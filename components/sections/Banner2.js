@@ -18,16 +18,16 @@ export default function Banner2() {
     }, []);
 
     const hstyle = {
-        fontSize: isMobile ? '42px' : '46px', 
-        lineHeight: isMobile ? '2.8rem': '1'
+        fontSize: isMobile ? '44px' : '48px', 
+        lineHeight: isMobile ? '2.85rem': '3.05rem'
     }
     const tstyle = {
-        fontSize: isMobile ? '26px' : '30px', 
-        lineHeight: isMobile ? '2.15rem': '2.25rem'
+        fontSize: isMobile ? '28px' : '32px', 
+        lineHeight: isMobile ? '2.25rem': '2.5rem'
     }
     return (
         <>
-            <section className={`banner__area-two banner__bg-two object-cover ${isMobile ? "object-right" : ""}`} style={{
+            <section className={`banner__area-two h-screen banner__bg-two object-cover ${isMobile ? "object-right" : ""}`} style={{
                 backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/banner.png"})`
             }}>
                 <div className="container">
