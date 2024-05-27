@@ -32,7 +32,7 @@ export default function Banner2() {
             }}>
                 <div className="container">
                     <div className="row">
-                        <div className={`col-lg-8 ${isMobile ? "mt-10" : ""}`}>
+                        <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
                             <div className="banner__content-two mb-24">
                                 <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
                                 <h3 className={`text-black col-lg-10`} data-aos="fade-up" data-aos-delay={200} style={tstyle}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Customer-Centric <span className='text-blue-400'>Growth</span></h3>
