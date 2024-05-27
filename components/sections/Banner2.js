@@ -31,7 +31,7 @@ export default function Banner2() {
                 backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/banner.png"})`
             }}>
                 <div className="container">
-                    <div className="row">
+                    <div className={`row ${isMobile ? "mb-16" : ""}`}>
                         <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
                             <div className="banner__content-two mb-24">
                                 <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
