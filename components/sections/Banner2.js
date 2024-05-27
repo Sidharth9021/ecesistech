@@ -18,12 +18,12 @@ export default function Banner2() {
     }, []);
 
     const hstyle = {
-        fontSize: isMobile ? '40px' : '46px', 
-        lineHeight: isMobile ? '2.75rem': '1'
+        fontSize: isMobile ? '42px' : '46px', 
+        lineHeight: isMobile ? '2.8rem': '1'
     }
     const tstyle = {
-        fontSize: isMobile ? '24px' : '30px', 
-        lineHeight: isMobile ? '2rem': '2.25rem'
+        fontSize: isMobile ? '26px' : '30px', 
+        lineHeight: isMobile ? '2.15rem': '2.25rem'
     }
     return (
         <>
