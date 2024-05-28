@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function About() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="About Us">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="About Us">
                 <div>
                     <section className="about__area-four">
                         <div className="container">
@@ -56,13 +56,13 @@ export default function About() {
                     </section>
                     {/* about-area-end */}
                     {/* brand-area */}
-                    <div className="brand__area-four">
+                    {/* <div className="brand__area-four">
                         <div className="container">
                             <div className="swiper-container brand-active">
                                 <BrandActiveSlider />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     {/* brand-area */}
                     {/* choose-area */}
                     <section className="choose__area-four">

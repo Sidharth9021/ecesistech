@@ -22,7 +22,7 @@ export default function Menu() {
                     <Link href="">Home</Link>
                 </li>
                 <li>
-                    <Link href="#">About Us</Link>
+                    <Link href="/about">About Us</Link>
                 </li>
                 <li className="menu-item-has-children">
                     <Link href="#">Services</Link>
