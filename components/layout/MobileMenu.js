@@ -35,7 +35,7 @@ export default function MobileMenu() {
                     </ul> */}
                     {/* <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="plus-line" /></div> */}
                 </li>
-                <li className=""><Link href="#">About Us</Link>
+                <li className=""><Link href="/about">About Us</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                         <li><Link href="about">Business About</Link></li>
                         <li><Link href="about-2">Finance About</Link></li>
@@ -56,7 +56,7 @@ export default function MobileMenu() {
                         <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
                         <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                     </ul>
-                    {/* <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div> */}
+                    <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div>
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Products</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
