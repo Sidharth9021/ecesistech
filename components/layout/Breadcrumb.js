@@ -46,14 +46,14 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
        
-                <img src={matchingBanner ? matchingBanner.backgroundImageUrl : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} />
+                <img src={isMobile ? "/assets/img/banner/mobile_banner2.png" :matchingBanner ? matchingBanner.backgroundImageUrl : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} />
 
                     <div className="container">
 
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="breadcrumb__content">
-                                    <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3`}>{breadcrumbTitle}</h2>
+                                    <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`}>{breadcrumbTitle}</h2>
                                     {/* <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item"><Link href="/">Home</Link></li>
