@@ -46,7 +46,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
        
-                <img src={matchingBanner ? matchingBanner.backgroundImageUrl : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner.img_style} ${isMobile ? "h-full" : "object-fill"}  w-full -z-1 top-0 `} />
+                <img src={matchingBanner ? matchingBanner.backgroundImageUrl : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full" : "object-fill"}  w-full -z-1 top-0 `} />
 
                     <div className="container">
 
