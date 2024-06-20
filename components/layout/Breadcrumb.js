@@ -53,7 +53,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="breadcrumb__content">
-                                    <h2 className={`title ${matchingBanner.style} ml-3`}>{breadcrumbTitle}</h2>
+                                    <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3`}>{breadcrumbTitle}</h2>
                                     {/* <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb">
                                         <li className="breadcrumb-item"><Link href="/">Home</Link></li>
