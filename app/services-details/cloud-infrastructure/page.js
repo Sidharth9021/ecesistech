@@ -2,7 +2,6 @@ import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
 import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
-import servicesData from './services.json';
 
 
 
@@ -12,7 +11,6 @@ export default function ServicesDetails() {
         <>
             <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Service Details">
                 <div>
-                    <h2>{service.id}</h2>
                     <section className="services__details-area">
                         <div className="container">
                             <div className="services__details-wrap">
@@ -92,7 +90,7 @@ export default function ServicesDetails() {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div className="sidebar__widget">
+                                            {/* <div className="sidebar__widget">
                                                 <h4 className="sidebar__widget-title">Brochure</h4>
                                                 <div className="sidebar__brochure">
                                                     <p>when an unknown printer took ga lley offer typey anddey.</p>
@@ -140,13 +138,13 @@ export default function ServicesDetails() {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div className="sidebar__widget sidebar__widget-two">
+                                            </div> */}
+                                            {/* <div className="sidebar__widget sidebar__widget-two">
                                                 <div className="sidebar__contact">
                                                     <h2 className="title">If You Need Any Help Contact With Us</h2>
                                                     <Link href="tel:0123456789" className="btn"><i className="flaticon-phone-call" />+91 705 2101 786</Link>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </aside>
                                     </div>
                                 </div>

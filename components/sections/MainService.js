@@ -131,7 +131,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/AI.webp" className="" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Artificial Intelligence</Link></h2>
+                                                    <h2 className="title"><Link href="#">Artificial Intelligence</Link></h2>
                                                     <p>Harness the power of Artificial Intelligence (AI) to propel your business to new heights. Our data-driven approach leverages cutting-edge AI and machine learning to transform your operations. Make smarter decisions, streamline processes, and craft personalized customer experiences that drive lasting success</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -140,7 +140,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" /> Solve complex challenges and drive innovation </li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/artificial-intelligence" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,7 +150,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Automation.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Automated Solutions</Link></h2>
+                                                    <h2 className="title"><Link href="#">Automated Solutions</Link></h2>
                                                     <p>Drive substantial business growth through automation. Our strategic approach helps streamline processes, reduce costs, and improve overall efficiency, fostering a robust environment for sustained expansion.
                                                         <br /><br />
                                                         Tailored to meet the unique needs of your business, our solutions enhance operational speed and accuracy, ensuring you stay ahead in a competitive marketplace
@@ -162,7 +162,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />Scalability</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/automation" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,7 +172,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Cloud.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Cloud Infrastructure</Link></h2>
+                                                    <h2 className="title"><Link href="#">Cloud Infrastructure</Link></h2>
                                                     <p>Drive substantial business growth through robust cloud infrastructure. Our comprehensive suite of services including VPN, VPS, and dedicated servers enhances your operational capabilities. These offerings ensure a secure, scalable, and highly available infrastructure, fostering a resilient environment for sustained expansion.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -181,7 +181,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />Dedicated Servers</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/cloud-infrastructure" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Web.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Web Application</Link></h2>
+                                                    <h2 className="title"><Link href="#">Web Application</Link></h2>
                                                     <p>Tailored to meet the unique needs of your business, our web application solutions enhance online visibility and operational efficiency, ensuring you stay ahead in a competitive marketplace.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -200,7 +200,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />Comprehensive Support</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/web-app" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -210,7 +210,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/RealEstate.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Real Estate Valuation</Link></h2>
+                                                    <h2 className="title"><Link href="#">Real Estate Valuation</Link></h2>
                                                     <p>For over a decade, we have provided US-based realtors, brokers, and real estate companies with precise valuations and Comparative Market Analysis (CMA). Our commitment to high-quality, value-driven deliverables ensures that you remain proactive, decisive, and adaptable as your business evolves and expands.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -219,7 +219,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />3X Revenue Growth For Clients</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/real-estate-valuation" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,7 +229,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Accounting.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Accounting & Finance</Link></h2>
+                                                    <h2 className="title"><Link href="#">Accounting & Finance</Link></h2>
                                                     <p>We specialize in unlocking accounting gaps and navigating the complexities of tax compliance with confidence and ease. Our suite of services is designed to bring harmony, accuracy, and strategic insight to all your financial processes.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -241,7 +241,7 @@ export default function MainService() {
 
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/accounting-finance" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -251,7 +251,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/ManpowerStaffing.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Manpower Staffing</Link></h2>
+                                                    <h2 className="title"><Link href="#">Manpower Staffing</Link></h2>
                                                     <p>We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -260,7 +260,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />Proven Expertise</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/manpower-staffing" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -270,7 +270,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/DigitalMarketing.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="/services-details">Digital Marketing</Link></h2>
+                                                    <h2 className="title"><Link href="#">Digital Marketing</Link></h2>
                                                     <p>We help you in positioning and promoting your brand, connecting you to new leads at optimum costs and helping you win new & exciting business deals that improve your brand value. Whether its to help you define your digital goals or achieve them, were with you every step of the way.
                                                         <br /><br />
                                                         We help online businesses get better returns on their marketing expenditure, e-commerce sites sell more goods, local businesses dominate their geographic areas and corporate entities have a better brand reputation.
@@ -282,7 +282,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />100% Secure</li>
                                                         </ul>
                                                     </div> */}
-                                                    <Link href="/services-details" className="btn">Read More</Link>
+                                                    <Link href="/services-details/digital-marketing" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>

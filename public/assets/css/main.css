@@ -949,9 +949,21 @@ textarea {
 /*=========================
 04. Breadcrumb
 ===========================*/
+.breadcrumb__bg_real_estate {
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 145px 0 150px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 991.98px) {
+  .breadcrumb__bg_real_estate {
+    padding: 85px 0 90px;
+    max-width: 1250px;
+  }
+}
 .breadcrumb__bg {
   background-size: cover;
-  background-position: center;
   padding: 105px 0 110px;
   position: relative;
   z-index: 1;
@@ -963,16 +975,16 @@ textarea {
 }
 .breadcrumb__content .title {
   margin-bottom: 10px;
-  font-size: 48px;
+  font-size: 40px;
 }
 @media (max-width: 991.98px) {
   .breadcrumb__content .title {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 @media (max-width: 767.98px) {
   .breadcrumb__content .title {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 .breadcrumb__content .breadcrumb {
@@ -1176,7 +1188,6 @@ textarea {
 
 
 .transparent-header {
-  position: absolute;
   left: 0;
   top: 0px;
   width: 100%;
@@ -3271,11 +3282,11 @@ textarea {
   }
 }
 .about__area-four {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 @media (max-width: 991.98px) {
   .about__area-four {
-    padding: 100px 0;
+    padding: 80px 0;
   }
 }
 .about__area-five {
@@ -4523,6 +4534,31 @@ textarea {
     padding: 25px 25px;
   }
 }
+
+.ebt {
+  display: flex;
+  align-items: center;
+}
+.ebt .title {
+  background: #f1f5f9;
+  border: 1px solid #f1f5f9;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -o-border-radius: 16px;
+  -ms-border-radius: 16px;
+  border-radius: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .ebt .title {
+    padding: 25px 25px;
+  }
+}
+
+
+
+
 .experience__box-three .title span {
   background: linear-gradient(180deg, #FFCE4F 0%, #F79400 100%);
   background-clip: text;
@@ -4541,6 +4577,28 @@ textarea {
 }
 @media (max-width: 991.98px) {
   .experience__box-three .title span {
+    font-size: 80px;
+  }
+}
+
+.ebt .title span {
+  background: var(--tg-theme-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 0.8;
+  position: relative;
+  font-family: var(--tg-heading-font-family);
+}
+@media (max-width: 1199.98px) {
+  .ebt .title span {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991.98px) {
+  .ebt .title span {
     font-size: 80px;
   }
 }
@@ -5370,11 +5428,11 @@ textarea {
   }
 }
 .services__details-area {
-  padding: 120px 0;
+  padding: 30px 0;
 }
 @media (max-width: 767.98px) {
   .services__details-area {
-    padding: 100px 0;
+    padding: 20px 0;
   }
 }
 .services__details-wrap .row .col-70 {
@@ -5833,9 +5891,8 @@ textarea {
   -o-border-radius: 10px;
   -ms-border-radius: 10px;
   border-radius: 10px;
-  min-height: 230px;
-  object-fit: cover;
-  width: 100%;
+
+
 }
 .services__details-inner-img .play-btn {
   width: 62px;
@@ -8149,7 +8206,7 @@ textarea {
 	10. Pricing
 ===============================*/
 .pricing__bg {
-  padding: 120px 0 90px;
+  padding: 70px 0 90px;
   position: relative;
   z-index: 1;
   background-size: cover;
@@ -8157,7 +8214,7 @@ textarea {
 }
 @media (max-width: 767.98px) {
   .pricing__bg {
-    padding: 100px 0 70px;
+    padding: 60px 0 70px;
   }
 }
 .pricing__bg-two {
@@ -14722,3 +14779,58 @@ blockquote p {
   text-transform: unset;
 
 }
+
+.about_photo_bg{
+  height: 50rem;
+  width: 50rem;
+  position: absolute;
+  top: -125px;
+  left: -200px;
+  z-index: -10;
+}
+.about_photo_bg_down{
+  height: 50rem;
+  width: 50rem;
+  position: absolute;
+  top: -125px;
+  left: -200px;
+  z-index: -10;
+}
+
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes counterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.radial:hover{
+  scale: 1.25;
+}
+
+.flip-container {
+  perspective: 1000px; /* Provides depth to the flipping effect */
+}
+
+.flip-image {
+  transition: transform 0.6s; /* Animation timing */
+  transform-style: preserve-3d; /* Needed to keep 3d perspective */
+}
+
+.flip-container:hover .flip-image {
+  transform: rotateY(180deg); /* Rotate image 180 degrees on the Y-axis */
+}
+

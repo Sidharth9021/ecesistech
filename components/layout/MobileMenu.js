@@ -34,7 +34,7 @@ export default function MobileMenu() {
                         <li><Link href="/index-8">08. IT Solutions</Link></li>
                     </ul> */}
                     {/* <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="plus-line" /></div> */}
-                    </li>
+                </li>
                 <li className=""><Link href="#">About Us</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                         <li><Link href="about">Business About</Link></li>
@@ -44,22 +44,20 @@ export default function MobileMenu() {
                         <li><Link href="about-4">Digital agency About</Link></li>
                     </ul> */}
                     {/* <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="plus-line" /></div> */}
-                    </li>
+                </li>
                 <li className="menu-item-has-children"><Link href="#">Services</Link>
-                    {/* <ul className="sub-menu" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                        <li><Link href="services">Business Service</Link></li>
-                        <li><Link href="services-2">Finance Service</Link></li>
-                        <li><Link href="services-3">Consulting Service</Link></li>
-                        <li><Link href="services-4">Insurance Service</Link></li>
-                        <li><Link href="services-5">Digital agency Service</Link></li>
-                        <li><Link href="services-details">Service Details One</Link></li>
-                        <li><Link href="services-details-2">Service Details Two</Link></li>
-                        <li><Link href="services-details-3">Service Details Three</Link></li>
-                        <li><Link href="services-details-4">Service Details Four</Link></li>
-                        <li><Link href="services-details-5">Service Details Five</Link></li>
-                    </ul> */}
+                    <ul className="sub-menu" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
+                        <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
+                        <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                        <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
+                        <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
+                        <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
+                        <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
+                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                        <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
+                    </ul>
                     {/* <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div> */}
-                    </li>
+                </li>
                 <li className="menu-item-has-children"><Link href="#">Products</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
                         <li><Link href="team">Team One</Link></li>

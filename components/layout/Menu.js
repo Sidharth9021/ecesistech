@@ -36,8 +36,17 @@ export default function Menu() {
                 <li className={activePath === "/about" ? "active" : ""}>
                     <Link href="/about">About Us</Link>
                 </li>
-                <li className="menu-item-has-children">
-                    <Link href="#">Services</Link>
+                <li className="menu-item-has-children"><Link href="#">Services</Link>
+                    <ul className="sub-menu">
+                        <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
+                        <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                        <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
+                        <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
+                        <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
+                        <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
+                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                        <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
+                    </ul>
                 </li>
                 <li className="menu-item-has-children">
                     <Link href="#">Products</Link>

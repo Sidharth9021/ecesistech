@@ -1,13 +1,24 @@
+'use client'
 import Link from "next/link"
 import Menu from "../Menu"
 import MobileMenu from "../MobileMenu"
 import OffcanvusMenu from "../OffcanvusMenu"
 import SearchPopup from "../SearchPopup"
+import React, { useEffect, useState } from "react";
 
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transparent, isSearch, isOffcanvus, handleOffcanvus, handleSearch }) {
+    const [Path, setPath] = useState('');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Set the active path from window.location.pathname
+            setPath(window.location.pathname);
+        }
+    }, []);
+   
     return (
         <>
-            <header className="tg-header__style-three transparent-header">
+            <header className={`tg-header__style-three transparent-header ${Path !== "/" ? "" : "absolute"}`}>
                 <div id="sticky-header" className={`tg-header__area  tg-header__area-three ${scroll ? "sticky-menu" : ""}`}>
                     <div className="container">
                         <div className="row">
