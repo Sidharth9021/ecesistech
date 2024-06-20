@@ -12,7 +12,6 @@ export default function ServicesDetails() {
         <>
             <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Service Details">
                 <div>
-                    <h2>{service.id}</h2>
                     <section className="services__details-area">
                         <div className="container">
                             <div className="services__details-wrap">
