@@ -14834,3 +14834,6 @@ blockquote p {
   transform: rotateY(180deg); /* Rotate image 180 degrees on the Y-axis */
 }
 
+.multiple-shadows {
+  text-shadow: 3px 3px 0px rgba(0,0,0,0.2), -1px -1px 0 rgba(0,0,0,0.1);
+}

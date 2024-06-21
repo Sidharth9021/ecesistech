@@ -29,15 +29,22 @@ export default function Breadcrumb({ breadcrumbTitle }) {
             id: "Real Estate Valuations",
             backgroundImageUrl: "/assets/img/banner/real-estate-banner4.png",
             backgroundMobile : "/assets/img/banner/mobile_static_real_estate.png",
-            style: "text-white"
+            style: "text-white multiple-shadows"
         },
         {
             id: "Manpower Staffing",
             backgroundImageUrl: "/assets/img/banner/manpower_banner2.png",
             backgroundMobile : "/assets/img/banner/manpower_banner2.png",
-            style: "text-black",
+            style: "text-white multiple-shadows",
             img_style: "max-h-96"
         },
+        {
+            id: "Accounting & Finance",
+            backgroundImageUrl: "/assets/img/banner/accounting_banner.jpeg",
+            backgroundMobile : "/assets/img/banner/mobile_static_real_estate.png",
+            style: "text-white multiple-shadows"
+        },
+        
 
   
     ]
@@ -49,7 +56,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
        
-                <img src={matchingBanner ? (isMobile ? matchingBanner.backgroundMobile :  matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} />
+                <img src={matchingBanner ? (isMobile ? matchingBanner.backgroundMobile :  matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`absolute ${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} style={{maxHeight: '353px'}} />
 
                     <div className="container">
 
