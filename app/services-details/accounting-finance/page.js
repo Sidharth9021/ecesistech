@@ -57,6 +57,10 @@ export default function ServicesDetails() {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <h2 className="title mt-16 text-center">Why Us?</h2>
+                                                        <div className="flex justify-center items-center " style={{maxWidth: '775px'}}>
+                                                        <img src="/assets/img/images/acc_values.png" className="aspect-auto h-auto w-full" alt="" style={{marginLeft : isMobile ? "" : "450px"}} />
+                                                        </div>
                                                     <div className="mt-16">
                                                         <h2 className="title text-center mb-5">Our Services</h2>
 
@@ -123,10 +127,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <h2 className="title mt-16 text-center">Why Us?</h2>
-                                                        <div className="flex justify-center items-center " style={{maxWidth: '775px'}}>
-                                                        <img src="/assets/img/images/acc_values.png" className="aspect-auto h-auto w-full" alt="" style={{marginLeft : isMobile ? "" : "450px"}} />
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
