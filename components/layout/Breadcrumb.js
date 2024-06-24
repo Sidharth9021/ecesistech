@@ -28,7 +28,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "Real Estate Valuations",
             backgroundImageUrl: "/assets/img/banner/real-estate-banner4.png",
-            backgroundMobile : "/assets/img/banner/mobile_static_real_estate.png",
+            backgroundMobile : "/assets/img/banner/real-estate_mobile.png",
             style: "text-white multiple-shadows"
         },
         {
@@ -41,7 +41,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "Accounting & Finance",
             backgroundImageUrl: "/assets/img/banner/accounting_banner.jpeg",
-            backgroundMobile : "/assets/img/banner/mobile_static_real_estate.png",
+            backgroundMobile : "/assets/img/banner/accounting_mobile.png",
             style: "text-white multiple-shadows"
         },
         
@@ -64,7 +64,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                             <div className="col-lg-6">
                                 <div className="breadcrumb__content">
                                     {
-                                        isMobile && breadcrumbTitle === "Real Estate Valuations" ? (
+                                        isMobile  ? (
                                             <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`}></h2>
 
                                         ) : (
