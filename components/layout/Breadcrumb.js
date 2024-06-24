@@ -65,7 +65,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                                 <div className="breadcrumb__content">
                                     {
                                         isMobile  ? (
-                                            <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`}></h2>
+                                            <></>
 
                                         ) : (
                                             <h2 className={`title ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`}>{breadcrumbTitle}</h2>

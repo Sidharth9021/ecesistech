@@ -38,7 +38,7 @@ export default function ServicesDetails() {
 
                                             <div className="services__details-inner">
                                                 <div className="row gutter-24 align-items-center">
-                                                    <div className="col-44">
+                                                    {/* <div className="col-44">
                                                         <div className="services__details-inner-img">
                                                             <img src="/assets/img/services/services_details_inner01.jpg" alt="" />
                                                             <VideoPopup />
@@ -56,7 +56,7 @@ export default function ServicesDetails() {
                                                                 </ul>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                     <h2 className="title mt-16 text-center">Why Us?</h2>
                                                         <div className="flex justify-center items-center " style={{maxWidth: '775px'}}>
                                                         <img src="/assets/img/images/acc_values.png" className="aspect-auto h-auto w-full" alt="" style={{marginLeft : isMobile ? "" : "450px"}} />
