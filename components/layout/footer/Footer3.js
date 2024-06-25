@@ -68,8 +68,8 @@ export default function Footer3() {
                                     </div>
                                 </div>
                                 <div className="max-w-full">
-                                    <LazyLoad height={200} key={renderKey} offset={100} once>
-                                        <h3 className={`${isMobile ? "font28 text-left"  : "text-4xl text-left"} ${showTypewriter ? "typewriter" : ""} mb-2`} >
+                                    <LazyLoad height={200} key={renderKey} unmountIfInvisible={true} offset={100} once>
+                                        <h3 className={`${isMobile ? "font28 text-left mr-1"  : "text-4xl text-left"} ${showTypewriter ? "typewriter" : ""} mb-2`} >
                                             <span className='text-blue-400'>Evolve.</span>
                                             <span className='text-pink-400'>Transform.</span>
                                             <span>Grow.</span>
