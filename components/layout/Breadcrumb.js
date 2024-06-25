@@ -34,7 +34,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "Manpower Staffing",
             backgroundImageUrl: "/assets/img/banner/manpower_banner2.png",
-            backgroundMobile : "/assets/img/banner/manpower_banner2.png",
+            backgroundMobile : "/assets/img/banner/manpower_mobile.png",
             style: "text-white multiple-shadows",
             img_style: "max-h-96"
         },

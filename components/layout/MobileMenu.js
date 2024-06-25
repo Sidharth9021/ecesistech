@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 
-export default function MobileMenu() {
+export default function MobileMenu({handleMobileMenu}) {
     const [isActive, setIsActive] = useState({
         status: false,
         key: "",
@@ -19,10 +19,11 @@ export default function MobileMenu() {
             })
         }
     }
+    
     return (
         <>
-            <ul className="navigation">
-                <li className="active"><Link href="#">Home</Link>
+            <ul className="navigation" >
+                <li className="active" onClick={handleMobileMenu}><Link href="#">Home</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                         <li><Link href="/">01. Business</Link></li>
                         <li><Link href="index-2">02. Finance</Link></li>
@@ -35,7 +36,7 @@ export default function MobileMenu() {
                     </ul> */}
                     {/* <div className={isActive.key == 1 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(1)}><span className="plus-line" /></div> */}
                 </li>
-                <li className=""><Link href="/about">About Us</Link>
+                <li className="" onClick={handleMobileMenu}><Link href="/about">About Us</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                         <li><Link href="about">Business About</Link></li>
                         <li><Link href="about-2">Finance About</Link></li>
@@ -45,13 +46,13 @@ export default function MobileMenu() {
                     </ul> */}
                     {/* <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(2)}><span className="plus-line" /></div> */}
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Services</Link>
-                    <ul className="sub-menu" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
+                <li className="menu-item-has-children" ><Link href="#">Services</Link>
+                    <ul className="sub-menu" onClick={handleMobileMenu} style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                         <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
                         <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
                         <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
                         <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
-                        <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
+                        <li ><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                         <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
                         <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
                         <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>

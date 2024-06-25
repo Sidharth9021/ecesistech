@@ -91,14 +91,14 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                             </form>
                                         </div> */}
                                         <div className="tgmobile__menu-outer">
-                                            <MobileMenu />
+                                            <MobileMenu handleMobileMenu={handleMobileMenu} />
                                         </div>
                                         <div className="tgmobile__menu-bottom">
                                             <div className="contact-info">
-                                                <ul className="list-wrap">
+                                                {/* <ul className="list-wrap">
                                                     <li><Link href="mailto:info@apexa.com">info@apexa.com</Link></li>
                                                     <li><Link href="tel:0123456789">+123 888 9999</Link></li>
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                             <div className="social-links">
                                                 <ul className="list-wrap">

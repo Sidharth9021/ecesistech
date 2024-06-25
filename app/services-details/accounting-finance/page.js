@@ -33,7 +33,7 @@ export default function ServicesDetails() {
                                         <div className="services__details-content">
                                             <h2 className="title">Simplify <span className="text-pink-400">Accounting & Tax</span>  Processes With Our Expert Solutions! </h2>
                                             <p>We are established with a vision to empower individuals and businesses with tangible accounting strategies, We are dedicated to delivering top-notch financial operational services that help you navigate the complexities of day to day transactional accounting. Transparency and communication are the cornerstones of our client relationships.</p>
-                                            <h2 className="title mt-12">Your Success Deserves Expert Guidance - We Specialize In Unlocking Accounting Gaps, Navigating Tax Complexity With Confidence And Ease.</h2>
+                                            <h2 className="title mt-12">We Specialize In <span className="text-blue-400">Unlocking Accounting Gaps</span> , Navigating Tax Complexity<span className="text-ly"> With Confidence & Ease.</span></h2>
                                             <p>We provide an all-encompassing array of accounting and tax services meticulously tailored for individuals, businesses, and diverse organizations. Our aim is to simplify your financial accounting, ensuring that it's cost-effective and instilling confidence at every juncture of our collaborative journey. Consider us your steadfast partner for all your accounting, compliance and regulatory requirements, delivering trustworthiness with every service.</p>
 
                                             <div className="services__details-inner">
@@ -57,7 +57,7 @@ export default function ServicesDetails() {
                                                             </div>
                                                         </div>
                                                     </div> */}
-                                                    <h2 className="title mt-16 text-center">Why Us?</h2>
+                                                    <h2 className="title mt-9 text-center">Why Us?</h2>
                                                         <div className="flex justify-center items-center " style={{maxWidth: '775px'}}>
                                                         <img src="/assets/img/images/acc_values.png" className="aspect-auto h-auto w-full" alt="" style={{marginLeft : isMobile ? "" : "450px"}} />
                                                         </div>
@@ -122,7 +122,7 @@ export default function ServicesDetails() {
                                                                         Tax Preparation, Filings and Reporting
                                                                     </h4>
 
-                                                                    <h6 className=" text-gray-500  font-medium" style={{ marginTop: "46px" }}>
+                                                                    <h6 className=" text-gray-500  font-medium" style={{ marginTop: "16px" }}>
                                                                         Analyzing, strategizing, & preparing your taxes                                                                    </h6>
                                                                 </div>
                                                             </div>

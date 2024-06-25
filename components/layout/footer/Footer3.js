@@ -18,15 +18,28 @@ export default function Footer3() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    const [renderKey, setRenderKey] = useState(0);  // Initial key for re-render
     const [showTypewriter, setShowTypewriter] = useState(true);
 
     useEffect(() => {
-      const timer = setTimeout(() => {
-        setShowTypewriter(false);
-      }, 4200); // 5000 milliseconds = 5 seconds
-  
-      return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+        // Change key at intervals to force re-render of LazyLoad
+        const interval = setInterval(() => {
+            setShowTypewriter(false);
+            setRenderKey(prevKey => prevKey + 1);  // Increment key
+            setShowTypewriter(true);
+        }, 6000);  // Adjust time as needed
+
+        return () => clearInterval(interval);  // Clean up the interval on component unmount
     }, []);
+
+    // useEffect(() => {
+    //     // Toggle the typewriter effect every 2 seconds
+    //     const interval = setInterval(() => {
+    //         setShowTypewriter(prev => !prev); // Toggle the state
+    //     }, 5500);
+
+    //     return () => clearInterval(interval); // Clean up the interval on component unmount
+    // }, []);
   
 
     return (
@@ -55,8 +68,8 @@ export default function Footer3() {
                                     </div>
                                 </div>
                                 <div className="max-w-full">
-                                    <LazyLoad height={200} offset={100} once>
-                                        <h3 className={`${isMobile ? "font28 text-left"  : "text-4xl text-left"} ${showTypewriter ? "typewriter" : "typewriter-none"} mb-2`} >
+                                    <LazyLoad height={200} key={renderKey} offset={100} once>
+                                        <h3 className={`${isMobile ? "font28 text-left"  : "text-4xl text-left"} ${showTypewriter ? "typewriter" : ""} mb-2`} >
                                             <span className='text-blue-400'>Evolve.</span>
                                             <span className='text-pink-400'>Transform.</span>
                                             <span>Grow.</span>
