@@ -23,7 +23,7 @@ export default function MobileMenu({handleMobileMenu}) {
     return (
         <>
             <ul className="navigation" >
-                <li className="active" onClick={handleMobileMenu}><Link href="#">Home</Link>
+                <li className="active" onClick={handleMobileMenu}><Link href="/">Home</Link>
                     {/* <ul className="sub-menu" style={{ display: `${isActive.key == 1 ? "block" : "none"}` }}>
                         <li><Link href="/">01. Business</Link></li>
                         <li><Link href="index-2">02. Finance</Link></li>
