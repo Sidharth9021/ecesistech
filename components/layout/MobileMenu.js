@@ -81,7 +81,7 @@ export default function MobileMenu({handleMobileMenu}) {
                     </ul>
                     <div className={isActive.key == 5 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(5)}><span className="plus-line" /></div>
                 </li> */}
-                <li><Link href="#">contacts</Link></li>
+                <li><Link href="/contact">contacts</Link></li>
             </ul>
         </>
     )

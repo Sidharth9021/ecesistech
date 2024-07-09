@@ -267,6 +267,10 @@ textarea {
   padding-right: 15px;
 }
 
+.custom-container {
+padding-left: 40px;
+}
+
 .row {
   --bs-gutter-x: 30px;
 }
@@ -952,7 +956,6 @@ textarea {
 .breadcrumb__bg_real_estate {
   background-repeat: no-repeat;
   background-position: top center;
-  padding: 145px 0 150px;
   position: relative;
   z-index: 1;
 }
@@ -14836,4 +14839,8 @@ blockquote p {
 
 .multiple-shadows {
   text-shadow: 3px 3px 0px rgba(0,0,0,0.2), -1px -1px 0 rgba(0,0,0,0.1);
+}
+
+.dynamic-size{
+  top: calc(10vw);
 }

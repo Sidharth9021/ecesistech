@@ -9,6 +9,8 @@ import React, { useEffect, useState } from 'react';
 
 
 export default function ServicesDetails() {
+    let Nothome = true;
+
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -25,7 +27,7 @@ export default function ServicesDetails() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Real Estate Valuations">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Real Estate Valuations" Nothome={Nothome}>
                 <div>
                     <section className="services__details-area mt-6">
                         <div className="container">
@@ -38,8 +40,8 @@ export default function ServicesDetails() {
                                         <div className="services__details-content">
                                             <h2 className="title" >Transforming Real Estate Valuations with<span className="text-pink-400" > Premier BPO Services</span></h2>
                                             <p>Welcome to ECESIS, where we specialize in Broker Price Opinion services that empower real estate professionals across the U.S. Founded in 2010, ECESIS has established itself as a leader in the real estate valuation industry, known for our precision, reliability, and innovative solutions. Our mission is to help you streamline your operations, enhance your service offerings, and expand your business reach with our expert support.</p>
-                                            <h3 className="text-center mt-5">Enhanced BPO Management with ECESIS</h3>
-                                            <div className={`w-full border-2 bg-slate-100 rounded-3xl ${isMobile ? "px-5" : "px-10"}  pt-7 pb-9 `} >
+                                            <h3 className="text-center text-3xl mt-5 ">Enhanced BPO Management with ECESIS</h3>
+                                            <div className={`w-full border-2 bg-slate-100 rounded-3xl mt-12 ${isMobile ? "px-5" : "px-10"}  pt-7 pb-9 `} >
                                                 <div className="services__details-list mt-3">
                                                     <div className="row">
                                                         <div className="">
@@ -102,9 +104,9 @@ export default function ServicesDetails() {
                                                     </div>
                                                     <div className="">
                                                         <div className="services__details-inner-content mt-5">
-                                                            <h1 className="head-text text-black text-center">WHY ECESIS ?</h1>
+                                                            <h1 className="font-bold text-4xl text-black text-center">WHY ECESIS ?</h1>
                                                             <h5 className="title text-center mt-9">What differentiates us</h5>
-                                                            <p className="text-center">We're a one-stop solution for all your BPO needs. We support you end-to-end, from registering portals to submitting reports.</p>
+                                                            <p className="text-center mb-10">We're a one-stop solution for all your BPO needs. We support you end-to-end, from registering portals to submitting reports.</p>
                                                             <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-3"} gap-x-4`}>
                                                                 <div className="ebt">
                                                                     <div className="title px-3 py-5 border-2 text-center justify-center rounded-2xl" style={{ width: '390px', height: '275px' }} >
@@ -113,84 +115,84 @@ export default function ServicesDetails() {
                                                                             An established & registered service provider
                                                                         </h4>
 
-                                                                        <h6 className="mt-3 text-gray-500  font-medium">
+                                                                        <p className="mt-3 text-gray-500  font-medium">
                                                                             14+ successful years in the US real estate industry.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="ebt">
                                                                     <div className="title px-2  border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px', paddingTop: '26px', paddingBottom: '26px' }}>
-                                                                        <span><img src="/assets/img/icon/verified-icon.png" className="w-20 h-20" /></span>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/verified-icon.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             High acceptance rate and best quality assurance & control
                                                                         </h4>
 
-                                                                        <h6 className="mt-3 text-gray-500  font-medium">
+                                                                        <p className="mt-3 text-gray-500  font-medium">
                                                                             Track record of 90%+ acceptance rate for all BPO portals and 92% quality score in BPO reports.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="ebt">
                                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                                        <span><img src="/assets/img/icon/handshake-icon2.png" className="w-20 h-20" /></span>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/handshake-icon2.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             Trusted partner to 150+ US realtors
                                                                         </h4>
 
-                                                                        <h6 className="mt-3 text-gray-500  font-medium" >
+                                                                        <p className="mt-3 text-gray-500  font-medium" >
                                                                             We invest both in technology and people to deliver high-quality services.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="ebt">
                                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                                        <span><img src="/assets/img/icon/time-icon.png" className="w-20 h-20" /></span>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/time-icon.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             Accelerated response & turnaround time
                                                                         </h4>
 
-                                                                        <h6 className="mt-3 text-gray-500  font-medium" >
+                                                                        <p className="mt-3 text-gray-500  font-medium" >
                                                                             We deliver over 15,000 monthly reports, with an average TAT of 24 hours.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="ebt">
                                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                                        <span><img src="/assets/img/icon/around-the-clock-icon.png" className="w-20 h-20" /></span>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/around-the-clock-icon.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             Round-the-clock support
                                                                         </h4>
 
-                                                                        <h6 className=" text-gray-500  font-medium" style={{ marginTop: "46px" }}>
+                                                                        <p className=" text-gray-500  font-medium" style={{ marginTop: "46px" }}>
                                                                             365 x 24 x 7 service with well-defined SLAs & escalation matrix.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="ebt">
                                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                                        <span><img src="/assets/img/icon/isp-icon.png" className="w-20 h-20" /></span>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/isp-icon.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             Sophisticated multi-tier network security
                                                                         </h4>
 
-                                                                        <h6 className="mt-3 text-gray-500  font-medium" >
+                                                                        <p className="mt-3 text-gray-500  font-medium" >
                                                                             Your web traffic is routed only through dedicated US IPs within the US border.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
 
                                                             </div>
                                                             <div className="flex justify-center">
                                                                 <div className="ebt">
-                                                                    <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                                        <span><img src="/assets/img/icon/security-icon.png" className="w-20 h-20" /></span>
+                                                                    <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xlitems-center " style={{ width: '390px', height: '275px' }}>
+                                                                        <span className="justify-center flex"><img src="/assets/img/icon/security-icon.png" className="w-20 h-20" /></span>
                                                                         <h4 className="mt-3">
                                                                             High standards of integrity
                                                                         </h4>
 
-                                                                        <h6 className="text-gray-500 font-medium" style={{ marginTop: "46px" }}>
+                                                                        <p className="text-gray-500 font-medium" style={{ marginTop: "46px" }}>
                                                                             Set processes & secure protocols to protect data confidentiality.
-                                                                        </h6>
+                                                                        </p>
                                                                     </div>
                                                                 </div>
 

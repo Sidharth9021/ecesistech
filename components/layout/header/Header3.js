@@ -6,21 +6,26 @@ import OffcanvusMenu from "../OffcanvusMenu"
 import SearchPopup from "../SearchPopup"
 import React, { useEffect, useState } from "react";
 
-export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transparent, isSearch, isOffcanvus, handleOffcanvus, handleSearch }) {
-    const [Path, setPath] = useState('');
+export default function Header3({ Nothome, scroll, isMobileMenu, handleMobileMenu, transparent, isSearch, isOffcanvus, handleOffcanvus, handleSearch }) {
+
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            // Set the active path from window.location.pathname
-            setPath(window.location.pathname);
-        }
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
    
     return (
         <>
-            <header className={`tg-header__style-three transparent-header ${Path !== "/" ? "" : "absolute"}`}>
-                <div id="sticky-header" className={`tg-header__area  tg-header__area-three ${scroll ? "sticky-menu" : ""}`}>
-                    <div className="container">
+            <header className={`tg-header__style-three transparent-header ${Nothome ? "" : "absolute"}`} >
+                <div id="sticky-header" className={`tg-header__area  tg-header__area-three ${scroll ? "sticky-menu" : ""}`}  >
+                    <div className="container" >
                         <div className="row">
                             <div className="col-12">
                                 <div className="tgmenu__wrap">
@@ -77,7 +82,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                                     </nav>
                                 </div>
                                 {/* Mobile Menu  */}
-                                <div className="tgmobile__menu">
+                                <div className={`${isMobile ? "tgmobile__menu" : "hidden"}`}>
                                     <nav className="tgmobile__menu-box">
                                         <div className="close-btn" onClick={handleMobileMenu}><i className="fas fa-times" /></div>
                                         <div className="nav-logo">
@@ -119,10 +124,10 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, transp
                     </div>
                 </div>
                 {/* header-search */}
-                <SearchPopup isSearch={isSearch} handleSearch={handleSearch} />
+                {/* <SearchPopup isSearch={isSearch} handleSearch={handleSearch} /> */}
                 {/* header-search-end */}
                 {/* offCanvas-menu */}
-                <OffcanvusMenu isOffcanvus={isOffcanvus} handleOffcanvus={handleOffcanvus} />
+                {/* <OffcanvusMenu isOffcanvus={isOffcanvus} handleOffcanvus={handleOffcanvus} /> */}
                 {/* offCanvas-menu-end */}
             </header>
 

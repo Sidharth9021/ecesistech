@@ -21896,13 +21896,6 @@ white-space: normal;}
   100% { border-color: transparent; }
 }
 
-.head-text{
-  font-family: var(--tg-heading-font-family);
-  margin-top: 0px;
-  font-weight: var(--tg-fw-bold);
-  line-height: var(--tg-heading-line-height);
-  text-transform: unset;
-}
 
 .breadcrumbBackgroundImage {
   position: absolute;

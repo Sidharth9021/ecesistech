@@ -9,6 +9,8 @@ import RadialCardGrid from './radial';
 
 
 export default function ServicesDetails() {
+    let Nothome = true;
+
 
 
     const iconData = [
@@ -28,13 +30,13 @@ export default function ServicesDetails() {
             id: 3,
             name: "Hospitality",
             url: "/assets/img/icon/hospitality.png",
-            style: "h-20 w-20 mb-3"
+            style: "h-20 w-20 mb-6"
         },
         {
             id: 4,
             name: "Information Technology",
             url: "/assets/img/icon/info-tech.png",
-            style: "h-20 w-20 mb-3"
+            style: "h-20 w-20 mb-6"
         },
         {
             id: 5,
@@ -77,7 +79,7 @@ export default function ServicesDetails() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Manpower Staffing">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Manpower Staffing" Nothome={Nothome}>
                 <div>
                     <section className="services__details-area mt-6">
                         <div className="container">
@@ -140,15 +142,15 @@ export default function ServicesDetails() {
                                                 </div>
                                             </div> */}
                                         </div>
-                                        <h3 className="mt-12 text-center mb-16">Why Us?</h3>
+                                        <h3 className="mt-12 text-4xl font-bold text-center mb-16">Why Us?</h3>
 
                                         <div className="">
                                             <div className="services__details-inner-content mt-5"></div>
                                             <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-3"} gap-x-4 gap-y-4`}>
                                                 <div className="ebt">
                                                     <div className="title px-3 py-4 border-2 text-center justify-center rounded-2xl" style={{ width: '390px', height: '275px' }} >
-                                                        <span><img src="/assets/img/icon/precision.png" className="w-20 h-20 mt-3" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/precision.png" className="w-20 h-20 mt-3" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Precision Placements
                                                         </h4>
 
@@ -159,8 +161,8 @@ export default function ServicesDetails() {
                                                 </div>
                                                 <div className="ebt">
                                                     <div className="title px-2  border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px', paddingTop: '26px', paddingBottom: '26px' }}>
-                                                        <span><img src="/assets/img/icon/verified-icon.png" className="w-20 h-20 mt-3" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/verified-icon.png" className="w-20 h-20 mt-3" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Proven Expertise</h4>
 
                                                         <h6 className="mt-3 text-gray-500  font-medium">
@@ -169,8 +171,8 @@ export default function ServicesDetails() {
                                                 </div>
                                                 <div className="ebt">
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/human.png" className="w-20 h-20 mt-3" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/human.png" className="w-20 h-20 mt-3" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Top Talent Network
                                                         </h4>
 
@@ -181,8 +183,8 @@ export default function ServicesDetails() {
                                                 </div>
                                                 <div className="ebt">
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/client-centric.png" className="w-20 h-20" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/client-centric.png" className="w-20 h-20" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Client-Centric Approach</h4>
 
                                                         <h6 className="mt-3 text-gray-500  font-medium" >
@@ -191,18 +193,18 @@ export default function ServicesDetails() {
                                                 </div>
                                                 <div className="ebt">
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/around-the-clock-icon.png" className="w-20 h-20" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/around-the-clock-icon.png" className="w-20 h-20" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Agile and Responsive</h4>
 
-                                                        <h6 className=" text-gray-500  font-medium" >
+                                                        <h6 className="mt-3 text-gray-500  font-medium" >
                                                             Quick and effective solutions to address your staffing challenges                                                        </h6>
                                                     </div>
                                                 </div>
                                                 <div className="ebt">
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/handshake-icon2.png" className="w-20 h-20" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/handshake-icon2.png" className="w-20 h-20" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Strategic Partner
                                                         </h4>
 
@@ -215,29 +217,29 @@ export default function ServicesDetails() {
                                             <div className={`${isMobile ? "flex-col mt-3" : "flex-row mt-4"} flex justify-center `}>
                                                 <div className="ebt">
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/security-icon.png" className="w-20 h-20" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/security-icon.png" className="w-20 h-20" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Flexibility</h4>
 
-                                                        <h6 className="text-gray-500 font-medium" style={{ marginTop: "46px" }}>
+                                                        <h6 className="text-gray-500 font-medium mt-3" >
                                                             Adapting to both short-term requirements and long-term organizational goals                                                        </h6>
                                                     </div>
                                                 </div>
                                                 <div className={`ebt ${isMobile ? "mt-3" : "ml-4"} `}>
                                                     <div className="title px-2 py-4 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
-                                                        <span><img src="/assets/img/icon/excellence.png" className="w-20 h-20" /></span>
-                                                        <h4 className="mt-3">
+                                                        <span className="flex justify-center"><img src="/assets/img/icon/excellence.png" className="w-20 h-20" /></span>
+                                                        <h4 className="mt-3 text-2xl">
                                                             Commitment to Excellence                                                        </h4>
 
-                                                        <h6 className="text-gray-500 font-medium" style={{ marginTop: "46px" }}>
+                                                        <h6 className="text-gray-500 font-medium mt-3">
                                                             A dedication to delivering unparalleled results in the realm of manpower staffing                                                        </h6>
                                                     </div>
                                                 </div>
 
                                             </div>
                                         </div>
-                                        <h2 className="title mt-14 text-center">Fueling Your Triumph with <span className="text-blue-400">Strategic Staffing Excellence</span></h2>
-                                        <h4 className="title mt-24 text-center mb-12">Industries we service</h4>
+                                        <h2 className="text-4xl mt-14 text-center">Fueling Your Triumph with <span className="text-blue-400">Strategic Staffing Excellence</span></h2>
+                                        <h4 className="text-3xl mt-24 text-center mb-12">Industries we service</h4>
 
 
                                         <div className="" >
@@ -246,12 +248,12 @@ export default function ServicesDetails() {
                                                 {iconData.map(icon => (
                                                     <div key={icon.id} className="text-center p-2 flip-container rounded-lg transition duration-300">
                                                         <img src={icon.url} alt={icon.name} title={icon.name} className={`mx-auto ${icon.style} flip-image`} />
-                                                        <h5 className="mt-2 text-gray-700">{icon.name}</h5> {/* Text label under the icon */}
+                                                        <h5 className="mt-2 text-gray-700 text-xl">{icon.name}</h5> {/* Text label under the icon */}
                                                     </div>
                                                 ))}
                                             </div>
                                         </div>
-                                        <h3 className={`title mt-24 ${isMobile ? "" : "ml-24"}  mb-5`}>Scope of skilled manpower supply</h3>
+                                        <h3 className={`text-3xl mt-24 ${isMobile ? "" : "ml-24"}  mb-5`}>Scope of skilled manpower supply</h3>
                                         <div className={`${isMobile ? "flex flex-col " : "flex flex-row"} justify-center items-center`}>
                                             <div className="about__list-box" >
                                                 <ul className="list-wrap">

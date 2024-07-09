@@ -6,6 +6,7 @@ import Link from "next/link"
 import React, { useState, useEffect } from 'react';
 
 export default function About() {
+    let Nothome = true;
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -27,7 +28,7 @@ export default function About() {
     
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="About Us">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="About Us" Nothome={Nothome}>
                 <div>
                     <section className="about__area-four">
                         <div className="container">
@@ -82,144 +83,7 @@ export default function About() {
                             </div>
                         </div>
                     </section>
-                    {/* about-area-end */}
-                    {/* brand-area */}
-                    {/* <div className="brand__area-four">
-                        <div className="container">
-                            <div className="swiper-container brand-active">
-                                <BrandActiveSlider />
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* brand-area */}
-                    {/* choose-area */}
-                    <section className="choose__area-four">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-5">
-                                    <div className="choose__content-four">
-                                        <div className="section-title white-title mb-20">
-                                            <span className="sub-title">Why We Are The Best</span>
-                                            <h2 className="title">Digital Solutions For Your Online Business</h2>
-                                        </div>
-                                        <p>We successfully cope with tasks of varying complexity provide area longerty guarantees and regularly master new Practice Following gies heur.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-7">
-                                    <div className="choose__list-two">
-                                        <ul className="list-wrap">
-                                            <li>
-                                                <div className="choose__list-box-two">
-                                                    <div className="choose__list-icon-two">
-                                                        <i className="flaticon-investment" />
-                                                    </div>
-                                                    <div className="choose__list-content-two">
-                                                        <h4 className="title">Business Solutions</h4>
-                                                        <p>Semper egetuis kelly for tellus urna area condition.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="choose__list-box-two">
-                                                    <div className="choose__list-icon-two">
-                                                        <i className="flaticon-financial-profit" />
-                                                    </div>
-                                                    <div className="choose__list-content-two">
-                                                        <h4 className="title">Finance Planning</h4>
-                                                        <p>Semper egetuis kelly for tellus urna area condition.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="choose__list-box-two">
-                                                    <div className="choose__list-icon-two">
-                                                        <i className="flaticon-investment-1" />
-                                                    </div>
-                                                    <div className="choose__list-content-two">
-                                                        <h4 className="title">Market Analysis</h4>
-                                                        <p>Semper egetuis kelly for tellus urna area condition.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div className="choose__list-box-two">
-                                                    <div className="choose__list-icon-two">
-                                                        <i className="flaticon-report" />
-                                                    </div>
-                                                    <div className="choose__list-content-two">
-                                                        <h4 className="title">Business Solutions</h4>
-                                                        <p>Semper egetuis kelly for tellus urna area condition.</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="choose__shape-wrap-four">
-                            <img src="/assets/img/images/inner_choose_shape01.png" alt="" data-aos="fade-right" data-aos-delay={400} />
-                            <img src="/assets/img/images/inner_choose_shape02.png" alt="" data-aos="fade-left" data-aos-delay={400} />
-                        </div>
-                    </section>
-                    {/* choose-area-end */}
-                    {/* counter-area */}
-                    {/* <section className="counter-area">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-3 col-lg-4 col-sm-6">
-                                    <div className="counter-item">
-                                        <div className="icon">
-                                            <i className="flaticon-trophy" />
-                                        </div>
-                                        <div className="content">
-                                            <h2 className="count"><CounterUp count={45} />+</h2>
-                                            <p>Successfully <br /> Completed Projects</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-sm-6">
-                                    <div className="counter-item">
-                                        <div className="icon">
-                                            <i className="flaticon-happy" />
-                                        </div>
-                                        <div className="content">
-                                            <h2 className="count"><CounterUp count={92} />K</h2>
-                                            <p>Satisfied <br /> 100% Our Clients</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-sm-6">
-                                    <div className="counter-item">
-                                        <div className="icon">
-                                            <i className="flaticon-china" />
-                                        </div>
-                                        <div className="content">
-                                            <h2 className="count"><CounterUp count={19} />+</h2>
-                                            <p>All Over The World <br /> We Are Available</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-sm-6">
-                                    <div className="counter-item">
-                                        <div className="icon">
-                                            <i className="flaticon-time" />
-                                        </div>
-                                        <div className="content">
-                                            <h2 className="count"><CounterUp count={25} />+</h2>
-                                            <p>Years of Experiences <br /> To Run This Company</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="counter-shape-wrap">
-                            <img src="/assets/img/images/counter_shape01.png" alt="" data-aos="fade-right" data-aos-delay={400} />
-                            <img src="/assets/img/images/counter_shape02.png" alt="" data-parallax="{&quot;x&quot; : 100 , &quot;y&quot; : -100 }" />
-                            <img src="/assets/img/images/counter_shape03.png" alt="" data-aos="fade-left" data-aos-delay={400} />
-                        </div>
-                    </section> */}
-                    {/* counter-area-end */}
+
                     {/* team-area */}
                     <section className="team__area-four">
                         <div className="container">

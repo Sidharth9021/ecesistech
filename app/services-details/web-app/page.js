@@ -6,10 +6,12 @@ import Link from "next/link"
 
 
 export default function ServicesDetails() {
+    let Nothome = true;
+
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Service Details">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Service Details" Nothome={Nothome}>
                 <div>
                     <section className="services__details-area">
                         <div className="container">

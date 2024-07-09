@@ -12,7 +12,16 @@ export const metadata = {
     title: 'EcesisTech',
 }
 
-export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, transparent }) {
+export default function Layout({ Nothome, headerStyle, footerStyle, headTitle, breadcrumbTitle, children, transparent }) {
+
+    const [Path, setPath] = useState('');
+
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            // Set the active path from window.location.pathname
+            setPath(window.location.pathname);
+        }
+    }, []);
 
     const [scroll, setScroll] = useState(0)
     const [isMobileMenu, setMobileMenu] = useState(false)
@@ -47,7 +56,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
             <PageHead headTitle={headTitle} />
             <DataBg />
 
-            {headerStyle == 3 ? <Header3 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} isOffcanvus={isOffcanvus} handleOffcanvus={handleOffcanvus} /> : null}
+            {headerStyle == 3 ? <Header3 Nothome={Nothome} scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} isOffcanvus={isOffcanvus} handleOffcanvus={handleOffcanvus} /> : null}
 
 
             <main className="fix">
