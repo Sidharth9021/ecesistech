@@ -42,7 +42,7 @@ export default function ServicesDetails() {
                                                     <h4 className={` ${isMobile ? 'text-lg text-center' : 'text-3xl'}  font-normal`}>Build what matters - Your challenges. Our solutions.</h4>
                                                 </div>
                                                 <div className={`${isMobile ? '' : 'mr-16'}`}>
-                                                    <LazyLoad height={200} once>
+                                                 
                                                         <ReactPlayer
                                                             url='/assets/videos/ai_main.mp4'
                                                             playing
@@ -51,7 +51,7 @@ export default function ServicesDetails() {
                                                             width={`${isMobile ? '150px' : '330px'}`}
                                                             height={`${isMobile ? '150px' : '330px'}`}
                                                         />
-                                                    </LazyLoad>
+                                                 
                                                 </div>
                                             </div>
                                             <h3 className="text-3xl mt-12 text-black">Put AI to Work for Your Business</h3>

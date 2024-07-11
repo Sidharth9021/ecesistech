@@ -75,7 +75,7 @@ export default function ServicesDetails() {
 
                                                         <div className={`flex flex-col   ${isMobile ? 'mt-7 gap-y-24' : 'mt-20 gap-y-28'} `}>
                                                             <div className={`flex  ${isMobile ? "flex-col" : "flex-row"}`}>
-                                                                <LazyLoad height={200} offset={250} once>
+                                                               
                                                                     <ReactPlayer
                                                                         url='/assets/videos/social_media.mp4'
                                                                         playing
@@ -84,7 +84,7 @@ export default function ServicesDetails() {
                                                                         width='330px'
                                                                         height='330px'
                                                                     />
-                                                                </LazyLoad>
+                                                               
 
                                                                 <div className={`${isMobile ? '' : 'mt-2'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Social Media Marketing & Optimization</h3>
@@ -102,7 +102,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col" : "flex-row-reverse justify-between"} `}>
-                                                                <LazyLoad height={200} offset={250} once>
+                                                               
                                                                     <ReactPlayer
                                                                         url='/assets/videos/paid_marketing1.mp4'
                                                                         playing
@@ -111,7 +111,7 @@ export default function ServicesDetails() {
                                                                         width='330px'
                                                                         height='330px'
                                                                     />
-                                                                </LazyLoad>
+                                                               
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Paid Marketing Services</h3>
                                                                     <p>Focused campaigns and ads that reach the right prospects, with a higher probability of conversions.</p>
@@ -126,7 +126,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex  ${isMobile ? "flex-col" : "flex-row"}`}>
-                                                                <LazyLoad height={200} offset={250} once>
+                                                               
                                                                     <ReactPlayer
                                                                         url='/assets/videos/web_design.mp4'
                                                                         playing
@@ -135,7 +135,7 @@ export default function ServicesDetails() {
                                                                         width='330px'
                                                                         height='330px'
                                                                     />
-                                                                </LazyLoad>
+                                                               
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-6'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Website Design & Development</h3>
                                                                     <p>Attract, engage and retain prospects with high-impact web designs & formats.</p>
@@ -151,7 +151,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col" : "flex-row-reverse justify-between"} `}>
-                                                                <LazyLoad height={200} offset={250} once>
+                                                               
                                                                     <ReactPlayer
                                                                         url='/assets/videos/branding.mp4'
                                                                         playing
@@ -160,7 +160,7 @@ export default function ServicesDetails() {
                                                                         width='330px'
                                                                         height='330px'
                                                                     />
-                                                                </LazyLoad>
+                                                               
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Branding and Creative Services</h3>
                                                                     <p>Transform your company into an iconic brand with the right mix of branding services.</p>

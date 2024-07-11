@@ -88,7 +88,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
 
-                <img src={matchingBanner ? (isMobile && !isTab ? matchingBanner.backgroundMobile : matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} style={{ maxHeight: isWide ? '' : '' }} />
+                <img src={matchingBanner ? (isMobile && !isTab ? matchingBanner.backgroundMobile : matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} style={{ maxHeight: isWide ? '' : '400px' }} />
 
                 <div className="container">
 
@@ -100,7 +100,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                                         <></>
 
                                     ) : (
-                                        <h2 className={`title absolute dynamic-size  ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px` }}>{breadcrumbTitle}</h2>
+                                        <h2 className={`title absolute  ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px`, left: '10%', top: '40%' }}>{breadcrumbTitle}</h2>
 
                                     )
                                 }
