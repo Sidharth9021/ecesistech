@@ -77,7 +77,7 @@ export default function ServicesDetails() {
 
                         <h2 className="text-3xl text-center font-semibold mb-5 mt-5">Tools / Frameworks We Use for AI Solution Development</h2>
                         <p className="text-center" >At ECESIS, we utilize advanced programming tools to develop robust and scalable AI solutions.<br /> These tools facilitate efficient model optimization and deployment, ensuring our technology remains at the forefront of the AI industry.</p>
-                        <div className={`flex gap-4 flex-col justify-center items-center mt-6`}>
+                        <div className={`flex gap-4 ${isMobile ? 'flex-col' : 'flex-row'}  justify-center items-center mt-6`}>
                             <div className="px-2">
                                 {/* Generative AI */}
                                 <div className={`border-2 mb-5 rounded ${isMobile ? 'w-full h-full' : ' w-fit'}`}>
@@ -85,12 +85,12 @@ export default function ServicesDetails() {
                                     <div className="w-full border" />
                                     <div className="flex flex-row">
                                         <div className="flex flex-col items-center">
-                                            <img src="/assets/img/icon/chatgpt.svg" className="w-10 h-10 mt-3" alt="" />
+                                            <img src="/assets/img/icon/chatgpt.svg" className="w-10 h-10 mt-4" alt="" />
                                             <p className="px-3 pb-1 mt-2 text-center w-48">Transformer models
                                                 (GPT3, GPT 3.5 Turbo, LaMDA)</p>
                                         </div>
                                         <div className="flex flex-col items-center ">
-                                            <img src="/assets/img/icon/meta.svg" className="w-10 h-10 mt-3" alt="" />
+                                            <img src="/assets/img/icon/meta.svg" className="w-10 h-10 mt-4" alt="" />
                                             <p className="px-3 pb-1 mt-2 text-center w-48">Llama 2/3, Palm 2, GPT-4, Gemini</p>
                                         </div>
                                     </div>
@@ -103,24 +103,24 @@ export default function ServicesDetails() {
                                     <div className="w-full border" />
                                     <div className="flex flex-row flex-wrap justify-evenly">
                                         <div className="flex flex-col items-center">
-                                            <img src="/assets/img/icon/supervised.png" className="w-10 h-10 mt-3" alt="" />
+                                            <img src="/assets/img/icon/supervised.png" className="w-10 h-10 mt-4" alt="" />
                                             <p className="px-3 pb-1 mt-2 text-center w-32">Supervised / Unsupervised <br /> Learning</p>
                                         </div>
                                         <div className="flex flex-col items-center">
-                                            <img src="/assets/img/icon/clustering.png" className="w-10 h-10 mt-3" alt="" />
+                                            <img src="/assets/img/icon/clustering.png" className="w-10 h-10 mt-4" alt="" />
                                             <p className="px-3 pb-1 mt-2 text-center w-32">Clustering</p>
                                         </div>
                                         <div className="flex flex-col items-center">
-                                            <img src="/assets/img/icon/metric.png" className="w-10 h-10 mt-3" alt="" />
+                                            <img src="/assets/img/icon/metric.png" className="w-10 h-10 mt-4" alt="" />
                                             <p className="px-3 pb-1 mt-2 text-center w-32">Metric<br /> Learning</p>
                                         </div>
                                         <div className="flex flex-col items-center">
-                                            <img src="/assets/img/icon/few_shot.png" className="w-10 h-10 mt-3" alt="" />
-                                            <p className="px-3 pb-1 mt-2 text-center">Fewshot<br />  Learning</p>
+                                            <img src="/assets/img/icon/few_shot.png" className="w-12 h-12 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-32">Fewshot<br />  Learning</p>
                                         </div>
                                         <div className="flex flex-col items-center ">
-                                            <img src="/assets/img/icon/yolo.png" className="w-10 h-10 mt-3" alt="" />
-                                            <p className="px-3 pb-1 mt-2 text-center">YOLO<br />  Learning</p>
+                                            <img src="/assets/img/icon/yolo.png" className="w-12 h-12 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-32">YOLO<br />  Learning</p>
                                         </div>
                                     </div>
                                 </div>
