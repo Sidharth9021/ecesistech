@@ -1,44 +1,32 @@
-export default function Callback2() {
+import Link from "next/link"
+
+export default function Callback2(isMobile) {
     return (
         <>
             <section className="call-back-area call-back-area-two">
-                <div className="container">
-                    <div className="call-back-wrap">
+                <div className="">
+                    <div className="call-back-wrap bg-lblue">
                         <div className="row align-items-center">
-                            <div className="col-xl-6 col-lg-5">
-                                <div className="call-back-content">
-                                    <div className="section-title white-title mb-10 tg-heading-subheading animation-style3">
-                                        <h2 className="title tg-element-title">Request A Call Back</h2>
+                                <div className="call-back-content flex flex-row justify-center items-center" >
+                                    <div className="section-title white-title tg-heading-subheading animation-style3">
+                                        {isMobile ? (<>
+                                            <h2 className="mb-0 text-4xl text-white tg-element-title">Get a <span className="text-ly">30-minute</span>,<br/> no-cost strategy session with a Data and AI services expert
+                                            </h2>
+                                        </>) : (<>
+                                            <h2 className="mb-0 text-4xl text-white tg-element-title">Get a <span className="text-ly">30-minute</span>, no-cost <br/>strategy session with a<br/> Data and AI services expert
+                                            </h2>
+                                        </>)}
+                                        
+                                        <p className="text-white  text-xl mt-3">Get started by talking to our experts about how to enable business insights at scale with the right data foundation, modernization and platform management.</p>
+                                        <Link href="/contact" className="btn mt-5">Let's Talk</Link>
                                     </div>
-                                    <p>Ever find yourself staring at your computer screen slogan to come to mind? Oftentimes.</p>
+                                    {!isMobile ? (<div className="">
+                                    <img src="/assets/img/images/callback_photo.jpg" alt="" style={{width: '1100px'}} className="ml-2 rounded-2xl"/>
+
+                                    </div>) : null }
+                                    
+
                                 </div>
-                            </div>
-                            <div className="col-xl-6 col-lg-7">
-                                <div className="call-back-form">
-                                    <form action="#">
-                                        <div className="row">
-                                            <div className="col-md-6">
-                                                <div className="form-grp">
-                                                    <input type="text" placeholder="Name *" />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="form-grp">
-                                                    <input type="email" placeholder="E-mail *" />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="form-grp">
-                                                    <input type="number" placeholder="Phone *" />
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <button type="submit" className="btn">Send Now</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

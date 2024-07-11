@@ -1,157 +1,136 @@
-import VideoPopup from "@/components/elements/PopupVideo"
+'use client'
 import Layout from "@/components/layout/Layout"
-import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
+import React, { useEffect, useState } from 'react';
+import ReactPlayer from 'react-player';
+import LazyLoad from 'react-lazyload';
+import Callback2 from "@/components/sections/Callback2"
+
 
 
 
 export default function ServicesDetails() {
     let Nothome = true;
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Service Details" Nothome={Nothome}>
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Artificial Intelligence" Nothome={Nothome}>
                 <div>
                     <section className="services__details-area">
                         <div className="container">
                             <div className="services__details-wrap">
                                 <div className="row">
-                                    <div className="col-70 order-0 order-lg-2">
-                                        <div className="services__details-thumb">
-                                            <img src="/assets/img/services/services_details01.jpg" alt="" />
-                                        </div>
+                                    <div className="col-100 order-0 order-lg-2">
                                         <div className="services__details-content">
-                                            <h2 className="title">Modern Business Investment Planning</h2>
-                                            <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia- list advice beyond the scope of our own expertise. That’s why we’ve developed close working relationships with a number of strategic partner.</p>
-                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
-                                            <div className="services__details-list">
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        <div className="services__details-list-box">
-                                                            <div className="icon">
-                                                                <i className="flaticon-life-insurance" />
-                                                            </div>
-                                                            <div className="content">
-                                                                <h4 className="title">Extend Coverage</h4>
-                                                                <p>We successfully copey withtks arying mplexity aweprguara nd regularly master</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6">
-                                                        <div className="services__details-list-box">
-                                                            <div className="icon">
-                                                                <i className="flaticon-insurance-agent" />
-                                                            </div>
-                                                            <div className="content">
-                                                                <h4 className="title">Modern Insurance</h4>
-                                                                <p>We successfully copey withtks arying mplexity aweprguara nd regularly master</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <div className={`${isMobile ? 'flex-col justify-center' : 'flex-row justify-between'} flex items-center`}>
+                                                <div className={`${isMobile ? 'justify-center items-center' : ''}`}>
+                                                    <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `}><span className="text-pink-400"> <br />AI </span>Solutions Powered <br />By <span className="text-blue-400">Human </span>Expertise</h2>
+                                                    <h4 className={` ${isMobile ? 'text-lg text-center' : 'text-3xl'}  font-normal`}>Build what matters - Your challenges. Our solutions.</h4>
+                                                </div>
+                                                <div className={`${isMobile ? '' : 'mr-16'}`}>
+                                                    <LazyLoad height={200} once>
+                                                        <ReactPlayer
+                                                            url='/assets/videos/ai_main.mp4'
+                                                            playing
+                                                            loop
+                                                            muted
+                                                            width={`${isMobile ? '150px' : '330px'}`}
+                                                            height={`${isMobile ? '150px' : '330px'}`}
+                                                        />
+                                                    </LazyLoad>
                                                 </div>
                                             </div>
-                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
-                                            <div className="services__details-inner">
-                                                <div className="row gutter-24 align-items-center">
-                                                    <div className="col-44">
-                                                        <div className="services__details-inner-img">
-                                                            <img src="/assets/img/services/services_details_inner01.jpg" alt="" />
-                                                            <VideoPopup />
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-56">
-                                                        <div className="services__details-inner-content">
-                                                            <h4 className="title">Raise capital faster  negotiate <br /> on your own terms</h4>
-                                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries.</p>
-                                                            <div className="about__list-box">
-                                                                <ul className="list-wrap">
-                                                                    <li><i className="flaticon-arrow-button" />Business Growth</li>
-                                                                    <li><i className="flaticon-arrow-button" />Analysis  Research</li>
-                                                                    <li><i className="flaticon-arrow-button" />100% Secure</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <h3 className="text-3xl mt-12 text-black">Put AI to Work for Your Business</h3>
+                                            <p className="mt-3 text-base">Partner with ECESIS to drive meaningful impact and long-term success through innovative, sustainable approaches that deliver competitive advantage.<br /> ECESIS’s depth of knowledge, coupled with flexible and comprehensive AI capabilities, positions you to thrive in the digital era.</p>
+                                            <p>
+                                                Partner with ECESIS to drive meaningful impact and long-term success through innovative, sustainable approaches that deliver a competitive advantage. Our commitment to excellence ensures that every AI solution we provide is tailored to meet your unique needs, enabling you to stay ahead in an ever-evolving market.
+                                                <br /><br />ECESIS’s depth of knowledge, combined with our flexible and comprehensive AI capabilities, positions you to thrive in the digital era. We offer a range of services designed to optimize your operations, enhance customer experiences, and unlock new growth opportunities. By leveraging cutting-edge technologies and industry best practices, we help you navigate the complexities of digital transformation with confidence.
+                                            </p>
+                                            <h3 className="text-3xl mb-3 mt-28 text-center">Harness the Potential of End-to-End AI/ML Solutions</h3>
+                                            <p className="text-center">Leverage the transformative power of our AI capabilities and revolutionize your business with limitless possibilities.</p>
+                                            <div className="flex justify-center items-center">
+                                                <img src="/assets/img/images/ai_solutions.png" className="" alt="" style={{ width: '85%' }} />
                                             </div>
-                                            <p className="last-info">when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.</p>
+                                            <p className="text-2xl text-center font-bold mb-6">With optimized data strategies, empowered decision-making, and AI-driven innovations, we will help you achieve unparalleled success.</p>
                                         </div>
-                                    </div>
-                                    <div className="col-30">
-                                        <aside className="services__sidebar">
-                                            <div className="sidebar__widget sidebar__widget-two">
-                                                <div className="sidebar__cat-list-two">
-                                                    <ul className="list-wrap">
-                                                        <li><Link href="/services-details">Investment Planning <i className="flaticon-arrow-button" /></Link></li>
-                                                        <li><Link href="/services-details">Strategic marketing <i className="flaticon-arrow-button" /></Link></li>
-                                                        <li><Link href="/services-details">Insights  analytics <i className="flaticon-arrow-button" /></Link></li>
-                                                        <li><Link href="/services-details">Business consulting <i className="flaticon-arrow-button" /></Link></li>
-                                                        <li><Link href="/services-details">Financial Advisory <i className="flaticon-arrow-button" /></Link></li>
-                                                        <li><Link href="/services-details">Market Research <i className="flaticon-arrow-button" /></Link></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            {/* <div className="sidebar__widget">
-                                                <h4 className="sidebar__widget-title">Brochure</h4>
-                                                <div className="sidebar__brochure">
-                                                    <p>when an unknown printer took ga lley offer typey anddey.</p>
-                                                    <Link href="/assets/img/services/services_details01.jpg" target="_blank" download><i className="far fa-file-pdf" />PDF. Download</Link>
-                                                    <Link href="/assets/img/services/services_details01.jpg" target="_blank" download><i className="far fa-file-alt" />DOC. Download</Link>
-                                                </div>
-                                            </div>
-                                            <div className="sidebar__widget">
-                                                <h4 className="sidebar__widget-title">Latest Posts</h4>
-                                                <div className="sidebar__post-list">
-                                                    <div className="sidebar__post-item">
-                                                        <div className="sidebar__post-thumb">
-                                                            <Link href="/blog-details"><img src="/assets/img/blog/sb_post01.jpg" alt="" /></Link>
-                                                        </div>
-                                                        <div className="sidebar__post-content">
-                                                            <h5 className="title"><Link href="/blog-details">deno weuine easiure and praising</Link></h5>
-                                                            <span className="date"><i className="flaticon-time" />Sep 15, 2024</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="sidebar__post-item">
-                                                        <div className="sidebar__post-thumb">
-                                                            <Link href="/blog-details"><img src="/assets/img/blog/sb_post02.jpg" alt="" /></Link>
-                                                        </div>
-                                                        <div className="sidebar__post-content">
-                                                            <h5 className="title"><Link href="/blog-details">know how to pursue pleasure rationally</Link></h5>
-                                                            <span className="date"><i className="flaticon-time" />Sep 15, 2024</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="sidebar__post-item">
-                                                        <div className="sidebar__post-thumb">
-                                                            <Link href="/blog-details"><img src="/assets/img/blog/sb_post03.jpg" alt="" /></Link>
-                                                        </div>
-                                                        <div className="sidebar__post-content">
-                                                            <h5 className="title"><Link href="/blog-details">there anyone who loves</Link></h5>
-                                                            <span className="date"><i className="flaticon-time" />Sep 15, 2024</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="sidebar__post-item">
-                                                        <div className="sidebar__post-thumb">
-                                                            <Link href="/blog-details"><img src="/assets/img/blog/sb_post04.jpg" alt="" /></Link>
-                                                        </div>
-                                                        <div className="sidebar__post-content">
-                                                            <h5 className="title"><Link href="/blog-details">deno weuine easiure and praising</Link></h5>
-                                                            <span className="date"><i className="flaticon-time" />Sep 15, 2024</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> */}
-                                            {/* <div className="sidebar__widget sidebar__widget-two">
-                                                <div className="sidebar__contact">
-                                                    <h2 className="title">If You Need Any Help Contact With Us</h2>
-                                                    <Link href="tel:0123456789" className="btn"><i className="flaticon-phone-call" />+91 705 2101 786</Link>
-                                                </div>
-                                            </div> */}
-                                        </aside>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <Callback2 isMobile={isMobile} />
+                        <div className="px-3">
+
+                        <h2 className="text-3xl text-center font-semibold mb-5 mt-5">Tools / Frameworks We Use for AI Solution Development</h2>
+                        <p className="text-center" >At ECESIS, we utilize advanced programming tools to develop robust and scalable AI solutions.<br /> These tools facilitate efficient model optimization and deployment, ensuring our technology remains at the forefront of the AI industry.</p>
+                        <div className={`flex gap-4 flex-col justify-center items-center mt-6`}>
+                            <div className="px-2">
+                                {/* Generative AI */}
+                                <div className={`border-2 mb-5 rounded ${isMobile ? 'w-full h-full' : ' w-fit'}`}>
+                                    <p className="px-3 pt-3 text-xl text-center font-medium">Generative AI Models</p>
+                                    <div className="w-full border" />
+                                    <div className="flex flex-row">
+                                        <div className="flex flex-col items-center">
+                                            <img src="/assets/img/icon/chatgpt.svg" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-48">Transformer models
+                                                (GPT3, GPT 3.5 Turbo, LaMDA)</p>
+                                        </div>
+                                        <div className="flex flex-col items-center ">
+                                            <img src="/assets/img/icon/meta.svg" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-48">Llama 2/3, Palm 2, GPT-4, Gemini</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="px-2">
+                                {/* Algorithms */}
+                                <div className={`border-2 mb-5 rounded ${isMobile ? 'w-full h-full' : ' w-fit'}`}>
+                                    <p className="px-3 pt-3 text-xl text-center font-medium">Algorithms</p>
+                                    <div className="w-full border" />
+                                    <div className="flex flex-row flex-wrap justify-evenly">
+                                        <div className="flex flex-col items-center">
+                                            <img src="/assets/img/icon/supervised.png" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-32">Supervised / Unsupervised <br /> Learning</p>
+                                        </div>
+                                        <div className="flex flex-col items-center">
+                                            <img src="/assets/img/icon/clustering.png" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-32">Clustering</p>
+                                        </div>
+                                        <div className="flex flex-col items-center">
+                                            <img src="/assets/img/icon/metric.png" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center w-32">Metric<br /> Learning</p>
+                                        </div>
+                                        <div className="flex flex-col items-center">
+                                            <img src="/assets/img/icon/few_shot.png" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center">Fewshot<br />  Learning</p>
+                                        </div>
+                                        <div className="flex flex-col items-center ">
+                                            <img src="/assets/img/icon/yolo.png" className="w-10 h-10 mt-3" alt="" />
+                                            <p className="px-3 pb-1 mt-2 text-center">YOLO<br />  Learning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center items-center">
+                            <img src="/assets/img/images/ai_pipeline.png" className="" alt="" style={{ width: '85%' }} />
+                        </div>
+                        </div>
+                        
                     </section>
                     {/* services-details-area-end */}
                     {/* brand-area */}

@@ -37,12 +37,12 @@ export default function ServicesDetails() {
                                     <div className="col-100 order-0 order-lg-2">
                                         <div className="services__details-content">
                                             <div className={`flex flex-col `}>
-                                                <div className={`flex ${isMobile ? 'flex-col justify-center' : "flex-row justify-between"} items-center  mt-6`}>
-                                                    <h2 className={` ${isMobile ? "text-center text-2xl": "text-5xl"} `}>High-Impact <span className="text-pink-400"> <br />Digital Marketing Strategies</span> <br />That Deliver <br /><span className="text-blue-400">Sustainable Outcomes</span></h2>
+                                                <div className={`flex ${isMobile ? 'flex-col justify-center' : "flex-row justify-between mt-6"} items-center`}>
+                                                    <h2 className={` ${isMobile ? "text-center text-2xl" : "text-5xl"} `}>High-Impact <span className="text-pink-400"> <br />Digital Marketing Strategies</span> <br />That Deliver <br /><span className="text-blue-400">Sustainable Outcomes</span></h2>
                                                     <img src="/assets/img/images/digital_image.png" className={`${isMobile ? '' : 'mr-16'} aspect-auto `} alt="" style={{ height: '320px', width: '320px' }} />
 
                                                 </div>
-                                                <p className="mt-5 text-lg text-justify">Build your brand and expand your reach In a hyperconnected marketplace, your digital identity can make or break empires. You need to build a powerful, omni-channel and differentiated brand presence—<span className="font-bold">within optimum budget and timelines.</span><br /><br />
+                                                <p className={`mt-5 text-lg ${isMobile ? '' : 'text-justify'} `}>Build your brand and expand your reach In a hyperconnected marketplace, your digital identity can make or break empires. You need to build a powerful, omni-channel and differentiated brand presence—<span className="font-bold">within optimum budget and timelines.</span><br /><br />
                                                     <span className="text-purple-500 font-bold">How do you do it?</span> That's the million-dollar question. Ecesis is all about YOU—positioning and promoting your brand, connecting you to new leads at optimum costs, and helping you win new & exciting business deals that improve your brand value. Whether it's to help you define your digital goals or achieve them, we're with you every step of the way.<br /><br />
                                                     Our focused thinking induces productive partnerships with clients, and our innovative work culture helps us deliver great results.
                                                 </p>
@@ -73,9 +73,9 @@ export default function ServicesDetails() {
                                                     <div>
                                                         <h2 className="text-3xl uppercase mt-20 text-black text-center">Our Services</h2>
 
-                                                        <div className={`flex flex-col  gap-y-28 mt-20`}>
+                                                        <div className={`flex flex-col   ${isMobile ? 'mt-7 gap-y-24' : 'mt-20 gap-y-28'} `}>
                                                             <div className={`flex  ${isMobile ? "flex-col" : "flex-row"}`}>
-                                                                <LazyLoad height={200} unmountIfInvisible={true} offset={100} once>
+                                                                <LazyLoad height={200} offset={250} once>
                                                                     <ReactPlayer
                                                                         url='/assets/videos/social_media.mp4'
                                                                         playing
@@ -86,11 +86,11 @@ export default function ServicesDetails() {
                                                                     />
                                                                 </LazyLoad>
 
-                                                                <div className="mt-2" style={{ marginLeft: isMobile ? "" : "100px" }}>
+                                                                <div className={`${isMobile ? '' : 'mt-2'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Social Media Marketing & Optimization</h3>
                                                                     <p>High-quality, strategic SMM & SEO services to turbocharge your company’s digital presence.</p>
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
-                                                                    <div className="about__list-box">
+                                                                    <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
                                                                             <li><i className="flaticon-arrow-button" />Building a strong image and identity</li>
                                                                             <li><i className="flaticon-arrow-button" />Social media management and promotions</li>
@@ -102,7 +102,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col" : "flex-row-reverse justify-between"} `}>
-                                                                <LazyLoad height={200} unmountIfInvisible={true} offset={100} once>
+                                                                <LazyLoad height={200} offset={250} once>
                                                                     <ReactPlayer
                                                                         url='/assets/videos/paid_marketing1.mp4'
                                                                         playing
@@ -112,11 +112,11 @@ export default function ServicesDetails() {
                                                                         height='330px'
                                                                     />
                                                                 </LazyLoad>
-                                                                <div className="mt-12">
+                                                                <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Paid Marketing Services</h3>
                                                                     <p>Focused campaigns and ads that reach the right prospects, with a higher probability of conversions.</p>
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
-                                                                    <div className="about__list-box">
+                                                                    <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
                                                                             <li><i className="flaticon-arrow-button" />Pay Per Click (PPC) advertisements</li>
                                                                             <li><i className="flaticon-arrow-button" />PPC management for SMEs & large enterprises</li>
@@ -126,7 +126,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex  ${isMobile ? "flex-col" : "flex-row"}`}>
-                                                                <LazyLoad height={200} unmountIfInvisible={true} offset={100} once>
+                                                                <LazyLoad height={200} offset={250} once>
                                                                     <ReactPlayer
                                                                         url='/assets/videos/web_design.mp4'
                                                                         playing
@@ -136,11 +136,11 @@ export default function ServicesDetails() {
                                                                         height='330px'
                                                                     />
                                                                 </LazyLoad>
-                                                                <div className="mt-6" style={{ marginLeft: isMobile ? "" : "100px" }}>
+                                                                <div className={`${isMobile ? 'mt-2' : 'mt-6'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Website Design & Development</h3>
                                                                     <p>Attract, engage and retain prospects with high-impact web designs & formats.</p>
                                                                     <h5 className="text-2xl mt-8">What you get:</h5>
-                                                                    <div className="about__list-box">
+                                                                    <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
                                                                             <li><i className="flaticon-arrow-button" />Improved search engine rankings</li>
                                                                             <li><i className="flaticon-arrow-button" />Increased conversions and revenue</li>
@@ -151,7 +151,7 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col" : "flex-row-reverse justify-between"} `}>
-                                                                <LazyLoad height={200} unmountIfInvisible={true} offset={100} once>
+                                                                <LazyLoad height={200} offset={250} once>
                                                                     <ReactPlayer
                                                                         url='/assets/videos/branding.mp4'
                                                                         playing
@@ -161,11 +161,11 @@ export default function ServicesDetails() {
                                                                         height='330px'
                                                                     />
                                                                 </LazyLoad>
-                                                                <div className="mt-12">
+                                                                <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Branding and Creative Services</h3>
                                                                     <p>Transform your company into an iconic brand with the right mix of branding services.</p>
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
-                                                                    <div className="about__list-box">
+                                                                    <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
                                                                             <li><i className="flaticon-arrow-button" />Brand analysis</li>
                                                                             <li><i className="flaticon-arrow-button" />Brand identity & image management</li>
@@ -180,22 +180,23 @@ export default function ServicesDetails() {
 
                                                     </div>
                                                     <div style={{ position: 'relative', height: isMobile ? '' : '350px' }} className="mt-24">
-                                                        <img src="/assets/img/banner/cross.png" alt="" style={{
+                                                        {!isMobile ? (<img src="/assets/img/banner/cross.png" alt="" style={{
                                                             position: 'absolute',
                                                             right: 0,
                                                             top: isMobile ? '200px' : '-170px',
-                                                            width: isMobile ? '337px': '506px',
-                                                            height: isMobile ? '450px' :'675px',
+                                                            width: isMobile ? '337px' : '506px',
+                                                            height: isMobile ? '450px' : '675px',
                                                             zIndex: -1, // Ensure this is what you want, as it might place the image behind the div's background
-                                                        }} />
+                                                        }} />) : null}
+
                                                         <div className="mt-6">
                                                             <h3 className="font-bold " style={{ fontSize: "40px" }}>
                                                                 Tell a compelling story that <br /> gets you noticed and applauded.
                                                             </h3>
-                                                            <p style={{ fontSize: '20px', width: '66%', marginTop: '20px' }}>
+                                                            <p style={{ fontSize: '20px', width: isMobile ? '' : '66%', marginTop: '20px' }}>
                                                                 Ecesis delivers integrated digital marketing solutions for the modern minimalist or the creative expressionist. We relentlessly challenge ourselves through meaningful solutions and inspired thinking. In the end, we’ll deliver what we promised and more!<br /><br />
                                                             </p>
-                                                            <h3 className="text-lb" style={{ fontSize: '44px' }}> Stay in the spotlight. <span className="text-ly">Always!</span></h3>
+                                                            <h3 className={`${isMobile ? 'text-center' : ''} text-lb`} style={{ fontSize: '44px' }}> Stay in the spotlight. <span className="text-ly">Always!</span></h3>
 
                                                         </div>
 

@@ -961,7 +961,7 @@ padding-left: 40px;
 }
 @media (max-width: 991.98px) {
   .breadcrumb__bg_real_estate {
-    padding: 85px 0 90px;
+    padding: 15px 0 30px;
     max-width: 1250px;
   }
 }
@@ -10617,7 +10617,6 @@ padding-left: 40px;
     18. Call-back
 ===============================*/
 .call-back-area {
-  background: var(--tg-heading-color);
   padding: 100px 0 85px;
   position: relative;
   z-index: 1;
@@ -10629,13 +10628,10 @@ padding-left: 40px;
   z-index: 2;
 }
 .call-back-wrap {
-  background: var(--tg-heading-color);
-  padding: 90px 80px 75px;
-  -webkit-border-radius: 15px;
+  padding: 50px 80px 60px;
   -moz-border-radius: 15px;
   -o-border-radius: 15px;
   -ms-border-radius: 15px;
-  border-radius: 15px;
 }
 @media (max-width: 1199.98px) {
   .call-back-wrap {
@@ -10661,7 +10657,6 @@ padding-left: 40px;
 }
 .call-back-content p {
   margin-bottom: 0;
-  color: #D0D0DD;
   font-weight: 500;
   width: 90%;
 }

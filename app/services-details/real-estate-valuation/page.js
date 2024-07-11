@@ -38,7 +38,7 @@ export default function ServicesDetails() {
                                             <img src="/assets/img/services/services_details01.jpg" alt="" />
                                         </div> */}
                                         <div className="services__details-content">
-                                            <h2 className="title" >Transforming Real Estate Valuations with<span className="text-pink-400" > Premier BPO Services</span></h2>
+                                            <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `} >Transforming Real Estate Valuations<br/> with<span className="text-pink-400" > Premier BPO Services</span></h2>
                                             <p>Welcome to ECESIS, where we specialize in Broker Price Opinion services that empower real estate professionals across the U.S. Founded in 2010, ECESIS has established itself as a leader in the real estate valuation industry, known for our precision, reliability, and innovative solutions. Our mission is to help you streamline your operations, enhance your service offerings, and expand your business reach with our expert support.</p>
                                             <h3 className="text-center text-3xl mt-5 ">Enhanced BPO Management with ECESIS</h3>
                                             <div className={`w-full border-2 bg-slate-100 rounded-3xl mt-12 ${isMobile ? "px-5" : "px-10"}  pt-7 pb-9 `} >
@@ -50,11 +50,11 @@ export default function ServicesDetails() {
                                                                     <div className="icon">
                                                                         <div>
                                                                         </div>
-                                                                        <h4 className="title flex text-left">
+                                                                        <h4 className="title text-left">
                                                                             <i className="flaticon-target mr-3" />
                                                                             BPO Portal Integration and Management</h4>
                                                                     </div>
-                                                                    <p className={` ${isMobile ? "text-justify" : ""} ml-8`}>Our system facilitates seamless registration and integration with over 100 leading BPO portals and asset management companies. This service ensures your profile is always up-to-date and compliant with industry standards</p>
+                                                                    <p className={` ${isMobile ? "" : "ml-8"}`}>Our system facilitates seamless registration and integration with over 100 leading BPO portals and asset management companies. This service ensures your profile is always up-to-date and compliant with industry standards</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -65,9 +65,9 @@ export default function ServicesDetails() {
                                                             </div> */}
                                                                 <div className="content mt-3">
                                                                     <div className="icon">
-                                                                        <h4 className="title flex text-left"><i className="flaticon-target mr-2" />Order Acceptance and Automation</h4>
+                                                                        <h4 className="title text-left"><i className="flaticon-target mr-2" />Order Acceptance and Automation</h4>
                                                                     </div>
-                                                                    <p className={` ${isMobile ? "text-justify" : ""} ml-8`}>Leveraging our proprietary software, BPO Acceptor, we automate order acceptance, captcha resolution, and regional compliance checks. This increases efficiency and acceptance rates, minimizing missed opportunities.</p>
+                                                                    <p className={` ${isMobile ? "" : "ml-8"} `}>Leveraging our proprietary software, BPO Acceptor, we automate order acceptance, captcha resolution, and regional compliance checks. This increases efficiency and acceptance rates, minimizing missed opportunities.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -78,9 +78,9 @@ export default function ServicesDetails() {
                                                             </div> */}
                                                                 <div className="content mt-3">
                                                                     <div className="icon">
-                                                                        <h4 className="title flex text-left"><i className="flaticon-target mr-2" />Data Processing and Analysis</h4>
+                                                                        <h4 className="title text-left"><i className="flaticon-target mr-2" />Data Processing and Analysis</h4>
                                                                     </div>
-                                                                    <p className={` ${isMobile ? "text-justify" : ""} ml-8`}>Our skilled team handles all aspects of data processing, from initial order capture to comprehensive market analysis and comparative research. We ensure each report is detailed, accurate, and aligned with current market data.</p>
+                                                                    <p className={` ${isMobile ? "" : "ml-8"}`}>Our skilled team handles all aspects of data processing, from initial order capture to comprehensive market analysis and comparative research. We ensure each report is detailed, accurate, and aligned with current market data.</p>
                                                                 </div>
                                                             </div>
                                                         </div>

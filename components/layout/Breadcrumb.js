@@ -59,7 +59,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
             id: "Let’s get in touch",
             backgroundImageUrl: "/assets/img/banner/contact_banner.jpg",
             backgroundMobile: "/assets/img/banner/accounting_mobile.png",
-            style: "text-white multiple-shadows"
+            style: "text-black"
         },
         {
             id: "Digital Marketing",
@@ -67,6 +67,13 @@ export default function Breadcrumb({ breadcrumbTitle }) {
             backgroundMobile: "/assets/img/banner/accounting_mobile.png",
             style: "text-black"
         },
+        {
+            id: "Artificial Intelligence",
+            backgroundImageUrl: "/assets/img/banner/ai_banner.png",
+            backgroundMobile: "/assets/img/banner/accounting_mobile.png",
+            style: "text-white multiple-shadows"
+        },
+
 
 
 
