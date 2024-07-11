@@ -58,19 +58,19 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "Let’s get in touch",
             backgroundImageUrl: "/assets/img/banner/contact_banner.jpg",
-            backgroundMobile: "/assets/img/banner/accounting_mobile.png",
+            backgroundMobile: "/assets/img/banner/contact_mobile.png",
             style: "text-black"
         },
         {
             id: "Digital Marketing",
             backgroundImageUrl: "/assets/img/banner/digital_banner.png",
-            backgroundMobile: "/assets/img/banner/accounting_mobile.png",
+            backgroundMobile: "/assets/img/banner/digital_mobile.png",
             style: "text-black"
         },
         {
             id: "Artificial Intelligence",
             backgroundImageUrl: "/assets/img/banner/ai_banner.png",
-            backgroundMobile: "/assets/img/banner/accounting_mobile.png",
+            backgroundMobile: "/assets/img/banner/ai_mobile.png",
             style: "text-white multiple-shadows"
         },
 

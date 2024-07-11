@@ -39,19 +39,20 @@ export default function ServicesDetails() {
                                             <div className={`${isMobile ? 'flex-col justify-center' : 'flex-row justify-between'} flex items-center`}>
                                                 <div className={`${isMobile ? 'justify-center items-center' : ''}`}>
                                                     <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `}><span className="text-pink-400"> <br />AI </span>Solutions Powered <br />By <span className="text-blue-400">Human </span>Expertise</h2>
-                                                    <h4 className={` ${isMobile ? 'text-lg text-center' : 'text-3xl'}  font-normal`}>Build what matters - Your challenges. Our solutions.</h4>
+                                                    <h4 className={` ${isMobile ? 'text-base text-center' : 'text-2xl'}  font-normal`}>Build what matters - Your challenges. Our solutions.</h4>
                                                 </div>
                                                 <div className={`${isMobile ? '' : 'mr-16'}`}>
-                                                 
+                                                <LazyLoad height={200} offset={250} once>
+
                                                         <ReactPlayer
                                                             url='/assets/videos/ai_main.mp4'
                                                             playing
                                                             loop
                                                             muted
-                                                            width={`${isMobile ? '150px' : '330px'}`}
-                                                            height={`${isMobile ? '150px' : '330px'}`}
+                                                            width={`${isMobile ? '250px' : '330px'}`}
+                                                            height={`${isMobile ? '250px' : '330px'}`}
                                                         />
-                                                 
+                                                 </LazyLoad>
                                                 </div>
                                             </div>
                                             <h3 className="text-3xl mt-12 text-black">Put AI to Work for Your Business</h3>
@@ -63,7 +64,7 @@ export default function ServicesDetails() {
                                             <h3 className="text-3xl mb-3 mt-28 text-center">Harness the Potential of End-to-End AI/ML Solutions</h3>
                                             <p className="text-center">Leverage the transformative power of our AI capabilities and revolutionize your business with limitless possibilities.</p>
                                             <div className="flex justify-center items-center">
-                                                <img src="/assets/img/images/ai_solutions.png" className="" alt="" style={{ width: '85%' }} />
+                                                <img src="/assets/img/images/ai_solutions.png" className="" alt="" style={{ width: isMobile ? '100%': '85%' }} />
                                             </div>
                                             <p className="text-2xl text-center font-bold mb-6">With optimized data strategies, empowered decision-making, and AI-driven innovations, we will help you achieve unparalleled success.</p>
                                         </div>
