@@ -1,33 +1,33 @@
-'use client'
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 
-
 export default function Breadcrumb({ breadcrumbTitle }) {
-
-    const [isMobile, setIsMobile] = useState(false);
-    const [isTab, setIsTab] = useState(false);
-    const [isWide, setIsWide] = useState(false);
+    const [isMobile, setIsMobile] = useState(null);
+    const [isTab, setIsTab] = useState(null);
+    const [isWide, setIsWide] = useState(null);
     const [calculatedWidth, setCalculatedWidth] = useState('');
 
     useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-            setIsTab(window.innerWidth > 768 && window.innerWidth <= 1024);
-            setIsWide(window.innerWidth > 2160);
-
-            const viewportWidth = window.innerWidth; // Get the viewport width
-            const vwUnit = viewportWidth / 100; // Calculate the value of 1vw
+        function handleResize() {
+            const viewportWidth = window.innerWidth;
+            setIsMobile(viewportWidth <= 768);
+            setIsTab(viewportWidth > 768 && viewportWidth <= 1024);
+            setIsWide(viewportWidth > 2160);
+            const vwUnit = viewportWidth / 100;
             const Width = 2.5 * vwUnit; // Replace 48 with whatever vw value you need
             setCalculatedWidth(Width);
-        };
+        }
 
-        handleResize();
-        window.addEventListener('resize', handleResize);
+        handleResize(); // Set initial size
+        window.addEventListener('resize', handleResize); // Adjust on window resize
 
-        return () => window.removeEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize); // Cleanup listener
     }, []);
 
+    // Do not render the component until the screen size is determined
+    if (isMobile === null || isTab === null || isWide === null) {
+        return null; // or render a loader/spinner here
+    }
 
     const banner = [
         {
@@ -82,40 +82,25 @@ export default function Breadcrumb({ breadcrumbTitle }) {
     ]
     const matchingBanner = banner.find(item => item.id === breadcrumbTitle);
 
-
-
     return (
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
-
-                <img src={matchingBanner ? (isMobile && !isTab ? matchingBanner.backgroundMobile : matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0 `} style={{ maxHeight: isWide ? '' : '400px' }} />
-
+                <img src={matchingBanner ? (isMobile && !isTab ? matchingBanner.backgroundMobile : matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0`} style={{ maxHeight: isWide ? '' : '400px' }} />
                 <div className="container">
-
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="breadcrumb__content">
                                 {
                                     isMobile ? (
                                         <></>
-
                                     ) : (
-                                        <h2 className={`title absolute  ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px`, left: '10%', top: '40%' }}>{breadcrumbTitle}</h2>
-
+                                        <h2 className={`title absolute ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px`, left: '10%', top: '40%' }}>{breadcrumbTitle}</h2>
                                     )
                                 }
-                                {/* <nav aria-label="breadcrumb">
-                                    <ol className="breadcrumb">
-                                        <li className="breadcrumb-item"><Link href="/">Home</Link></li>
-                                        <li className="breadcrumb-item active" aria-current="page">{breadcrumbTitle}</li>
-                                    </ol>
-                                </nav> */}
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </section>
         </>
     );
