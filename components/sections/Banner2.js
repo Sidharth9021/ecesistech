@@ -4,7 +4,7 @@ import Banner from '../../public/assets/img/banner/banner.png'
 import React, { useEffect, useState } from 'react';
 
 export default function Banner2() {
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(null);
 
     useEffect(() => {
         const handleResize = () => {
@@ -16,6 +16,10 @@ export default function Banner2() {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    if (isMobile === null) {
+        return null;  // Or render a loading spinner or placeholder component here
+    }
 
     const hstyle = {
         fontSize: isMobile ? '44px' : '48px', 

@@ -9,8 +9,7 @@ import Request3 from "./Request3";
 
 export default function MainService() {
     const [activeIndex, setActiveIndex] = useState(1);
-    const [isMobile, setIsMobile] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(null);
   
     const handleOnClick = (index) => {
       setActiveIndex(index);
@@ -30,6 +29,10 @@ export default function MainService() {
   
       return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    if (isMobile === null) {
+        return null;  // Or render a loading spinner or placeholder component here
+    }
 
     return (
         <>

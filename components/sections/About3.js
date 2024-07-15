@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function About3() {
 
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(null);
 
     useEffect(() => {
         const handleResize = () => {
@@ -17,6 +17,11 @@ export default function About3() {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    if (isMobile === null) {
+        return null;  // Or render a loading spinner or placeholder component here
+    }
+    
     return (
         <>
             <section className="about__area-three about__bg-two">
