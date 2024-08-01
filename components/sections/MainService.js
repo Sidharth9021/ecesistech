@@ -79,9 +79,9 @@ export default function MainService() {
                                         <li className="nav-item" onClick={() => handleOnClick(1)}>
                                             <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true">Artificial Intelligence</button>
                                         </li>
-                                        <li className="nav-item" onClick={() => handleOnClick(2)}>
+                                        {/* <li className="nav-item" onClick={() => handleOnClick(2)}>
                                             <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Automation Solutions </button>
-                                        </li>
+                                        </li> */}
                                         <li className="nav-item" onClick={() => handleOnClick(3)}>
                                             <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="false">Cloud Infrastructure</button>
                                         </li>
