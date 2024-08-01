@@ -49,7 +49,7 @@ export default function MobileMenu({ handleMobileMenu }) {
                 <li className="menu-item-has-children" ><Link href="#">Services</Link>
                     <ul className="sub-menu" onClick={handleMobileMenu} style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                         <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
-                        <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                        {/* <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li> */}
                         <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
                         <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
                         <li ><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
