@@ -2,7 +2,7 @@ import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
 import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
-import servicesData from './services.json';
+
 
 
 
