@@ -9,7 +9,7 @@ import LazyLoad from 'react-lazyload';
 
 
 
-function AutoServices() {
+function SoftwareServices() {
     let Nothome = true;
 
 
@@ -302,4 +302,4 @@ function AutoServices() {
     )
 }
 
-export default withLoading(AutoServices);
+export default withLoading(SoftwareServices);
