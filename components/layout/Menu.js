@@ -71,11 +71,11 @@ export default function Menu() {
                     </ul>
                 </li>
                 <li>
-                    <Link href="/contact">Contacts</Link>
+                    <Link href="/contact">Contact</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link href="/project-details">Project</Link>
-                </li>
+                </li> */}
             </ul>
         </>
     );
