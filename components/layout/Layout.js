@@ -51,6 +51,7 @@ export default function Layout({ Nothome, headerStyle, footerStyle, headTitle, b
             }
         })
     }, [])
+    
     return (
         <>
             <PageHead headTitle={headTitle} />

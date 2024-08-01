@@ -1,11 +1,16 @@
+'use client'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+import React, { useState } from "react";
+import Modal from "@/app/Modal";
 
 export default function ProjectDetails() {
+
+    const [showModal, setShowModal] = useState(false);
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Project Details">
-                <div>
+            <Layout headerStyle={3} footerStyle={3}>
+                <div className="relative">
                     <section className="project__details-area">
                         <div className="container">
                             <div className="project__details-wrap">
@@ -42,43 +47,47 @@ export default function ProjectDetails() {
                                             </div>
                                         </div>
                                         <div className="project__details-content">
-                                            <h2 className="title">Company Values  The Relationship</h2>
-                                            <p>eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia- list advice beyond the scope of our own expertise.when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only.</p>
-                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled it to make a type specimen book.when an unknown.</p>
+                                            <h3 className="text-3xl">Transforming Industries with Accurate and reliable Valuation Solutions using AI. <br />
+                                                <span className="text-2xl font-normal">Revolutionize Your Operations with Unmatched Precision and Flexibility.
+                                                </span></h3>
                                             <div className="project__details-inner">
                                                 <div className="row align-items-center">
-                                                    <div className="col-lg-6 order-0 order-lg-2">
-                                                        <div className="project__details-inner-img">
-                                                            <img src="/assets/img/project/project_details02.jpg" alt="" />
-                                                        </div>
+
+
+                                                    <div className="project__details-inner-content">
+                                                        <h2 className="title">SmartValue</h2>
+                                                        {/* <div className="content-inner">
+                                                               
+                                                                </div> */}
                                                     </div>
-                                                    <div className="col-lg-6">
-                                                        <div className="project__details-inner-content">
-                                                            <h2 className="title">Our Corporate Business Planning</h2>
-                                                            <p>when an unknown printer took a galley of type and scrambled it to make a type specimen bookhas survived not only five centuries.but also the leap into electronic typesetting, remaining.</p>
-                                                            <div className="content-inner">
-                                                                <div className="graph-img">
-                                                                    <img src="/assets/img/project/graph.jpg" alt="" />
-                                                                </div>
-                                                                <div className="about__list-box">
-                                                                    <ul className="list-wrap">
-                                                                        <li><i className="flaticon-arrow-button" />Medicare Advantage Plans</li>
-                                                                        <li><i className="flaticon-arrow-button" />Analysis  Research</li>
-                                                                        <li><i className="flaticon-arrow-button" />100% Secure Money Back</li>
-                                                                        <li><i className="flaticon-arrow-button" />100% Money Growth</li>
-                                                                    </ul>
-                                                                </div>
+                                                    <p className="">Smart Value stands at the cutting edge of Valuation technology, offering unparalleled versatility and precision across industries. Central to Smart Value, innovation is its foundation on state-of-the-art machine learning algorithms, including Python - need to add technologies if any. This powerful tool is adept at analyzing available data with unmatched accuracy, thanks to extensive training on a diverse data set. The essence of Smart Value capability lies in its adaptability; with specific datasets for training, it can be tailored to meet any use case.
+                                                    </p>
+                                                    {/* <div>
+                                                        <img src="/assets/img/icon/few_shot.png" className="w-32 cursor-pointer" alt=""
+                                                            onMouseEnter={() => setShowModal(true)}
+                                                            onMouseLeave={() => setShowModal(false)} />
+                                                    </div>
+                                                    <div className="absolute justify-end items-end" style={{ bottom: '38%'}}>
+                                                        {showModal && (
+                                                            <div className="absolute justify-end items-end" style={{ bottom: '38%', maxWidth: '500px' }} onClick={(e) => e.stopPropagation()}>
+                                                                <Modal showModal={showModal} setShowModal={setShowModal}>
+                                                                    <p className="text-lg">Dynamic content goes here!</p>
+                                                                </Modal>
                                                             </div>
-                                                            <p className="last-info">when an unknown printer took a galley of type and scrambled it to make  specimen bookhas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchan galley of type and scrambled specimen book.when an unknown.</p>
-                                                        </div>
-                                                    </div>
+                                                        )}
+                                                    </div> */}
+
+
+
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </section>
                     {/* project-details-area-end */}
                     {/* call-back-area */}

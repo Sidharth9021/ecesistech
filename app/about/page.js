@@ -1,12 +1,27 @@
 'use client'
 import CounterUp from "@/components/elements/CounterUp"
 import Layout from "@/components/layout/Layout"
+import Counter3 from "@/components/sections/Counter3"
 import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import React, { useState, useEffect } from 'react';
 
 export default function About() {
     let Nothome = true;
+
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const [scrolled, setScrolled] = useState(false);
 
@@ -42,7 +57,7 @@ export default function About() {
                                     <div className="about__img-wrap-four">
                                         <img src="/assets/img/images/inner_about01.jpg" alt="" />
                                         <img src="/assets/img/images/inner_about02.jpg" alt="" />
-                                        <img src="/assets/img/bg/bg_about_photos.png" className={scrolled ? 'about_photo_bg_down' : 'about_photo_bg'} alt="" />
+                                        <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{marginLeft: isMobile ? '50px' : '',}} alt="" />
 
                                         {/* <div className="about__award-box">
                                             <div className="icon">
@@ -83,6 +98,7 @@ export default function About() {
                             </div>
                         </div>
                     </section>
+                    <Counter3/>
 
                     {/* team-area */}
                     <section className="team__area-four">
@@ -222,50 +238,7 @@ export default function About() {
                         </div>
                     </section>
                     {/* team-area-end */}
-                    {/* call-back-area */}
-                    <section className="call-back-area">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="call-back-content">
-                                        <div className="section-title white-title mb-10">
-                                            <h2 className="title">Request A Call Back</h2>
-                                        </div>
-                                        <p>Ever find yourself staring at your computer screen a good consulting slogan to come to mind? Oftentimes.</p>
-                                        <div className="shape">
-                                            <img src="/assets/img/images/call_back_shape.png" alt="" data-aos="fade-right" data-aos-delay={400} />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="call-back-form">
-                                        <form action="#">
-                                            <div className="row">
-                                                <div className="col-md-6">
-                                                    <div className="form-grp">
-                                                        <input type="text" placeholder="Name *" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-grp">
-                                                        <input type="email" placeholder="E-mail *" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <div className="form-grp">
-                                                        <input type="number" placeholder="Phone *" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-6">
-                                                    <button type="submit" className="btn">Send Now</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                    
                 </div>
             </Layout>
         </>

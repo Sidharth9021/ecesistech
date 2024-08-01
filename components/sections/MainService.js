@@ -194,7 +194,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Web.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="#">Web Application</Link></h2>
+                                                    <h2 className="title"><Link href="#">Software Development</Link></h2>
                                                     <p>Tailored to meet the unique needs of your business, our web application solutions enhance online visibility and operational efficiency, ensuring you stay ahead in a competitive marketplace.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -203,7 +203,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" />Comprehensive Support</li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details/web-app" className="btn">Read More</Link>
+                                                    <Link href="/services-details/software-development" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>

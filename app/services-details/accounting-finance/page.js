@@ -1,11 +1,12 @@
 'use client'
+import withLoading from "@/app/withLoading"
 import VideoPopup from "@/components/elements/PopupVideo"
 import Layout from "@/components/layout/Layout"
 import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import React, { useEffect, useState } from 'react';
 
-export default function ServicesDetails() {
+function AccountingServices() {
 
     const [isMobile, setIsMobile] = useState(false);
     let Nothome = true;
@@ -20,6 +21,7 @@ export default function ServicesDetails() {
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+    
 
 
     return (
@@ -144,3 +146,5 @@ export default function ServicesDetails() {
         </>
     )
 }
+
+export default withLoading(AccountingServices);

@@ -5,10 +5,11 @@ import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import React, { useEffect, useState } from 'react';
 import RadialCardGrid from './radial';
+import withLoading from "@/app/withLoading"
 
 
 
-export default function ServicesDetails() {
+function ManpowerServices() {
     let Nothome = true;
 
 
@@ -288,3 +289,5 @@ export default function ServicesDetails() {
         </>
     )
 }
+
+export default withLoading(ManpowerServices);

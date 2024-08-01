@@ -1,3 +1,4 @@
+'use client'
 import Layout from "@/components/layout/Layout"
 import About3 from "@/components/sections/About3"
 import Banner2 from "@/components/sections/Banner2"
@@ -5,8 +6,9 @@ import Counter3 from "@/components/sections/Counter3"
 import Request3 from "@/components/sections/Request3"
 import MainService from "@/components/sections/MainService"
 import Marquee2 from "@/components/sections/Marquee2"
+import withLoading from "./withLoading"
 
-export default function Home() {
+function Home() {
     return (
         <>
 
@@ -29,3 +31,5 @@ export default function Home() {
         </>
     )
 }
+
+export default withLoading(Home);

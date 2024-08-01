@@ -5,11 +5,12 @@ import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import Callback2 from "@/components/sections/Callback2"
+import withLoading from "@/app/withLoading";
 
 
 
 
-export default function ServicesDetails() {
+function AIServices() {
     let Nothome = true;
 
     const [isMobile, setIsMobile] = useState(false);
@@ -147,3 +148,5 @@ export default function ServicesDetails() {
         </>
     )
 }
+
+export default withLoading(AIServices);

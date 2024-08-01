@@ -1,7 +1,8 @@
+import withLoading from "@/app/withLoading";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 
-export default function Breadcrumb({ breadcrumbTitle }) {
+function Breadcrumb({ breadcrumbTitle }) {
     const [isMobile, setIsMobile] = useState(null);
     const [isTab, setIsTab] = useState(null);
     const [isWide, setIsWide] = useState(null);
@@ -33,7 +34,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "About Us",
             backgroundImageUrl: "/assets/img/banner/about_banner.png",
-            backgroundMobile: "/assets/img/bg/breadcrumb_bg.jpg",
+            backgroundMobile: "/assets/img/banner/about_mobile.png",
             style: ""
         },
         {
@@ -73,6 +74,13 @@ export default function Breadcrumb({ breadcrumbTitle }) {
             backgroundMobile: "/assets/img/banner/ai_mobile.png",
             style: "text-white multiple-shadows"
         },
+        {
+            id: "Software Development",
+            backgroundImageUrl: "/assets/img/banner/software_banner.png",
+            backgroundMobile: "/assets/img/banner/ai_mobile.png",
+            style: "text-sky-900"
+        },
+
 
 
 
@@ -105,3 +113,5 @@ export default function Breadcrumb({ breadcrumbTitle }) {
         </>
     );
 }
+
+export default withLoading(Breadcrumb);

@@ -6,10 +6,10 @@ import Link from "next/link"
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
+import withLoading from "@/app/withLoading"
 
 
-
-export default function ServicesDetails() {
+function DigitalServices() {
     let Nothome = true;
 
     const [isMobile, setIsMobile] = useState(false);
@@ -74,23 +74,41 @@ export default function ServicesDetails() {
                                                         <h2 className="text-3xl uppercase mt-20 text-black text-center">Our Services</h2>
                                                         <div className={`flex flex-col   ${isMobile ? 'mt-7 gap-y-24' : 'mt-20 gap-y-28'} `}>
                                                             <div className={`flex  ${isMobile ? "flex-col-reverse" : "flex-row"}`}>
-                                                                <div className="justify-center items-center">
-                                                                    <LazyLoad height={200} offset={250} once>
-
-                                                                        <ReactPlayer
-                                                                            url='/assets/videos/social_media.mp4'
-                                                                            playing
-                                                                            loop
-                                                                            muted
-                                                                            width='330px'
-                                                                            height='330px'
-                                                                        />
-                                                                    </LazyLoad>
-                                                                </div>
+                                                                {!isMobile && (
+                                                                     <div className="justify-center items-center">
+                                                                     <LazyLoad height={200} offset={250} once>
+ 
+                                                                         <ReactPlayer
+                                                                             url='/assets/videos/social_media.mp4'
+                                                                             playing
+                                                                             loop
+                                                                             muted
+                                                                             width='330px'
+                                                                             height='330px'
+                                                                         />
+                                                                     </LazyLoad>
+                                                                 </div>
+                                                                )}
+                                                               
 
                                                                 <div className={`${isMobile ? '' : 'mt-2'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Social Media Marketing & Optimization</h3>
                                                                     <p>High-quality, strategic SMM & SEO services to turbocharge your company’s digital presence.</p>
+                                                                    {isMobile && (
+                                                                     <div className="justify-center items-center">
+                                                                     <LazyLoad height={200} offset={250} once>
+ 
+                                                                         <ReactPlayer
+                                                                             url='/assets/videos/social_media.mp4'
+                                                                             playing
+                                                                             loop
+                                                                             muted
+                                                                             width='330px'
+                                                                             height='330px'
+                                                                         />
+                                                                     </LazyLoad>
+                                                                 </div>
+                                                                )}
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
                                                                     <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
@@ -104,22 +122,41 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row-reverse justify-between"} `}>
-                                                                <div>
-                                                                    <LazyLoad height={200} offset={250} once>
-                                                                        <ReactPlayer
-                                                                            url='/assets/videos/paid_marketing1.mp4'
-                                                                            playing
-                                                                            loop
-                                                                            muted
-                                                                            width='330px'
-                                                                            height='330px'
-                                                                        />
-                                                                    </LazyLoad>
-                                                                </div>
+                                                                {!isMobile && (
+                                                                    <div>
+                                                                        <LazyLoad height={200} offset={250} once>
+                                                                            <ReactPlayer
+                                                                                url='/assets/videos/paid_marketing1.mp4'
+                                                                                playing
+                                                                                loop
+                                                                                muted
+                                                                                width='330px'
+                                                                                height='330px'
+                                                                            />
+                                                                        </LazyLoad>
+                                                                    </div>
+
+                                                                )}
 
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Paid Marketing Services</h3>
                                                                     <p>Focused campaigns and ads that reach the right prospects, with a higher probability of conversions.</p>
+                                                                    {isMobile && (
+                                                                    <div>
+                                                                        <LazyLoad height={200} offset={250} once>
+                                                                            <ReactPlayer
+                                                                                url='/assets/videos/paid_marketing1.mp4'
+                                                                                playing
+                                                                                loop
+                                                                                muted
+                                                                                width='330px'
+                                                                                height='330px'
+                                                                            />
+                                                                        </LazyLoad>
+                                                                    </div>
+
+                                                                )}
+
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
                                                                     <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
@@ -131,22 +168,41 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex  ${isMobile ? "flex-col-reverse" : "flex-row"}`}>
-                                                                <div>
-                                                                    <LazyLoad height={200} offset={250} once>
-                                                                        <ReactPlayer
-                                                                            url='/assets/videos/web_design.mp4'
-                                                                            playing
-                                                                            loop
-                                                                            muted
-                                                                            width='330px'
-                                                                            height='330px'
-                                                                        />
-                                                                    </LazyLoad>
-                                                                </div>
+
+
+                                                                {!isMobile && (
+                                                                    <div>
+                                                                        <LazyLoad height={200} offset={250} once>
+                                                                            <ReactPlayer
+                                                                                url='/assets/videos/web_design.mp4'
+                                                                                playing
+                                                                                loop
+                                                                                muted
+                                                                                width='330px'
+                                                                                height='330px'
+                                                                            />
+                                                                        </LazyLoad>
+                                                                    </div>
+                                                                )}
+
 
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-6'} `} style={{ marginLeft: isMobile ? "" : "100px" }}>
                                                                     <h3 className="text-2xl">Website Design & Development</h3>
                                                                     <p>Attract, engage and retain prospects with high-impact web designs & formats.</p>
+                                                                    {isMobile && (
+                                                                        <div>
+                                                                            <LazyLoad height={200} offset={250} once>
+                                                                                <ReactPlayer
+                                                                                    url='/assets/videos/web_design.mp4'
+                                                                                    playing
+                                                                                    loop
+                                                                                    muted
+                                                                                    width='330px'
+                                                                                    height='330px'
+                                                                                />
+                                                                            </LazyLoad>
+                                                                        </div>
+                                                                    )}
                                                                     <h5 className="text-2xl mt-8">What you get:</h5>
                                                                     <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
@@ -159,22 +215,41 @@ export default function ServicesDetails() {
                                                                 </div>
                                                             </div>
                                                             <div className={`flex ${isMobile ? "flex-col-reverse" : "flex-row-reverse justify-between"} `}>
-                                                                <div>
-                                                                    <LazyLoad height={200} offset={250} once>
-                                                                        <ReactPlayer
-                                                                            url='/assets/videos/branding.mp4'
-                                                                            playing
-                                                                            loop
-                                                                            muted
-                                                                            width='330px'
-                                                                            height='330px'
-                                                                        />
-                                                                    </LazyLoad>
-                                                                </div>
+
+                                                                {!isMobile && (
+                                                                    <div>
+                                                                        <LazyLoad height={200} offset={250} once>
+                                                                            <ReactPlayer
+                                                                                url='/assets/videos/branding.mp4'
+                                                                                playing
+                                                                                loop
+                                                                                muted
+                                                                                width='330px'
+                                                                                height='330px'
+                                                                            />
+                                                                        </LazyLoad>
+                                                                    </div>
+
+                                                                )}
 
                                                                 <div className={`${isMobile ? 'mt-2' : 'mt-12'} `}>
                                                                     <h3 className="text-2xl">Branding and Creative Services</h3>
                                                                     <p>Transform your company into an iconic brand with the right mix of branding services.</p>
+                                                                    {isMobile && (
+                                                                        <div>
+                                                                            <LazyLoad height={200} offset={250} once>
+                                                                                <ReactPlayer
+                                                                                    url='/assets/videos/branding.mp4'
+                                                                                    playing
+                                                                                    loop
+                                                                                    muted
+                                                                                    width='330px'
+                                                                                    height='330px'
+                                                                                />
+                                                                            </LazyLoad>
+                                                                        </div>
+
+                                                                    )}
                                                                     <h5 className="text-2xl mt-8">What this includes:</h5>
                                                                     <div className="about__list-box mt-2">
                                                                         <ul className="list-wrap">
@@ -228,3 +303,5 @@ export default function ServicesDetails() {
         </>
     )
 }
+
+export default withLoading(DigitalServices)

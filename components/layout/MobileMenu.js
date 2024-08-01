@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 
-export default function MobileMenu({handleMobileMenu}) {
+export default function MobileMenu({ handleMobileMenu }) {
     const [isActive, setIsActive] = useState({
         status: false,
         key: "",
@@ -19,7 +19,7 @@ export default function MobileMenu({handleMobileMenu}) {
             })
         }
     }
-    
+
     return (
         <>
             <ul className="navigation" >
@@ -60,19 +60,23 @@ export default function MobileMenu({handleMobileMenu}) {
                     <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div>
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Products</Link>
-                    {/* <ul className="sub-menu" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
-                        <li><Link href="team">Team One</Link></li>
-                        <li><Link href="team-2">Team Two</Link></li>
-                        <li><Link href="team-3">Team Three</Link></li>
-                        <li><Link href="team-4">Team Four</Link></li>
-                        <li><Link href="team-details">Team Details</Link></li>
-                        <li><Link href="project-details">Project Details</Link></li>
-                        <li><Link href="error">404 Error Page</Link></li>
-                        <li><Link href="/login">Login Page</Link></li>
-                        <li><Link href="/register">Register Page</Link></li>
-                        <li><Link href="/forgot-password">Forgot password Page</Link></li>
-                    </ul> */}
-                    {/* <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="plus-line" /></div> */}
+                    <ul className="sub-menu" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
+                        <p className="ml-3 font-bold text-dblue mt-3">Property Tech</p>
+                        <li><Link href={`/services-details/artificial-intelligence`}>SmartValue</Link></li>
+                        <li><Link href={`/services-details/automation`}>SmartEntry</Link></li>
+                        <li><Link href={`/services-details/cloud-infrastructure`}>SmartBid</Link></li>
+                        <li><Link href={`/services-details/web-app`}>PropVision</Link></li>
+                        <p className="ml-3 font-bold text-dblue mt-3">RPA</p>
+
+                        <li><Link href={`/services-details/real-estate-valuation`}>Workflow Automation Platform</Link></li>
+                        <li><Link href={`/services-details/accounting-finance`}>i-EMS</Link></li>
+                        <p className="ml-3 font-bold text-dblue mt-3">Other Industry</p>
+
+                        <li><Link href={`/services-details/manpower-staffing`}>i-Match Pro</Link></li>
+                        <li><Link href={`/services-details/digital-marketing`}>i-Grow</Link></li>
+                        <li><Link href={`/services-details/digital-marketing`}>i-Slot</Link></li>
+                    </ul>
+                    <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(4)}><span className="plus-line" /></div>
                 </li>
                 {/* <li className="menu-item-has-children"><Link href="#">Blog</Link>
                     <ul className="sub-menu" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
