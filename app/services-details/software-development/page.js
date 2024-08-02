@@ -258,7 +258,7 @@ function SoftwareServices() {
                         <div className="services__details-wrap  m-auto w-full" style={{ maxWidth: '2160px' }}>
                             <div className="relative">
                                 <div className="flex flex-row" style={{ height: '50%' }}>
-                                    <div className="absolute" style={{ left: '60px', top: '75px' }}>
+                                    <div className="absolute" style={{ left: '60px', top: '40px' }}>
                                         <p className="font-bold text-white" style={{ fontSize: '5rem', lineHeight: '4.75rem' }}>Business</p>
                                         <p className="font-bold ml-12" style={{ color: '#42B677', left: '50px', fontSize: '5rem', lineHeight: '4.75rem' }}>Models</p>
                                         <span className="flex items-center mt-2">
@@ -267,11 +267,11 @@ function SoftwareServices() {
                                         </span>
                                     </div>
                                     <div>
-                                        <p className="text-lg absolute text-white mt-12" style={{ width: '35rem', right: '100px', top: '60px' }}>At ECESIS, we understand that the right approach can make all the difference in achieving success in today's dynamic marketplace. Our business models are designed to empower organizations, streamline processes, and unleash the full potential of technology. With our customized solutions and agile development practices, we remain dedicated to providing excellent outcomes.</p>
+                                        <p className="text-lg absolute text-white mt-12" style={{ width: '35rem', right: '100px', top: '65px' }}>At ECESIS, we understand that the right approach can make all the difference in achieving success in today's dynamic marketplace. Our business models are designed to empower organizations, streamline processes, and unleash the full potential of technology. With our customized solutions and agile development practices, we remain dedicated to providing excellent outcomes.</p>
 
                                     </div>
                                 </div>
-                                <div className="flex flex-row absolute" style={{ top: '400px', left: '50px', gap: '5rem' }}>
+                                <div className="flex flex-row absolute" style={{ top: '360px', left: '50px', gap: '5rem' }}>
                                     <div className="flex flex-col "  >
                                         <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
                                             <p className="font-bold" style={{ fontSize: '1.3rem', lineHeight: '1rem', color: '#0F1EAF' }}>Project Based</p>
