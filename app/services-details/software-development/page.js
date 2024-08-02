@@ -52,7 +52,7 @@ function SoftwareServices() {
                                 <p className="font-bold absolute text-right text-white" style={{ fontSize: '4rem', lineHeight: '4rem', left: '300px', top: '25px' }}>Core  <br /><span className="text-pink-600">Services</span></p>
                                 <p className="absolute text-lg text-white" style={{ right: '200px', top: '50px', width: '30rem' }}>We are dedicated to delivering cutting-edge solutions tailored to meet your specific needs. Our expertise spans a wide range of domains, ensuring that we can address diverse requirements and deliver exceptional results.</p>
                                 <img src="/assets/img/images/soft_core.png" alt="" className="" style={{ width: '840px', marginTop: '100px' }} />
-                                <div className="soft__list-box absolute text-white" style={{ left: '500px', bottom: '0px' }}>
+                                <div className="soft__list-box text-lg absolute text-white" style={{ left: '500px', bottom: '0px' }}>
                                     <ul className="list-wrap">
                                         <li><i className="flaticon-arrow-button" />Flagship Product - BPO Acceptor</li>
                                         <li><i className="flaticon-arrow-button" />AI-Powered Real Estate Valuation</li>
@@ -62,7 +62,7 @@ function SoftwareServices() {
 
                                     </ul>
                                 </div>
-                                <div className="soft__list-box absolute text-white" style={{ right: '150px', bottom: '0px' }}>
+                                <div className="soft__list-box text-lg absolute text-white" style={{ right: '150px', bottom: '0px' }}>
                                     <ul className="list-wrap ">
                                         <li><i className="flaticon-arrow-button" />E-commerce Solutions</li>
                                         <li><i className="flaticon-arrow-button" />Quality Assurance & Testing</li>
@@ -231,69 +231,116 @@ function SoftwareServices() {
                     {/* Development Approach */}
 
 
-                    <section className="services__details-area relative" style={{ backgroundColor: '#FDBD28', minHeight: '800px' }}>
-                        <div className="services__details-wrap m-auto w-full" style={{ maxWidth: '2160px' }}>
+                    <section className="services__details-area" style={{ backgroundColor: '#FDBD28', minHeight: '800px' }}>
+                        <div className="services__details-wrap relative m-auto w-full" style={{ maxWidth: '2160px' }}>
                             <div className="">
                                 <div className="absolute" style={{ right: '250px', top: '100px' }}>
                                     <p className="font-bold text-white" style={{ fontSize: '5rem', lineHeight: '4.75rem' }}>Development</p>
                                     <p className="font-bold ml-12" style={{ color: '#0F1EAF', left: '50px', fontSize: '5rem', lineHeight: '4.75rem' }}>Approach</p>
                                 </div>
-                                <img src="/assets/img/images/soft_hand.png" alt="" className="absolute left-0 bottom-0" style={{ width: '800px' }} />
-                                <img src="/assets/img/images/soft_approach.png" alt="" className="absolute right-28 bottom-16" style={{ width: '300px' }} />
-                                <div className="flex flex-col absolute text-right justify-center items-end" style={{ right: '425px', bottom: '83px' }}>
+                                <img src="/assets/img/images/soft_hand.png" alt="" className="absolute left-0" style={{ width: '700px' }} />
+                                <img src="/assets/img/images/soft_approach.png" alt="" className="absolute right-28 " style={{ width: '300px', top: '300px' }} />
+                                <div className="flex flex-col absolute text-right justify-center items-end" style={{ right: '425px', top: '335px' }}>
                                     <p className="">Thorough Project Planning</p>
                                     <p className="" style={{ marginTop: '42px' }}>Scope and Goal Clarity</p>
                                     <p className="" style={{ marginTop: '42px' }}>Efficient Collaboration</p>
                                     <p className="" style={{ marginTop: '42px' }}>Proactive Progress Monitoring</p>
                                     <p className="" style={{ marginTop: '42px' }}>Project Completion</p>
 
-                                </div>
+                                </div>  
                             </div>
                         </div>
                     </section>
 
 
                     {/* Business Models */}
-                    {/* <section className="services__details-area relative" style={{ backgroundColor: '#0F1EAF', minHeight: '800px' }}>
-                        <div className="services__details-wrap m-auto w-full" style={{ maxWidth: '2160px' }}>
-
-
-                            <div className="relative flex flex-row" style={{ height: '50%' }}>
-                                <div className="absolute" style={{ left: '60px', top: '100px' }}>
-                                    <p className="font-bold text-white" style={{ fontSize: '5rem', lineHeight: '4.75rem' }}>Business</p>
-                                    <p className="font-bold ml-12" style={{ color: '#42B677', left: '50px', fontSize: '5rem', lineHeight: '4.75rem' }}>Models</p>
-                                    <span className="flex items-center mt-2">
-                                        <div className="h-20 w-1 bg-green-600"></div>
-                                        <p className="text-white ml-4" style={{ fontSize: '2.25rem', lineHeight: '2.75rem' }}>Transforming ideas into digital brilliance.</p>
-                                    </span>
-                                </div>
-                                <div>
-                                <p className="text-base absolute text-white mt-12" style={{ width: '35rem', right: '100px', top: '50px' }}>At ECESIS, we understand that the right approach can make all the difference in achieving success in today's dynamic marketplace. Our business models are designed to empower organizations, streamline processes, and unleash the full potential of technology. With our customized solutions and agile development practices, we remain dedicated to providing excellent outcomes.</p>
-
-                                </div>
-                            </div>
-                            <div className="flex flex-row">
-                                <div className="flex flex-col absolute" style={{bottom: '25px', left: '50px'}} >
-                                    <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
-                                        <p className="font-bold" style={{fontSize: '1rem', lineHeight: '1rem'}}>Project Based</p>
+                    <section className="services__details-area " style={{ backgroundColor: '#0F1EAF', minHeight: '800px'}}>
+                        <div className="services__details-wrap  m-auto w-full" style={{ maxWidth: '2160px' }}>
+                            <div className="relative">
+                                <div className="flex flex-row" style={{ height: '50%' }}>
+                                    <div className="absolute" style={{ left: '60px', top: '75px' }}>
+                                        <p className="font-bold text-white" style={{ fontSize: '5rem', lineHeight: '4.75rem' }}>Business</p>
+                                        <p className="font-bold ml-12" style={{ color: '#42B677', left: '50px', fontSize: '5rem', lineHeight: '4.75rem' }}>Models</p>
+                                        <span className="flex items-center mt-2">
+                                            <div className="h-20 w-1 bg-green-600"></div>
+                                            <p className="text-white ml-4 mt-2" style={{ fontSize: '2.25rem', lineHeight: '2.75rem' }}>Creating value, <br/>delivering excellence.</p>
+                                        </span>
                                     </div>
-                                    <div className=" rounded-bl-xl rounded-br-xl p-3" style={{ backgroundColor: '#2534C6', width: '250px' }}>
-                                        <div className="soft__list-box text-white text-sm">
-                                            <ul className="list-wrap ">
-                                                <li><i className="flaticon-arrow-button" />E-commerce Solutions</li>
-                                                <li><i className="flaticon-arrow-button" />Quality Assurance & Testing</li>
-                                                <li><i className="flaticon-arrow-button" />Custom Software Development</li>
-                                                <li><i className="flaticon-arrow-button" />IT & Management Consultancy Services</li>
-                                                <li><i className="flaticon-arrow-button" />Maintenance and Support</li>
+                                    <div>
+                                        <p className="text-lg absolute text-white mt-12" style={{ width: '35rem', right: '100px', top: '60px' }}>At ECESIS, we understand that the right approach can make all the difference in achieving success in today's dynamic marketplace. Our business models are designed to empower organizations, streamline processes, and unleash the full potential of technology. With our customized solutions and agile development practices, we remain dedicated to providing excellent outcomes.</p>
 
-                                            </ul>
+                                    </div>
+                                </div>
+                                <div className="flex flex-row absolute" style={{ top: '400px', left: '50px', gap: '5rem' }}>
+                                    <div className="flex flex-col "  >
+                                        <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
+                                            <p className="font-bold" style={{ fontSize: '1.3rem', lineHeight: '1rem', color: '#0F1EAF' }}>Project Based</p>
+                                        </div>
+                                        <div className=" rounded-bl-xl rounded-br-xl p-3" style={{ backgroundColor: '#2534C6', width: '250px', height: '300px' }}>
+                                            <div className="soft__list-box text-base text-white ">
+                                                <ul className="list-wrap ">
+                                                    <li><i className="flaticon-arrow-button" />Proposal</li>
+                                                    <li><i className="flaticon-arrow-button" />Scope</li>
+                                                    <li><i className="flaticon-arrow-button" />Contract</li>
+                                                    <li><i className="flaticon-arrow-button" />Planning</li>
+                                                    <li><i className="flaticon-arrow-button" />Execution</li>
+                                                    <li><i className="flaticon-arrow-button" />QA & Testing</li>
+                                                    <li><i className="flaticon-arrow-button" />Delivery & Hyper care</li>
+                                                    <li><i className="flaticon-arrow-button" />Payment & Closure</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col " >
+                                        <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
+                                            <p className="font-bold" style={{ fontSize: '1.3rem', lineHeight: '1rem', color: '#0F1EAF' }}>Pay-As-You-Go</p>
+                                        </div>
+                                        <div className=" rounded-bl-xl rounded-br-xl p-3" style={{ backgroundColor: '#2534C6', width: '250px', height: '300px' }}>
+                                            <div className="soft__list-box text-base text-white">
+                                                <ul className="list-wrap ">
+                                                    <li><i className="flaticon-arrow-button" />Hourly Rates</li>
+                                                    <li><i className="flaticon-arrow-button" />Scope Flexibility</li>
+                                                    <li><i className="flaticon-arrow-button" />Transparency via Weekly Reports</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col " >
+                                        <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
+                                            <p className="font-bold" style={{ fontSize: '1.3rem', lineHeight: '1rem', color: '#0F1EAF' }}>Retainer</p>
+                                        </div>
+                                        <div className=" rounded-bl-xl rounded-br-xl p-3" style={{ backgroundColor: '#2534C6', width: '250px', height: '300px' }}>
+                                            <div className="soft__list-box text-base text-white">
+                                                <ul className="list-wrap ">
+                                                    <li><i className="flaticon-arrow-button" />Clear Scope Definition</li>
+                                                    <li><i className="flaticon-arrow-button" />Transparent Reports</li>
+                                                    <li><i className="flaticon-arrow-button" />Clarity on Duration and Termination</li>
+                                                    <li><i className="flaticon-arrow-button" />Scalable & Flexible</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="flex flex-col " >
+                                        <div className=" rounded-tl-xl rounded-tr-xl p-3" style={{ backgroundColor: '#42B677', width: '250px', height: '50px' }}>
+                                            <p className="font-bold" style={{ fontSize: '1.3rem', lineHeight: '1rem', color: '#0F1EAF' }}>Equivalent Staffing</p>
+                                        </div>
+                                        <div className=" rounded-bl-xl rounded-br-xl p-3" style={{ backgroundColor: '#2534C6', width: '250px', height: '300px' }}>
+                                            <div className="soft__list-box text-base text-white">
+                                                <ul className="list-wrap ">
+                                                    <li><i className="flaticon-arrow-button" />Dedicated Service</li>
+                                                    <li><i className="flaticon-arrow-button" />Continuity</li>
+                                                    <li><i className="flaticon-arrow-button" />Stability</li>
+                                                    <li><i className="flaticon-arrow-button" />Fixed Price</li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
+
                         </div>
-                    </section> */}
+                    </section>
 
 
                 </div>
