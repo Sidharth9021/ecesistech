@@ -1634,7 +1634,7 @@ padding-left: 40px;
 .tgmenu__navbar-wrap > ul > li .sub-menu {
   position: absolute;
   left: 0;
-  top: 110%;
+  top: 102%;
   min-width: 230px;
   border: 1px solid #f5f5f5;
   background: var(--tg-color-white-default);
@@ -14841,25 +14841,25 @@ blockquote p {
   top: calc(10vw);
 }
 
+
 .tgmenu__navbar-wrap > ul > li .sub-menu > li .sub-menu {
-    position: absolute;
-    top: 0;
-    left: 105%;  /* Start from directly beneath the parent item */
-    transform: translateX(100%);  /* Move it all the way to the left */
-    visibility: hidden;
-    opacity: 0;
-    transition: transform 0.3s ease-out, visibility 0s linear 0.3s, opacity 0.3s ease-out;  /* Delay visibility transition to avoid click issues */
-    z-index: 10;
+  position: absolute;
+  top: -0.5px;
+  left: 107%;  /* Positioned to the right of the parent menu item */
+  transform: translateX(0%);  /* Starts from its initial position, just off-screen */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s ease-out;  /* Controls the timing and ease of the visibility and opacity transitions */
+  z-index: 10;
 }
 
 /* Transition to visible and aligned state when parent li is hovered */
 .tgmenu__navbar-wrap > ul > li:hover > .sub-menu > li:hover > .sub-menu {
-    transform: translateX(0%);  /* Move to natural position under parent */
-    visibility: visible;
-    opacity: 1;
-    transition: transform 0.3s ease-out, visibility 0s, opacity 0.3s ease-out;
+  transform: translateX(-5%);  /* Adjusts to slightly overlap the parent for a connected look */
+  visibility: visible;
+  opacity: 1;
+  transition: transform 0.3s ease-out, visibility 0s, opacity 0.3s ease-out;  /* Immediate transition for visibility to make submenu interactable */
 }
-
 
 .tgmenu__main-menu li.menu-item-has-children > .sub-menu > li.menu-item-has-children  .dropdown-btn {
   display: none;
