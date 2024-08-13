@@ -38,15 +38,26 @@ export default function Menu() {
                 </li>
                 <li className="menu-item-has-children"><Link href="#">Services</Link>
                     <ul className="sub-menu">
-                        <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
-                        <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
-                        <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
-                        <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
-                        <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
-                        <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
-                        <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
-                        <li><Link href={`/services-details/software-development`}>Software Development</Link></li>
+                        <li className="menu-item-has-children">
+                            <Link href="#">Digital Solutions</Link>
+                            <ul className="sub-menu">
+                                <li><Link href="#">PropTech</Link></li>
+                                <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
+                                <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                            </ul>
+                        </li>
+                        <li className="menu-item-has-children">
+                            <Link href="#">Business Consulting</Link>
+                            <ul className="sub-menu">
+                                <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
+                                <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
+                                <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                                <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
+                            </ul>
+                        </li>
+
+
+
                     </ul>
                 </li>
                 <li className="menu-item-has-children">
@@ -71,11 +82,11 @@ export default function Menu() {
                     </ul>
                 </li>
                 <li>
-                    <Link href="/contact">Contact</Link>
+                    <Link href="/contact">Contacts</Link>
                 </li>
-                {/* <li>
+                <li>
                     <Link href="/project-details">Project</Link>
-                </li> */}
+                </li>
             </ul>
         </>
     );

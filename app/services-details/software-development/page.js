@@ -132,8 +132,8 @@ function SoftwareServices() {
 
                         <div className="relative m-auto w-full" style={{ maxWidth: '2160px' }}>
                             <div className="absolute" style={{ right: '250px', top: '50px' }}>
-                                <p className="font-bold text-white ml-28" style={{ fontSize: '4rem', lineHeight: '4rem' }}>Guiding</p>
-                                <p className="font-bold" style={{ color: '#11C4D3', left: '50px', fontSize: '4rem', lineHeight: '3rem' }}>Principles</p>
+                                <p className="font-bold text-white ml-28" style={{ fontSize: '5rem', lineHeight: '5rem' }}>Guiding</p>
+                                <p className="font-bold" style={{ color: '#11C4D3', left: '50px', fontSize: '5rem', lineHeight: '5rem' }}>Principles</p>
 
                             </div>
                             <span className="flex items-center absolute mt-2 ml-2" style={{ left: '50px', top: '25px' }}>
@@ -148,21 +148,21 @@ function SoftwareServices() {
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#11C4D3', border: '#11C4D3' }}></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >Customer Centricity</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >Customer Centricity</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Crafting experiences that resonate with customer needs.</p>
                                     </div>
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#D6114C', border: '#D6114C' }} ></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >Modular Development</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >Modular Development</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Flexibility-driven innovation for maximum efficiency.</p>
                                     </div>
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#5D8AFF', border: '#5D8AFF' }}></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >Art of Assessment</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >Art of Assessment</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Legislation, Brand, Specialism: The trifecta of our market competency.</p>
                                     </div>
@@ -172,21 +172,21 @@ function SoftwareServices() {
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#E54F25', border: '#E54F25' }}></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >Decoding the Techscape</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >Decoding the Techscape</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Empowering businesses with strategic tech choices.</p>
                                     </div>
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#F2EB38', border: '#F2EB38' }}></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >Integrative Capabilities</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >Integrative Capabilities</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Synchronizing success by making integration a hygiene factor.</p>
                                     </div>
                                     <div style={{ width: '20rem' }}>
                                         <span className="flex items-center mt-2">
                                             <div className=" border-1  rounded-full w-3 h-3" style={{ backgroundColor: '#42B677', border: '#42B677' }}></div>
-                                            <p className="text-white font-semibold ml-3 text-base mt-12" >User Interface & Usability</p>
+                                            <p className="text-white font-semibold ml-3 text-base mt-3" >User Interface & Usability</p>
                                         </span>
                                         <p className="text-white ml-6 text-sm" >Our systems are used by a wide selection of stakeholders.</p>
                                     </div>
