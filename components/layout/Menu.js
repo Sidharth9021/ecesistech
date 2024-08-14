@@ -84,9 +84,9 @@ export default function Menu() {
                 <li>
                     <Link href="/contact">Contacts</Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link href="/project-details">Project</Link>
-                </li>
+                </li> */}
             </ul>
         </>
     );

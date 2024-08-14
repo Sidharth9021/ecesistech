@@ -39,7 +39,7 @@ export default function ServicesDetails() {
                                         </div> */}
                                         <div className="services__details-content">
                                             <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `} >Transforming Real Estate Valuations<br/> with<span className="text-pink-400" > Premier BPO Services</span></h2>
-                                            <p>Welcome to ECESIS, where we specialize in Broker Price Opinion services that empower real estate professionals across the U.S. Founded in 2010, ECESIS has established itself as a leader in the real estate valuation industry, known for our precision, reliability, and innovative solutions. Our mission is to help you streamline your operations, enhance your service offerings, and expand your business reach with our expert support.</p>
+                                            <p>We specialize in Broker Price Opinion services that empower real estate professionals across the U.S. Started in 2010, ECESIS has established itself as a leader in the real estate valuation industry, known for our precision, reliability, and innovative solutions. For over a decade, we have provided US-based realtors, brokers, and real estate companies with precise valuations and Comparative Market Analysis (CMA). Our commitment to high-quality, value-driven deliverables ensures that you remain proactive, decisive, and adaptable as your business evolves and expands.</p>
                                             <h3 className="text-center text-3xl mt-5 ">Enhanced BPO Management with ECESIS</h3>
                                             <div className={`w-full border-2 bg-slate-100 rounded-3xl mt-12 ${isMobile ? "px-5" : "px-10"}  pt-7 pb-9 `} >
                                                 <div className="services__details-list mt-3">
@@ -52,9 +52,9 @@ export default function ServicesDetails() {
                                                                         </div>
                                                                         <h4 className="title text-left">
                                                                             <i className="flaticon-target mr-3" />
-                                                                            BPO Portal Integration and Management</h4>
+                                                                            BPO Portal Registration and Management</h4>
                                                                     </div>
-                                                                    <p className={` ${isMobile ? "" : "ml-8"}`}>Our system facilitates seamless registration and integration with over 100 leading BPO portals and asset management companies. This service ensures your profile is always up-to-date and compliant with industry standards</p>
+                                                                    <p className={` ${isMobile ? "" : "ml-8"}`}>Our team facilitates seamless registration with over 100 leading BPO portals and asset management companies. This service ensures your profile is always up-to-date and compliant with industry standards</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -65,9 +65,9 @@ export default function ServicesDetails() {
                                                             </div> */}
                                                                 <div className="content mt-3">
                                                                     <div className="icon">
-                                                                        <h4 className="title text-left"><i className="flaticon-target mr-2" />Order Acceptance and Automation</h4>
+                                                                        <h4 className="title text-left"><i className="flaticon-target mr-2" />Order Acceptance</h4>
                                                                     </div>
-                                                                    <p className={` ${isMobile ? "" : "ml-8"} `}>Leveraging our proprietary software, BPO Acceptor, we automate order acceptance, captcha resolution, and regional compliance checks. This increases efficiency and acceptance rates, minimizing missed opportunities.</p>
+                                                                    <p className={` ${isMobile ? "" : "ml-8"} `}>Our proprietary software, BPO Acceptor, is designed to immediately capture available orders by swiftly solving captchas and performing regional compliance checks. This ultra-fast process ensures you secure all available opportunities without delay.</p>
                                                                 </div>
                                                             </div>
                                                         </div>

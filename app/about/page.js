@@ -5,6 +5,7 @@ import Counter3 from "@/components/sections/Counter3"
 import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import React, { useState, useEffect } from 'react';
+import VideoPopup from "@/components/elements/PopupVideo"
 
 export default function About() {
     let Nothome = true;
@@ -40,14 +41,14 @@ export default function About() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <>
             <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="About Us" Nothome={Nothome}>
                 <div>
                     <section className="about__area-four">
                         <div className="container">
-                        {/* <div className=" ml-5 mb-16">
+                            {/* <div className=" ml-5 mb-16">
                             <h2 className="">
                                 About Us
                             </h2>
@@ -57,7 +58,7 @@ export default function About() {
                                     <div className="about__img-wrap-four">
                                         <img src="/assets/img/images/inner_about01.jpg" alt="" />
                                         <img src="/assets/img/images/inner_about02.jpg" alt="" />
-                                        <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{marginLeft: isMobile ? '50px' : '',}} alt="" />
+                                        <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{ marginLeft: isMobile ? '50px' : '', }} alt="" />
 
                                         {/* <div className="about__award-box">
                                             <div className="icon">
@@ -81,24 +82,29 @@ export default function About() {
                                         <div className="about__content-inner-three mt-2">
                                             <div className="about__list-box">
                                                 <ul className="list-wrap">
-                                                    <li><i className="flaticon-arrow-button" />Comprehensive Services Portfolio</li>
-                                                    <li><i className="flaticon-arrow-button" />Innovative Work Culture</li>
-                                                    <li><i className="flaticon-arrow-button" />Future-Focused Strategy</li>
+                                                    <li><i className="flaticon-arrow-button" />Extensive Industry Knowledge</li>
+                                                    <li><i className="flaticon-arrow-button" />Innovative and Adaptive Culture</li>
+                                                    <li><i className="flaticon-arrow-button" />Strategic Vision for Long-Term Growth</li>
                                                 </ul>
                                             </div>
                                             {/* <div className="about__list-img-two">
                                                 <img src="/assets/img/images/about_list_img02.png" alt="" />
                                             </div> */}
                                         </div>
-                                        <p>At Ecesis, we've evolved from a BPO provider to a globally recognized conglomerate with expertise spanning various sectors including software development, digital marketing, and staffing solutions.
-                                            <br/> Every day, we push the boundaries of growth, driven by our unwavering commitment to meeting our clients' needs. Our ability to adapt and thrive in an ever-changing marketplace makes us a preferred partner in our clients’ transformation journeys.</p>
-                                        <Link href="/services" className="btn">Know More</Link>
+                                        <p>We’ve transformed from a BPO provider into a global leader, offering a diverse portfolio of services including software development, digital marketing, and staffing solutions. Our evolution is guided by a forward-thinking approach that anticipates the needs of tomorrow’s markets.
+                                            <br /><br/>Driven by our dedication to client success, we continuously innovate to stay ahead of industry trends. Our strategic agility and commitment to excellence make us the trusted partner for companies navigating transformative journeys in a rapidly changing world.</p>
+                                        {/* <Link href="/services" className="btn">Know More</Link> */}
                                     </div>
+                                </div>
+                                <div className="services__details-inner-img justify-center flex mt-6" >
+                                    <img src="/assets/img/services/h3_services_img01.jpg" className="object-cover object-top" style={{ height: "350px", width: "60%" }} alt="" />
+                                    <VideoPopup />
+
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <Counter3/>
+                    <Counter3 />
 
                     {/* team-area */}
                     <section className="team__area-four">
@@ -238,7 +244,7 @@ export default function About() {
                         </div>
                     </section>
                     {/* team-area-end */}
-                    
+
                 </div>
             </Layout>
         </>

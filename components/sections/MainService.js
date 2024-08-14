@@ -10,24 +10,24 @@ import Request3 from "./Request3";
 export default function MainService() {
     const [activeIndex, setActiveIndex] = useState(1);
     const [isMobile, setIsMobile] = useState(null);
-  
+
     const handleOnClick = (index) => {
-      setActiveIndex(index);
+        setActiveIndex(index);
     };
-  
+
     const handleResize = () => {
-      const mobileView = window.innerWidth <= 768;
-      setIsMobile(mobileView);
-      if (mobileView) {
-        setActiveIndex(0);
-      }
+        const mobileView = window.innerWidth <= 768;
+        setIsMobile(mobileView);
+        if (mobileView) {
+            setActiveIndex(0);
+        }
     };
-  
+
     useEffect(() => {
-      handleResize(); // Check initial size
-      window.addEventListener('resize', handleResize);
-  
-      return () => window.removeEventListener('resize', handleResize);
+        handleResize(); // Check initial size
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     if (isMobile === null) {
@@ -80,7 +80,7 @@ export default function MainService() {
                                             <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true">Artificial Intelligence</button>
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                            <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Automation Solutions </button>
+                                            <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Business Process Automation </button>
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(3)}>
                                             <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="false">Cloud Infrastructure</button>
@@ -135,7 +135,7 @@ export default function MainService() {
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title"><Link href="#">Artificial Intelligence</Link></h2>
-                                                    <p>Harness the power of Artificial Intelligence (AI) to propel your business to new heights. Our data-driven approach leverages cutting-edge AI and machine learning to transform your operations. Make smarter decisions, streamline processes, and craft personalized customer experiences that drive lasting success</p>
+                                                    <p>Harness the power of Artificial Intelligence (AI) to propel your business to new heights. Our data-driven approach leverages cutting-edge AI and machine learning to transform your business. Make smarter decisions, streamline processes, and craft personalized customer experiences that drive lasting success</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
                                                             <li><i className="fas fa-check" /> AI Solutions Tailored for You </li>
@@ -153,11 +153,10 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Automation.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="#">Automated Solutions</Link></h2>
-                                                    <p>Drive substantial business growth through automation. Our strategic approach helps streamline processes, reduce costs, and improve overall efficiency, fostering a robust environment for sustained expansion.
+                                                    <h2 className="title"><Link href="#">Business Process Automation</Link></h2>
+                                                    <p>Optimize your business operations with automation. Our strategic approach enhances efficiency, reduces costs, and streamlines processes, creating a solid foundation for sustained success.
                                                         <br /><br />
-                                                        Tailored to meet the unique needs of your business, our solutions enhance operational speed and accuracy, ensuring you stay ahead in a competitive marketplace
-                                                    </p>
+                                                        Crafted to fit your unique business requirements, our solutions enhance speed and accuracy while reducing costs and streamlining FTE management, keeping you ahead in the competitive landscape.                                                    </p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
                                                             <li><i className="fas fa-check" />Streamlined Operations</li>
@@ -214,10 +213,11 @@ export default function MainService() {
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title"><Link href="#">Real Estate Valuation</Link></h2>
-                                                    <p>For over a decade, we have provided US-based realtors, brokers, and real estate companies with precise valuations and Comparative Market Analysis (CMA). Our commitment to high-quality, value-driven deliverables ensures that you remain proactive, decisive, and adaptable as your business evolves and expands.</p>
-                                                    <div className="about__list-box">
+                                                    <p>
+                                                        For over a decade, we have partnered with realtors, brokers, and real estate companies with precise valuations and Comparative Market Analysis (CMA). Our commitment to high-quality, value-driven deliverables ensures that you remain proactive, decisive, and adaptable as your business evolves and expands.
+                                                    </p>                                                    <div className="about__list-box">
                                                         <ul className="list-wrap">
-                                                            <li><i className="fas fa-check" />Trusted partner to 150+ US realtors</li>
+                                                            <li><i className="fas fa-check" />Trusted partner to 150+ realtors</li>
                                                             <li><i className="fas fa-check" />Round-the-clock support</li>
                                                             <li><i className="fas fa-check" />3X Revenue Growth For Clients</li>
                                                         </ul>
@@ -255,7 +255,7 @@ export default function MainService() {
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title"><Link href="#">Manpower Staffing</Link></h2>
-                                                    <p>We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
+                                                    <p>We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing <br /> end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
                                                             <li><i className="fas fa-check" />Precision Placements</li>
@@ -274,10 +274,10 @@ export default function MainService() {
                                                 </div>
                                                 <div className="services__content-four">
                                                     <h2 className="title"><Link href="#">Digital Marketing</Link></h2>
-                                                    <p>We help you in positioning and promoting your brand, connecting you to new leads at optimum costs and helping you win new & exciting business deals that improve your brand value. Whether its to help you define your digital goals or achieve them, were with you every step of the way.
+                                                    <p>
+                                                        We help you in positioning and promoting your brand, bringing in new customers at optimum costs and helping you win new & exciting business deals that improve your brand value.
                                                         <br /><br />
-                                                        We help online businesses get better returns on their marketing expenditure, e-commerce sites sell more goods, local businesses dominate their geographic areas and corporate entities have a better brand reputation.
-                                                    </p>
+                                                        We help businesses get better returns on their marketing expenditure, e-commerce sites sell more goods, local businesses dominate their geographic areas and corporate entities have a better brand reputation.                                                    </p>
                                                     {/* <div className="about__list-box">
                                                         <ul className="list-wrap">
                                                             <li><i className="fas fa-check" />Business Growth</li>
@@ -304,7 +304,7 @@ export default function MainService() {
                 {/* brand-area */}
 
 
-                
+
 
 
 

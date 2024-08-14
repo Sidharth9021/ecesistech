@@ -25,7 +25,7 @@ export default function Request3() {
                     <div className="row">
                         <div className="flex flex-col">
                             <div className="request__content-two px-4 pt-4 pb-2">
-                                <h2 className="title font-semibold">We want to hear about what you're building</h2>
+                                <h2 className="title font-semibold">Let’s Create Something Extraordinary Together!</h2>
                                 <div className="request__phone">
                                     {/* <div className="icon">
                                         <i className="flaticon-phone-call" />

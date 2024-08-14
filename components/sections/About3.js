@@ -41,9 +41,9 @@ export default function About3() {
                             <div className="about__content-three">
                                 <div className="section-title mb-25 tg-heading-subheading animation-style3">
                                     <span className="sub-title">About Our Company</span>
-                                    <h2 className="title tg-element-title">Digital Transformation for Global Impact</h2>
+                                    <h2 className="title tg-element-title">Digital Transformation for Business Growth</h2>
                                 </div>
-                                <p className='text-lb mt-2'>We are leveraging advanced digital technologies such as artificial intelligence to expand our global presence and enhance our market impact. By integrating these innovative tools, we aim to optimize operations and drive growth, strengthening our competitive edge.</p>
+                                <p className='text-lb mt-2'>We offer cutting-edge solutions designed to optimize operations, enhance decision-making, and drive growth. With our expertise in advanced technologies and deep industry knowledge, we create solutions that are uniquely suited to your goals.</p>
                                 <div className="about__content-inner about__content-inner-two">
                                     <div className="experience__box-three ">
                                         <div className="title px-3 py-3">
@@ -63,13 +63,14 @@ export default function About3() {
                                     <div className="author-wrap">
                                         <h4 className='title text-lb'>Mission</h4>
                                         <p className='text-lb'>
-                                        We are dedicated to agility, customer focus, and innovation. Our aim is to drive value and growth by partnering strategically in our clients' transformative journeys.                                        </p>
+                                        Our mission is to empower clients through strategic partnerships, driving value and growth in their transformative journeys.
+                                        </p>
 
                                     </div>
                                     <div className="about__phone">
                                         <h4 className='title text-lb'>Vision</h4>
                                         <p className='text-lb'>
-                                        We aim to lead in providing innovative, technology-driven solutions that empower and accelerate transformative client experiences, ensuring lasting impact and value.                                        </p>
+                                        Our vision is to be the leader in delivering innovative, technology-driven solutions that empower transformative client experiences and create lasting value.                                        </p>
                                         {/* <div className="icon">
                                             <i className="flaticon-phone-call" />
                                         </div>

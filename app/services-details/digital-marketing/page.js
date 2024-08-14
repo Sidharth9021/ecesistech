@@ -42,9 +42,9 @@ function DigitalServices() {
                                                     <img src="/assets/img/images/digital_image.png" className={`${isMobile ? '' : 'mr-16'} aspect-auto `} alt="" style={{ height: '320px', width: '320px' }} />
 
                                                 </div>
-                                                <p className={`mt-5 text-lg ${isMobile ? '' : 'text-justify'} `}>Build your brand and expand your reach In a hyperconnected marketplace, your digital identity can make or break empires. You need to build a powerful, omni-channel and differentiated brand presence—<span className="font-bold">within optimum budget and timelines.</span><br /><br />
-                                                    <span className="text-purple-500 font-bold">How do you do it?</span> That's the million-dollar question. Ecesis is all about YOU—positioning and promoting your brand, connecting you to new leads at optimum costs, and helping you win new & exciting business deals that improve your brand value. Whether it's to help you define your digital goals or achieve them, we're with you every step of the way.<br /><br />
-                                                    Our focused thinking induces productive partnerships with clients, and our innovative work culture helps us deliver great results.
+                                                <p className={`mt-5 text-lg ${isMobile ? '' : 'text-justify'} `}>In today’s hyperconnected marketplace, your digital identity is not just important—it’s essential. To thrive, you need a robust, omni-channel brand presence that’s both distinctive and strategically executed within budget and timelines.<br /><br />
+                                                Ecesis is your partner in digital marketing excellence. We specialize in creating tailored strategies that position and promote your brand across all digital platforms, ensuring you connect with new leads at optimal costs. Our expertise in digital marketing drives targeted campaigns that resonate with your audience, helping you secure new business opportunities that elevate your brand value.<br /><br />
+                                                From defining your digital goals to achieving them, we stand by you at every stage, delivering measurable results that drive growth.
                                                 </p>
                                             </div>
 
