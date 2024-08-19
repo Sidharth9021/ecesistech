@@ -41,7 +41,7 @@ export default function Menu() {
                         <li className="menu-item-has-children">
                             <Link href="#">Digital Solutions</Link>
                             <ul className="sub-menu">
-                                <li><Link href="#">PropTech</Link></li>
+                                <li><Link href="/services-details/proptech">PropTech</Link></li>
                                 <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
                                 <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
                             </ul>
