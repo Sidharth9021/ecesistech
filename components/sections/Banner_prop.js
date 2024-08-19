@@ -35,7 +35,7 @@ export default function Banner_prop() {
     return (
         <>
             <section className={`banner__area-two  banner__bg-two object-cover ${isMobile ? "object-right h-screen" : "h-full"}`} style={{
-                backgroundImage: `url(${isMobile ? "/assets/img/bg/services_1.jpeg" : "/assets/img/banner/banner.png"})`
+                backgroundImage: `url(${isMobile ? "/assets/img/bg/services_1.jpeg" : "/assets/img/banner/Proptech.png"})`
             }}>
                 <div className="container">
                     <div className={`row`} style={space}>
