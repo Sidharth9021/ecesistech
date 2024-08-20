@@ -226,7 +226,7 @@ export default function Proptech() {
                             </p>
                         </div>
                         <div className='flex justify-center items-center'>
-                            <img src="/assets/img/images/Approach_Proptech.png" alt="" className='w-[700px]' />
+                            <img src="/assets/img/images/Approach_Proptech.png" alt="" className={`${isMobile ? 'w-[800px]' : 'w-[700px]'}`} />
 
                         </div>
 
