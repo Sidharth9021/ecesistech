@@ -492,6 +492,63 @@ padding-left: 40px;
   top: -40%;
 }
 
+.but2 {
+  text-transform: uppercase;
+  user-select: none;
+  -moz-user-select: none;
+  background: var(--tg-theme-primary) none repeat scroll 0 0;
+  border: medium none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  color: var(--tg-color-white-default);
+  font-family: var(--tg-heading-font-family);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 14px 20px;
+  text-align: center;
+  touch-action: manipulation;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.but2::after {
+  content: "\f10a";
+  font-family: flaticon;
+  font-weight: var(--tg-fw-bold);
+  margin-left: 8px;
+  font-size: 20px;
+  line-height: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.but2:hover, .but2:focus-visible {
+  transform: translateY(-10%);
+}
+.but2:hover:before, .but2:focus-visible:before {
+  top: -40%;
+}
+
 .btn::before {
   content: "";
   position: absolute;
