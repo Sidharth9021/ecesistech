@@ -9,6 +9,8 @@ import React, { useEffect, useState } from 'react';
 function AccountingServices() {
 
     const [isMobile, setIsMobile] = useState(false);
+    const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
+
     let Nothome = true;
 
     useEffect(() => {
@@ -19,9 +21,17 @@ function AccountingServices() {
         handleResize();
         window.addEventListener('resize', handleResize);
 
+        setAllLoaded(true);
+
+
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+
     
+    if (!allLoaded) {
+        return <div>Loading...</div>; // Or any other loading indicator
+    }
 
 
     return (
@@ -34,7 +44,7 @@ function AccountingServices() {
                                 <div className="row">
                                     <div className="col-100 order-0 order-lg-2">
                                         <div className="services__details-content">
-                                            <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `}>Simplify <span className="text-pink-400">Accounting & Tax<br/> </span>  Processes With Our Expert Solutions! </h2>
+                                            <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `}>Simplify <span className="text-pink-400">Accounting & Tax<br /> </span>  Processes With Our Expert Solutions! </h2>
                                             <p>We are established with a vision to empower individuals and businesses with tangible accounting strategies, We are dedicated to delivering top-notch financial operational services that help you navigate the complexities of day to day transactional accounting. Transparency and communication are the cornerstones of our client relationships.</p>
                                             <h2 className="title mt-12">We Specialize In <span className="text-blue-400">Unlocking Accounting Gaps</span> , Navigating Tax Complexity<span className="text-ly"> With Confidence & Ease.</span></h2>
                                             <p>We provide an all-encompassing array of accounting and tax services meticulously tailored for individuals, businesses, and diverse organizations. Our aim is to simplify your financial accounting, ensuring that it's cost-effective and instilling confidence at every juncture of our collaborative journey. Consider us your steadfast partner for all your accounting, compliance and regulatory requirements, delivering trustworthiness with every service.</p>
@@ -65,7 +75,7 @@ function AccountingServices() {
                                                         <img src="/assets/img/images/acc_values.png" className="aspect-auto h-auto w-full" alt="" style={{ marginLeft: isMobile ? "" : "450px" }} />
                                                     </div>
                                                     <div className="mt-16">
-                                                    <h3 className="mt-12 text-4xl font-bold text-center mb-16">Our Services</h3>
+                                                        <h3 className="mt-12 text-4xl font-bold text-center mb-16">Our Services</h3>
 
                                                         <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-3"} gap-x-4 gap-y-4`}>
                                                             <div className="ebt">

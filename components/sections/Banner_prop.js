@@ -23,7 +23,7 @@ export default function Banner_prop() {
 
     const hstyle = {
         fontSize: isMobile ? '44px' : '48px', 
-        lineHeight: isMobile ? '2.85rem': '3.05rem'
+        lineHeight: isMobile ? '2.85rem': '3.25rem'
     }
     const tstyle = {
         fontSize: isMobile ? '28px' : '32px', 
@@ -34,18 +34,16 @@ export default function Banner_prop() {
     }
     return (
         <>
-            <section className={`banner__area-two  banner__bg-two object-cover ${isMobile ? "object-right h-screen" : "h-full"}`} style={{
-                backgroundImage: `url(${isMobile ? "/assets/img/bg/services_1.jpeg" : "/assets/img/banner/Proptech.png"})`
+            <section className={`banner__area-two  banner__bg-two object-cover ${isMobile ? "object-right h-full" : "h-full"}`} style={{
+                backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/Proptech.png"})`
             }}>
                 <div className="container">
                     <div className={`row`} style={space}>
                         <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
-                            <div className="banner__content-two mb-24">
-                                <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
-                                <h3 className={`text-black col-lg-10`} data-aos="fade-up" data-aos-delay={200} style={tstyle}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Sustainable <span className='text-blue-400'>Growth</span></h3>
-                                <div>
-                                    <Link href="#" className="btn border-btn mt-1" data-aos="fade-up" data-aos-delay={200}>Get Started</Link>
-                                </div>
+                            <div className={`banner__content-two ${isMobile ? "mt-12" : "mb-24"} `}>
+                                <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}><span className='text-pink-500'> AI </span> & <span className='text-blue-400'> PropTech</span> Solutions For<br/> <span className='text-ly'> Real Estate</span> Industry </h2>
+                                <h4 className={`font-medium mb-6 text-xl`} data-aos="fade-up" data-aos-delay={100}>Empowering Real Estate with 14+ Years of Technological Excellence</h4>
+                              
                                 {/* {isMobile ?
                                     <Link href="#" className="btn border-btn mt-40" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
                                     :

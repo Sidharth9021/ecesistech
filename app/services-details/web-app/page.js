@@ -8,6 +8,27 @@ import Link from "next/link"
 export default function ServicesDetails() {
     let Nothome = true;
 
+    const [isMobile, setIsMobile] = useState(false);
+    const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        setAllLoaded(true);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    if (!allLoaded) {
+        return <div>Loading...</div>; // Or any other loading indicator
+    }
+
 
     return (
         <>

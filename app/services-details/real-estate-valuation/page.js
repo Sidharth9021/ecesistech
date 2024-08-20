@@ -13,6 +13,8 @@ export default function ServicesDetails() {
 
 
     const [isMobile, setIsMobile] = useState(false);
+    const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -22,8 +24,14 @@ export default function ServicesDetails() {
         handleResize();
         window.addEventListener('resize', handleResize);
 
+        setAllLoaded(true);
+
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    if (!allLoaded) {
+        return <div>Loading...</div>; // Or any other loading indicator
+    }
 
     return (
         <>

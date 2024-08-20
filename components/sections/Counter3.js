@@ -5,7 +5,7 @@ export default function Counter3() {
         <>
             <section className="counter-area-three ">
                 <div className="container">
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center items-center justify-center">
                         <div className="col-xl-3 col-lg-4 col-sm-6 ">
                             <div className="counter-item">
                                 <div className="icon">
