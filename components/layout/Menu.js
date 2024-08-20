@@ -60,7 +60,7 @@ export default function Menu() {
 
                     </ul>
                 </li>
-                <li className="menu-item-has-children">
+                {/* <li className="menu-item-has-children">
                     <Link href="#">Products</Link>
 
                     <ul className="sub-menu">
@@ -80,7 +80,7 @@ export default function Menu() {
                         <li><Link href={`/project-details/i-Slot`}>i - Slot</Link></li>
 
                     </ul>
-                </li>
+                </li> */}
                 <li>
                     <Link href="/contact">Contacts</Link>
                 </li>
