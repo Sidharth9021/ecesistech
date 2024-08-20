@@ -134,7 +134,7 @@ export default function Proptech() {
                             </div>
 
                             <div className={`${isMobile ? '' : ' flex-col'} flex justify-center items-center mt-6`}>
-                                <img src="/assets/img/images/proptech_about.png" className={`${isMobile ? 'w-[175px] h-[175px] ml-[23vw]' : 'ml-[175px] w-[300px] h-[300px]'}`} alt="About ECESIS" />
+                                <img src="/assets/img/images/proptech_about.png" className={`${isMobile ? 'w-[175px] h-[175px] ml-[21vw]' : 'ml-[175px] w-[300px] h-[300px]'}`} alt="About ECESIS" />
                             </div>
                         </div>
 
