@@ -49,7 +49,7 @@ export default function Proptech() {
                                 With our expertise in AI, custom software development, and web design, we deliver tailored solutions that address your unique challenges.
                             </p>
                             
-                            <Link href="/services-details/proptech " className="but2 w-fit text-lg ">Contact us for a free consultation</Link>
+                            <Link href="/services-details/proptech " className={`but2 text-lg ${isMobile ? 'w-full' : 'w-fit'} `}>Contact us for a free consultation</Link>
 
                             
 
