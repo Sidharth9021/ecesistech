@@ -152,11 +152,11 @@ export default function Proptech() {
 
                         <div className="">
                             <div className="mt-16 mb-12 flex justify-center items-center">
-                                <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-2"} gap-x-4 gap-y-4 `} >
+                                <div className={`grid ${isMobile ? "grid-cols-1 gap-y-4 gap-x-16 " : "grid-cols-2 gap-y-20 gap-x-4 "}  `} >
                                     {/* Artificial Intelligence in Real Estate */}
                                     <div className='relative'>
-                                        <img src="/assets/img/images/AI_Proptech.png" alt="" className={`${isMobile ? 'scale-135' : 'w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-36' : 'top-60'} `} style={{ width: isMobile ? '380px' : '410px', left: isMobile ? '10px' : '97px' }}>
+                                        <img src="/assets/img/images/AI_Proptech.png" alt="" className={`${isMobile ? 'scale-135' : 'scale-110 w-full'}`} />
+                                        <div className={`absolute ${isMobile ? 'top-36' : 'top-60'} `} style={{ width: isMobile ? '370px' : '410px', left: isMobile ? '-3px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Artificial Intelligence in Real Estate</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>ECESIS harnesses the power of AI to transform the real estate landscape. Our AI solutions streamline property management, enhance decision-making, and automate routine tasks.</p>
                                             <ul className={`list-disc ${isMobile ? 'text-[14px]' : ''} ml-4 text-black`}>
@@ -168,8 +168,8 @@ export default function Proptech() {
                                     </div>
                                     {/* Tailored Software for Real Estate */}
                                     <div className='relative'>
-                                        <img src="/assets/img/images/Soft_Proptech.png" alt="" className={`${isMobile ? 'scale-135 mt-36' : 'w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-72' : 'top-60'} `} style={{ width: isMobile ? '380px' : '410px', left: isMobile ? '15px' : '97px' }}>
+                                        <img src="/assets/img/images/Soft_Proptech.png" alt="" className={`${isMobile ? 'scale-135 mt-36' :  'scale-110 w-full'}`} />
+                                        <div className={`absolute ${isMobile ? 'top-72' : 'top-60'} `} style={{ width: isMobile ? '360px' : '410px', left: isMobile ? '3px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Tailored Software for Real Estate</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>Every real estate business is unique. ECESIS delivers
                                                 tailored software solutions to meet your specific needs.</p>
@@ -181,8 +181,8 @@ export default function Proptech() {
                                         </div>
                                     </div>
                                     <div className='relative'>
-                                        <img src="/assets/img/images/Web_Proptech.png" alt="" className={`${isMobile ? 'scale-140 mt-36' : 'w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-[300px]' : 'top-60'} `} style={{ width: isMobile ? '360px' : '410px', left: isMobile ? '21px' : '97px' }}>
+                                        <img src="/assets/img/images/Web_Proptech.png" alt="" className={`${isMobile ? 'scale-140 mt-36' : 'scale-110 w-full'}`} />
+                                        <div className={`absolute ${isMobile ? 'top-[280px]' : 'top-60'} `} style={{ width: isMobile ? '350px' : '410px', left: isMobile ? '5px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Web Development</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>Your website is your digital storefront. ECESIS creates stunning, user-friendly websites optimized for real estate businesses.</p>
                                             <ul className={`list-disc ${isMobile ? 'text-[14px]' : ''} ml-4 text-black`}>
@@ -193,8 +193,8 @@ export default function Proptech() {
                                         </div>
                                     </div>
                                     <div className='relative'>
-                                        <img src="/assets/img/images/Sol_Proptech.png" alt="" className={`${isMobile ? 'scale-140 mt-36' : 'w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-72' : 'top-60'} `} style={{ width: isMobile ? '360px' : '410px', left: isMobile ? '21px' : '97px' }}>
+                                        <img src="/assets/img/images/Sol_Proptech.png" alt="" className={`${isMobile ? 'scale-140 mt-36' : 'scale-110 w-full'}`} />
+                                        <div className={`absolute ${isMobile ? 'top-60' : 'top-60'} `} style={{ width: isMobile ? '350px' : '410px', left: isMobile ? '5px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Comprehensive PropTech Solutions</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>ECESIS offers a range of specialized services to address the complex challenges facing the real estate industry.</p>
                                             <ul className={`list-disc ${isMobile ? 'text-[14px]' : ''} ml-4 text-black`}>
