@@ -48,10 +48,10 @@ export default function Proptech() {
                             <p className={`title ${isMobile ? "text-center" : "text-left"}`}>We offer cutting-edge PropTech solutions designed to optimize operations, enhance decision-making, and drive growth.
                                 With our expertise in AI, custom software development, and web design, we deliver tailored solutions that address your unique challenges.
                             </p>
-                            <div className=''>
-                            <Link href="/services-details/proptech " className="but2 w-full text-lg ">Contact us for a free consultation</Link>
+                            
+                            <Link href="/services-details/proptech " className="but2 w-fit text-lg ">Contact us for a free consultation</Link>
 
-                            </div>
+                            
 
                         </div>
 
@@ -247,7 +247,7 @@ export default function Proptech() {
                                     <div className='rounded-xl bg-slate-100 p-3'>
                                         <h1 className='title text-center text-2xl'>Real Estate Firms Embracing AI Transformation</h1>
                                         <p className='text-center mt-4 text-black'>Struggling with manual workflows and disjointed data? Ecesis can streamline your processes with innovative AI-powered real estate software. We specialize in developing custom solutions that enhance efficiency, boost customer loyalty, and open up new revenue opportunities.</p>
-                                        <div className='flex justify-center items-center'>
+                                        <div className='flex justify-center items-center mt-[45px]'>
                                             <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
 
                                         </div>
@@ -264,7 +264,7 @@ export default function Proptech() {
                                     <div className='rounded-xl bg-slate-100 p-3'>
                                         <h1 className='title text-center text-2xl'>Established Proptechs Expanding Market Presence</h1>
                                         <p className='text-center mt-4 text-black'>Passionate about advancing real estate technology but need industry expertise or tech support? Ecesis is here to help. Whether you’re launching new software or enhancing existing solutions, we offer code audits, team augmentation, and full-cycle development to deliver custom real estate software that drives business growth.</p>
-                                        <div className='flex justify-center items-center'>
+                                        <div className='flex justify-center items-center mt-[45px]'>
                                             <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
 
                                         </div>
