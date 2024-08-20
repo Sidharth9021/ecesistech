@@ -41,7 +41,7 @@ export default function Proptech() {
                 {/* Hero Section */}
                 <section className="text-center py-12">
                     <div className="container flex flex-row flex-wrap justify-between">
-                        <div className='flex flex-col justify-center' style={{ width: '700px' }}>
+                        <div className='flex flex-col justify-center' style={{ width: isMobile ? 'w-full px-3': '700px' }}>
 
                             <h1 className={`text-4xl font-bold mb-3 ${isMobile ? "text-center" : "text-left"} `}>Experience the ECESIS difference.</h1>
 

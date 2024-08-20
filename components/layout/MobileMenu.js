@@ -59,18 +59,19 @@ export default function MobileMenu({ handleMobileMenu }) {
                         <li className="menu-item-has-children">
                             <Link href="#">Digital Solutions</Link>
                             <ul onClick={handleMobileMenu} style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
-                                <li><Link href="/services-details/proptech">PropTech</Link></li>
-                                <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
-                                <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                                <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
+                                <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
+                                <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                                <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                             </ul>
                         </li>
-                        <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
+                        {/* <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
                         <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
                         <li><Link href={`/services-details/cloud-infrastructure`}>Cloud Infrastructure</Link></li>
                         <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
                         <li ><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                         <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li> */}
                         <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                     </ul>
                     <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div>
