@@ -169,7 +169,7 @@ export default function Proptech() {
                                     {/* Tailored Software for Real Estate */}
                                     <div className='relative'>
                                         <img src="/assets/img/images/Soft_Proptech.png" alt="" className={`${isMobile ? 'scale-135 mt-36' :  'scale-110 w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-72' : 'top-60'} `} style={{ width: isMobile ? '360px' : '410px', left: isMobile ? '3px' : '97px' }}>
+                                        <div className={`absolute ${isMobile ? 'top-64' : 'top-60'} `} style={{ width: isMobile ? '360px' : '410px', left: isMobile ? '3px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Tailored Software for Real Estate</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>Every real estate business is unique. ECESIS delivers
                                                 tailored software solutions to meet your specific needs.</p>
@@ -194,13 +194,13 @@ export default function Proptech() {
                                     </div>
                                     <div className='relative'>
                                         <img src="/assets/img/images/Sol_Proptech.png" alt="" className={`${isMobile ? 'scale-140 mt-36' : 'scale-110 w-full'}`} />
-                                        <div className={`absolute ${isMobile ? 'top-60' : 'top-60'} `} style={{ width: isMobile ? '350px' : '410px', left: isMobile ? '5px' : '97px' }}>
+                                        <div className={`absolute ${isMobile ? 'top-60' : 'top-56'} `} style={{ width: isMobile ? '350px' : '410px', left: isMobile ? '5px' : '97px' }}>
                                             <h1 className={`title text-center ${isMobile ? 'text-lg' : 'text-2xl'}`}>Comprehensive PropTech Solutions</h1>
                                             <p className={`text-center  ${isMobile ? 'text-sm mt-2' : 'mt-4'} text-black`}>ECESIS offers a range of specialized services to address the complex challenges facing the real estate industry.</p>
                                             <ul className={`list-disc ${isMobile ? 'text-[14px]' : ''} ml-4 text-black`}>
                                                 <li className=''><span className='font-bold'>PropTech Consulting & Software Audit:</span> Our experts provide in-depth analysis of your tech stack to identify opportunities for improvement and optimization.</li>
                                                 <li className=''><span className='font-bold'>Legacy System Modernization:</span> Upgrade outdated systems to enhance performance, security, and user experience.</li>
-                                                <li className=''><span className='font-bold'>AI Document Processing:</span> Automate document-intensive tasks with our AI-powered solutions, saving time and reducing errors.</li>
+                                                {/* <li className=''><span className='font-bold'>AI Document Processing:</span> Automate document-intensive tasks with our AI-powered solutions, saving time and reducing errors.</li> */}
                                             </ul>
                                         </div>
                                     </div>
