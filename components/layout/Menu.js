@@ -51,7 +51,7 @@ export default function Menu() {
                             <ul className="sub-menu">
                                 <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                                 <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                                <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                                <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li>
                                 <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                             </ul>
                         </li>

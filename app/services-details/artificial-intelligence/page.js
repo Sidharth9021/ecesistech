@@ -137,7 +137,7 @@ function AIServices() {
                             </div>
                         </div>
                         <div className="flex justify-center items-center">
-                            <img src="/assets/img/images/ai_pipeline.png" className="" alt="" style={{ width: '85%' }} />
+                            <img src={`${isMobile ? '/assets/img/images/ai_pipeline_mobile.png' : '/assets/img/images/ai_pipeline.png'}`} className="" alt="" style={{ width: isMobile ? '90%' : '85%' }} />
                         </div>
                         </div>
                         

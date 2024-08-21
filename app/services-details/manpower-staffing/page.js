@@ -9,7 +9,7 @@ import withLoading from "@/app/withLoading"
 
 
 
-function ManpowerServices() {
+function TalentServices() {
     let Nothome = true;
 
 
@@ -88,7 +88,7 @@ function ManpowerServices() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Manpower Staffing" Nothome={Nothome}>
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Talent Acquisition" Nothome={Nothome}>
                 <div>
                     <section className="services__details-area mt-6">
                         <div className="container">
@@ -100,7 +100,7 @@ function ManpowerServices() {
                                         </div> */}
                                         <div className="services__details-content">
                                             <h2 className={` ${isMobile ? "text-center text-3xl" : "text-5xl mb-3"} `}>Elevating Industries Through <span className="text-pink-400">Premier Staffing Solution</span></h2>
-                                            <p>Over the years, ECESIS has developed deep expertise in management consulting and manpower staffing for the advanced manufacturing industry. We are one of the most trusted brands in the industry, and this recognition stems from the world-class, high-quality talent we provide. We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
+                                            <p>Over the years, ECESIS has developed deep expertise in management consulting and Talent Acquisition for the advanced manufacturing industry. We are one of the most trusted brands in the industry, and this recognition stems from the world-class, high-quality talent we provide. We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
                                             {/* <div className="services__details-list">
                                                 <div className="row">
                                                     <div className="col-md-6">
@@ -241,7 +241,7 @@ function ManpowerServices() {
                                                             Commitment to Excellence                                                        </h4>
 
                                                         <h6 className="text-gray-500 font-medium mt-3">
-                                                            A dedication to delivering unparalleled results in the realm of manpower staffing                                                        </h6>
+                                                            A dedication to delivering unparalleled results in the realm of Talent Acquisition                                                        </h6>
                                                     </div>
                                                 </div>
 
@@ -298,4 +298,4 @@ function ManpowerServices() {
     )
 }
 
-export default withLoading(ManpowerServices);
+export default withLoading(TalentServices);

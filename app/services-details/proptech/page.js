@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Counter3 from '@/components/sections/Counter3';
 import Marquee2 from '@/components/sections/Marquee2';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import default styles
 
 
 export default function Proptech() {
@@ -28,6 +30,43 @@ export default function Proptech() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+
+    const [settings, setSettings] = useState({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+    useEffect(() => {
+        setSettings({
+            ...settings,
+            slidesToShow: isMobile ? 1 : 4, // Show 4 cards in a row if not mobile, otherwise use the carousel
+        });
+    }, [isMobile]);
+
+    const coreValues = [
+        {
+            title: "Innovation",
+            description: "Embracing new technologies to deliver groundbreaking solutions."
+        },
+        {
+            title: "Client-Centricity",
+            description: "Building strong partnerships based on trust and collaboration."
+        },
+        {
+            title: "Expertise",
+            description: "Leveraging our deep industry knowledge to drive results."
+        },
+        {
+            title: "Excellence",
+            description: "Delivering exceptional products and services that exceed expectations."
+        },
+    ];
+
     if (!allLoaded) {
         return <div>Loading...</div>; // Or any other loading indicator
     }
@@ -48,10 +87,10 @@ export default function Proptech() {
                             <p className={`title ${isMobile ? "text-center" : "text-left"}`}>We offer cutting-edge PropTech solutions designed to optimize operations, enhance decision-making, and drive growth.
                                 With our expertise in AI, custom software development, and web design, we deliver tailored solutions that address your unique challenges.
                             </p>
-                            
+
                             <Link href="/services-details/proptech " className={`but2 text-lg ${isMobile ? 'w-full' : 'w-fit'} `}>Contact us for a free consultation</Link>
 
-                            
+
 
                         </div>
 
@@ -66,54 +105,47 @@ export default function Proptech() {
                 <Counter3 />
 
                 {/* Core Values */}
-                {!isMobile && (<section className="">
-                    <h3 className="mt-12 text-4xl font-bold text-center mb-16">Core Values</h3>
-                    <div className='px-3 w-full'>
-                        <div className="mt-16 mb-12 flex justify-center items-center ">
-                            <div className={`flex ${isMobile ? "flex-row flex-wrap" : "flex-row"} gap-x-4 gap-y-4`} >
-                                <div className="ebt">
-                                    <div className="title  px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br" style={{ width: isMobile ? '180px' : '250px', height: isMobile ? '180px' : '250px' }} >
-                                        <h4 className="mt-3 text-2xl">
-                                            Innovation
-                                        </h4>
+                <section className="mt-12 mb-16">
+                    <h3 className="text-4xl font-bold text-center">Core Values</h3>
+                    
+                        {isMobile ? (
+                            <Carousel
+                                showArrows={false}
+                                autoPlay={false}
+                                infiniteLoop={true}
+                                showStatus={false}
+                                useKeyboardArrows={true}
+                                dynamicHeight={true}
+                            >
+                                {coreValues.map((value, index) => (
+                                    <div key={index} className="ebt p-2 flex justify-center items-center">
+                                        <div className="title px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
+                                            style={{ width: '250px', height: '250px' }}>
+                                            <h4 className="mt-3 text-2xl">{value.title}</h4>
+                                            <h6 className="mt-3 text-black font-medium">{value.description}</h6>
+                                        </div>
+                                    </div>
+                                ))}
+                            </Carousel>
 
-                                        <h6 className="mt-3 text-black  font-medium">
-                                            Embracing new technologies to deliver groundbreaking solutions.
-                                        </h6>
+
+                    ) : (
+                    <div className='px-3 w-full mt-16 mb-12 flex justify-center items-center'>
+                        <div className={`flex flex-row gap-x-4 gap-y-4`}>
+                            {coreValues.map((value, index) => (
+                                <div key={index} className="ebt">
+                                    <div className="title px-3 py-5 border-2 text-center justify-center rounded-2xl"
+                                        style={{ width: '250px', height: '250px' }}>
+                                        <h4 className="mt-3 text-2xl">{value.title}</h4>
+                                        <h6 className="mt-3 text-black font-medium">{value.description}</h6>
                                     </div>
                                 </div>
-                                <div className="ebt">
-                                    <div className="title px-2 py-5  border-2 text-center justify-center rounded-2xl " style={{ width: isMobile ? '180px' : '250px', height: isMobile ? '180px' : '250px' }}>
-                                        <h4 className="mt-3 text-2xl">
-                                            Client-Centricity
-                                        </h4>
-                                        <h6 className="mt-3 text-black  font-medium">
-                                            Building strong partnerships based on trust and collaboration.                                    </h6>
-                                    </div>
-                                </div>
-                                <div className="ebt">
-                                    <div className="title px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '250px', height: '250px' }}>
-                                        <h4 className="mt-3 text-2xl">
-                                            Expertise
-                                        </h4>
-                                        <h6 className="mt-3 text-black  font-medium" >
-                                            Leveraging our deep industry knowledge to drive results.                                    </h6>
-                                    </div>
-                                </div>
-                                <div className="ebt">
-                                    <div className="title px-2 py-5 border-2 text-center justify-center rounded-2xl" style={{ width: '250px', height: '250px' }}>
-                                        <h4 className="mt-3 text-2xl">
-                                            Excellence                                    </h4>
-                                        <h6 className="mt-3 text-black  font-medium" >
-                                            Delivering exceptional products and services that exceed expectations.                                       </h6>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
+                    )}
 
                 </section>
-                )}
 
 
 

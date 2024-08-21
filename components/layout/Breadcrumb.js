@@ -44,7 +44,7 @@ function Breadcrumb({ breadcrumbTitle }) {
             style: "text-white multiple-shadows"
         },
         {
-            id: "Manpower Staffing",
+            id: "Talent Acquisition",
             backgroundImageUrl: "/assets/img/banner/manpower_banner2.png",
             backgroundMobile: "/assets/img/banner/manpower_mobile.png",
             style: "text-white multiple-shadows",

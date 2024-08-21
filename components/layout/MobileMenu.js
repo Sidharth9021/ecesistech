@@ -61,7 +61,7 @@ export default function MobileMenu({ handleMobileMenu }) {
                             <ul onClick={handleMobileMenu} style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                 <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                                 <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                                <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li>
+                                <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li>
                                 <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                             </ul>
                         </li>
@@ -71,7 +71,7 @@ export default function MobileMenu({ handleMobileMenu }) {
                         <li><Link href={`/services-details/web-app`}>Web Application</Link></li>
                         <li ><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                         <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                        <li><Link href={`/services-details/manpower-staffing`}>Manpower Staffing</Link></li> */}
+                        <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li> */}
                         {/* <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li> */}
                     </ul>
                     <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleToggle(3)}><span className="plus-line" /></div>
