@@ -36,7 +36,7 @@ const Modal = ({ showModal, setShowModal, title, description, imageUrl, linkedIn
               }}
               onClick={e => e.stopPropagation()}
           >
-              <img src={imageUrl} alt="Profile" className={`md:w-1/3 md:h-auto object-cover rounded-lg ${isMobile ? 'w-full' : 'h-full'}`} />
+              <img src={imageUrl} alt="Profile" className={`md:w-1/3 md:h-auto object-cover rounded-lg ${isMobile ? 'w-full mt-3' : 'h-full'}`} />
 
               <div className='flex flex-col w-full mt-4 md:mt-0 md:ml-3 overflow-y-auto' style={{ maxHeight: '70vh' }}>
                   <h1 className="text-xl text-center sm:text-left sm:text-2xl font-bold">{title}</h1>
@@ -48,10 +48,10 @@ const Modal = ({ showModal, setShowModal, title, description, imageUrl, linkedIn
 
               <button
                   onClick={() => setShowModal(false)}
-                  className="absolute top-0 right-2 w-10 p-2"
+                  className="absolute top-2 right-2 w-10 p-2"
                   aria-label="Close modal"
               >
-                  &times;
+                  <img src="/assets/img/icon/close.png" alt='' className=''/>
               </button>
           </div>
       </div>

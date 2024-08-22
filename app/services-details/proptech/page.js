@@ -119,7 +119,7 @@ export default function Proptech() {
                             >
                                 {coreValues.map((value, index) => (
                                     <div key={index} className="ebt p-2 flex justify-center items-center">
-                                        <div className="title px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
+                                        <div className="title bg-[#f9ba00] border-[#f9ba00] px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
                                             style={{ width: '250px', height: '250px' }}>
                                             <h4 className="mt-3 text-2xl">{value.title}</h4>
                                             <h6 className="mt-3 text-black font-medium">{value.description}</h6>
@@ -134,7 +134,7 @@ export default function Proptech() {
                         <div className={`flex flex-row gap-x-4 gap-y-4`}>
                             {coreValues.map((value, index) => (
                                 <div key={index} className="ebt">
-                                    <div className="title px-3 py-5 border-2 text-center justify-center rounded-2xl"
+                                    <div className="title bg-[#f9ba00] border-[#f9ba00] px-3 py-5 border-2 text-center justify-center rounded-2xl"
                                         style={{ width: '250px', height: '250px' }}>
                                         <h4 className="mt-3 text-2xl">{value.title}</h4>
                                         <h6 className="mt-3 text-black font-medium">{value.description}</h6>

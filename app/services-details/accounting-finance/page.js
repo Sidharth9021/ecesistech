@@ -79,7 +79,7 @@ function AccountingServices() {
 
                                                         <div className={`grid ${isMobile ? "grid-cols-1" : "grid-cols-3"} gap-x-4 gap-y-4`}>
                                                             <div className="ebt">
-                                                                <div className="title  px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br" style={{ width: '390px', height: '275px' }} >
+                                                                <div className="title bg-[#e6e7e8] border-[#e6e7e8] px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br" style={{ width: '390px', height: '275px' }} >
                                                                     <span style={{ fontSize: '65px' }}>01</span>
                                                                     <h4 className="mt-3 text-2xl">
                                                                         Bookkeeping
@@ -91,7 +91,7 @@ function AccountingServices() {
                                                                 </div>
                                                             </div>
                                                             <div className="ebt">
-                                                                <div className="title px-2 py-5  border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px', paddingTop: '26px', paddingBottom: '26px' }}>
+                                                                <div className="title bg-[#e6e7e8] border-[#e6e7e8] px-2 py-5  border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px', paddingTop: '26px', paddingBottom: '26px' }}>
                                                                     <span style={{ fontSize: '65px' }}>02</span>
                                                                     <h4 className="mt-3 text-2xl">
                                                                         Payroll Management
@@ -103,7 +103,7 @@ function AccountingServices() {
                                                                 </div>
                                                             </div>
                                                             <div className="ebt">
-                                                                <div className="title px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
+                                                                <div className="title bg-[#e6e7e8] border-[#e6e7e8] px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
                                                                     <span style={{ fontSize: '65px' }}>03</span>
                                                                     <h4 className="mt-3 text-2xl">
                                                                         Purchase Order Matching
@@ -118,7 +118,7 @@ function AccountingServices() {
                                                         </div>
                                                         <div className={` flex justify-center mt-4 ${isMobile ? "flex-col" : ""} `}>
                                                             <div className="ebt">
-                                                                <div className="title px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
+                                                                <div className="title bg-[#e6e7e8] border-[#e6e7e8] px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
                                                                     <span style={{ fontSize: '65px' }}>04</span>
                                                                     <h4 className="mt-3 text-2xl">
                                                                         Accounts Payable & Reconciliation
@@ -129,7 +129,7 @@ function AccountingServices() {
                                                                 </div>
                                                             </div>
                                                             <div className={`ebt ${isMobile ? "mt-6" : "ml-6"} `}>
-                                                                <div className="title px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
+                                                                <div className="title bg-[#e6e7e8] border-[#e6e7e8] px-2 py-5 border-2 text-center justify-center rounded-2xl " style={{ width: '390px', height: '275px' }}>
                                                                     <span style={{ fontSize: '65px' }}>05</span>
                                                                     <h4 className="mt-3 text-2xl">
                                                                         Tax Preparation, Filings and Reporting

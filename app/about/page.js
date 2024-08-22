@@ -16,12 +16,16 @@ export default function About() {
             title: 'T K Velayudham',
             designation: 'CEO',
             description: (
-                <p className="text-xs">
-                    T.K. Velayudham is a visionary leader and founder with over 35 years of expertise in establishing and driving successful ventures for clients across the globe. He began his professional journey at Keltron, where he served as an Assistant Manager from 1983 to 1993. During this time, he was the Site-in-Charge for the Metro Railway Automated Fare Collection (AFC) ticketing machine project in Calcutta (now Kolkata), a pioneering initiative that marked the beginning of his long and illustrious career. In 1995, T.K. Velayudham took on the role of Head of Medical Equipment at Terumo Penpol Limited, where he led the development and manufacturing of blood bank equipment. Over the next four years, he played a crucial role in establishing the company as a key player in the healthcare industry, particularly in the production of advanced medical equipment. His entrepreneurial spirit led him to found Enter Technologies Pvt. Ltd. in Technopark in 1999, where he served as Managing Director until 2005. Under his leadership, the company grew into a successful healthcare BPO firm catering to U.S. clients, demonstrating his ability to navigate the complexities of international business. In 2005, he became the Managing Director of Wins Infotek Pvt. Ltd., a software company he promoted as a joint venture with Wins Ltd., Japan. His leadership was instrumental in the company's growth and eventual acquisition by GES, after which it became Kimball Electronics, a Nasdaq-listed company. He held this position until 2009, during which time he expanded the company’s capabilities and market reach. Following this, T.K. Velayudham served as Senior Vice President of New Business Initiatives at Accentia Technologies Ltd., from 2009 to 2010. In this role, he was responsible for business development and setting up operations for one of the largest providers of medical transcription, healthcare revenue cycle management (HRCM), billing, and coding services in India. In 2010, drawing on his vast experience and entrepreneurial acumen, he founded ECESIS, a venture that continues to thrive under his leadership. ECESIS has seen immense growth, becoming a leader in its field, and reflecting T.K. Velayudham’s sustained commitment to excellence and innovation.
-                </p>
+                <p className="text-sm">
+                    T.K. Velayudham is a visionary leader with over 35 years of expertise in creating and steering successful ventures across the globe. His career began at Keltron, where he was instrumental in the Metro Railway AFC project in Kolkata, a pioneering initiative in automated fare collection. He then led the medical equipment division at Terumo Penpol, establishing the company as a prominent player in healthcare.<br/><br/>
+
+                    In 1999, he founded Enter Technologies in Technopark, where he transformed the company into a successful healthcare BPO serving U.S. clients. He continued his entrepreneurial journey by promoting Wins Infotek, guiding its growth and eventual acquisition by GES, after which it became Kimball Electronics. As Senior Vice President at Accentia Technologies, he spearheaded business development in healthcare services.<br/><br/>
+
+                    In 2010, he founded ECESIS, a venture that has since thrived under his leadership, becoming a leader in its field and reflecting his ongoing commitment to innovation and excellence.                
+                    </p>
             ),
-            imageUrl: '/assets/img/team/h4_team_img01.jpg',
-            linkedInUrl: 'https://www.linkedin.com/in/johndoe'
+            imageUrl: '/assets/img/team/TKV.png',
+            linkedInUrl: 'https://www.linkedin.com/in/velayudham-tk-ecesis/'
         },
         {
             title: 'Karthik K V',
@@ -33,7 +37,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Karthik.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/karthik-k-v-2403891a/'
         },
         {
             title: 'Anil Appukuttan',
@@ -46,7 +50,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/h4_team_img01.jpg',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/anil-ar-001/'
         },
         {
             title: 'Saritha N S',
@@ -59,7 +63,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Saritha.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/sarithans/'
         },
         {
             title: 'Shebin Koshy',
@@ -71,7 +75,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Shebin.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/shebin-koshy-050543160/'
         },
         {
             title: 'Pradeep M',
@@ -82,7 +86,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Pradeep.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'hhttps://www.linkedin.com/in/pradeep-maddipoti-5a2ab4125/'
         },
         {
             title: 'Sathi Devi',
@@ -93,7 +97,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Sathi.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/sathi-devi-752aa725/'
         },
         {
             title: 'Arun Sankar',
@@ -106,7 +110,7 @@ export default function About() {
                 </p>
             ),
             imageUrl: '/assets/img/team/Arun.png',
-            linkedInUrl: 'https://www.linkedin.com/in/janesmith'
+            linkedInUrl: 'https://www.linkedin.com/in/arun-sankar-697837185/'
         },
 
     ];
@@ -167,7 +171,7 @@ export default function About() {
                                 <div className="col-lg-6 col-md-9 col-sm-10">
                                     <div className="about__img-wrap-four">
                                         <img src="/assets/img/images/inner_about01.jpg" alt="" />
-                                        <img src="/assets/img/images/inner_about02.jpg" alt="" />
+                                        {/* <img src="/assets/img/images/inner_about02.jpg" alt="" /> */}
                                         <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{ marginLeft: isMobile ? '50px' : '', }} alt="" />
 
                                         {/* <div className="about__award-box">
@@ -206,9 +210,9 @@ export default function About() {
                                         {/* <Link href="/services" className="btn">Know More</Link> */}
                                     </div>
                                 </div>
-                                <div className={`services__details-inner-img ${isMobile ? '' : 'justify-center'}  flex mt-6`} >
-                                    <img src="/assets/img/services/h3_services_img01.jpg" className="object-cover object-top" style={{ height: isMobile ? "200px" : "350px", width: isMobile ? '100%' : "60%" }} alt="" />
-                                    <VideoPopup />
+                                <div className={`services__details-inner-img relative ${isMobile ? '' : 'justify-center'}  flex mt-6`} >
+                                    <img src="/assets/img/images/thumbnail.png" className="object-fit" style={{ width: isMobile ? '100vw' : "50vw" }} alt="" />
+                                    <VideoPopup url={'sSjS2Fm_R9M'} />
 
                                 </div>
                             </div>
@@ -219,13 +223,13 @@ export default function About() {
                     {/* team-area */}
                     <section className="team__area-four relative">
                         <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-6">
-                                    <div className="section-title text-center mb-40">
+                            <div className="row justify-center">
+                                
+                                    <div className="section-title text-center mb-20">
                                         <span className="sub-title">MEET OUR TEAM</span>
-                                        <h2 className="title">Business Expertise Is Here <br /> For You Can Trust</h2>
+                                        <h2 className="title w-full">Meet the visionary leaders driving Ecesis' success, each bringing a wealth of experience, innovation, and dedication to our mission of excellence.</h2>
                                     </div>
-                                </div>
+                              
                             </div>
                             {modalIndex !== null && showModal && (
                                 <Modal
@@ -247,13 +251,14 @@ export default function About() {
                                         <div className="team__thumb-four shine-animate" >
                                             <img src="/assets/img/team/TKV.png" alt="" />
                                         </div>
-                                        <div className="team__content-four bg-slate-200">
+                                        <div className="team__content-four bg-slate-200 relative">
                                             <h2 className="title">T K Velayudham</h2>
                                             <span className="text-black">CEO</span>
+                                            <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
                                 <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8 z-0 relative" onClick={() => { handlePageClick(1) }}>
                                     <div className="team__item-four shine-animate-item">
@@ -263,6 +268,7 @@ export default function About() {
                                         <div className="team__content-four bg-slate-200">
                                             <h2 className="title">Karthik K V</h2>
                                             <span className="text-black">Director</span>
+                                            <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                         </div>
                                     </div>
@@ -277,6 +283,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title">Anil Appukuttan</h2>
                                                 <span className="text-black">Director <br /> (North America)</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>
@@ -290,6 +297,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Saritha N S</Link></h2>
                                                 <span className="text-black">Vice President <br />Software Engineering</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>
@@ -303,6 +311,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Shebin Koshy</Link></h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>
@@ -318,6 +327,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Pradeep M</Link></h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>
@@ -331,6 +341,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Sathi Devi</Link></h2>
                                                 <span className="text-black">General Manager <br /> Finance</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>
@@ -344,6 +355,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Arun Sankar</Link></h2>
                                                 <span className="text-black">Asst. Vice President <br /> Business Development</span>
+                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
 
                                             </div>
                                         </div>

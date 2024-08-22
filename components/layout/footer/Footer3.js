@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import Request3 from "@/components/sections/Request3";
 import LazyLoad from 'react-lazyload';
+import Marquee_Footer from '@/components/sections/Maquee_footer';
 
 export default function Footer3() {
 
@@ -74,6 +75,7 @@ export default function Footer3() {
                                             <span className='text-pink-400'>Transform.</span>
                                             <span>Grow.</span>
                                         </h3>
+                                        {/* <Marquee_Footer/> */}
                                     </LazyLoad>
                                     <div className="">
                                         <Request3 />

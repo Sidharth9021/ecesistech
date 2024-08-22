@@ -53,7 +53,7 @@ export default function MobileMenu({ handleMobileMenu }) {
                             <ul onClick={handleMobileMenu} style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                 <li><Link href="/services-details/proptech">PropTech</Link></li>
                                 <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
-                                <li><Link href={`/services-details/automation`}>Automated Solutions</Link></li>
+                                <li><Link href={`/services-details/automation`}>Business Process Automation</Link></li>
                             </ul>
                         </li>
                         <li className="menu-item-has-children">
