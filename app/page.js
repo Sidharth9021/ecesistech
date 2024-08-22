@@ -7,6 +7,7 @@ import Request3 from "@/components/sections/Request3"
 import MainService from "@/components/sections/MainService"
 import Marquee2 from "@/components/sections/Marquee2"
 import withLoading from "./withLoading"
+import LazyLoad from "react-lazyload"
 
 function Home() {
     return (
@@ -17,8 +18,10 @@ function Home() {
                 <Marquee2 />
                 {/* <Brand3 /> */}
                 <About3 />
-                <Counter3 />
-                <MainService/>
+                <LazyLoad height={100} offset={250} once>
+                    <Counter3 />
+                </LazyLoad>
+                <MainService />
                 {/* <Services4/> */}
                 {/* <Choose3 /> */}
                 {/* <Project3 /> */}

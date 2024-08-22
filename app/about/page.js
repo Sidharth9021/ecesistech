@@ -7,6 +7,7 @@ import Link from "next/link"
 import React, { useState, useEffect } from 'react';
 import VideoPopup from "@/components/elements/PopupVideo"
 import Modal from "../Modal"
+import LazyLoad from "react-lazyload"
 
 export default function About() {
     let Nothome = true;
@@ -17,12 +18,12 @@ export default function About() {
             designation: 'CEO',
             description: (
                 <p className="text-sm">
-                    T.K. Velayudham is a visionary leader with over 35 years of expertise in creating and steering successful ventures across the globe. His career began at Keltron, where he was instrumental in the Metro Railway AFC project in Kolkata, a pioneering initiative in automated fare collection. He then led the medical equipment division at Terumo Penpol, establishing the company as a prominent player in healthcare.<br/><br/>
+                    T.K. Velayudham is a visionary leader with over 35 years of expertise in creating and steering successful ventures across the globe. His career began at Keltron, where he was instrumental in the Metro Railway AFC project in Kolkata, a pioneering initiative in automated fare collection. He then led the medical equipment division at Terumo Penpol, establishing the company as a prominent player in healthcare.<br /><br />
 
-                    In 1999, he founded Enter Technologies in Technopark, where he transformed the company into a successful healthcare BPO serving U.S. clients. He continued his entrepreneurial journey by promoting Wins Infotek, guiding its growth and eventual acquisition by GES, after which it became Kimball Electronics. As Senior Vice President at Accentia Technologies, he spearheaded business development in healthcare services.<br/><br/>
+                    In 1999, he founded Enter Technologies in Technopark, where he transformed the company into a successful healthcare BPO serving U.S. clients. He continued his entrepreneurial journey by promoting Wins Infotek, guiding its growth and eventual acquisition by GES, after which it became Kimball Electronics. As Senior Vice President at Accentia Technologies, he spearheaded business development in healthcare services.<br /><br />
 
-                    In 2010, he founded ECESIS, a venture that has since thrived under his leadership, becoming a leader in its field and reflecting his ongoing commitment to innovation and excellence.                
-                    </p>
+                    In 2010, he founded ECESIS, a venture that has since thrived under his leadership, becoming a leader in its field and reflecting his ongoing commitment to innovation and excellence.
+                </p>
             ),
             imageUrl: '/assets/img/team/TKV.png',
             linkedInUrl: 'https://www.linkedin.com/in/velayudham-tk-ecesis/'
@@ -218,18 +219,21 @@ export default function About() {
                             </div>
                         </div>
                     </section>
-                    <Counter3 />
+                    <LazyLoad height={100} offset={250} once>
+                        <Counter3 />
+                    </LazyLoad>
+
 
                     {/* team-area */}
                     <section className="team__area-four relative">
                         <div className="container">
                             <div className="row justify-center">
-                                
-                                    <div className="section-title text-center mb-20">
-                                        <span className="sub-title">MEET OUR TEAM</span>
-                                        <h2 className="title w-full">Meet the visionary leaders driving Ecesis' success, each bringing a wealth of experience, innovation, and dedication to our mission of excellence.</h2>
-                                    </div>
-                              
+
+                                <div className="section-title text-center mb-20">
+                                    <span className="sub-title">MEET OUR TEAM</span>
+                                    <h2 className="title w-full">Meet the visionary leaders driving Ecesis' success, each bringing a wealth of experience, innovation, and dedication to our mission of excellence.</h2>
+                                </div>
+
                             </div>
                             {modalIndex !== null && showModal && (
                                 <Modal
@@ -254,7 +258,7 @@ export default function About() {
                                         <div className="team__content-four bg-slate-200 relative">
                                             <h2 className="title">T K Velayudham</h2>
                                             <span className="text-black">CEO</span>
-                                            <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                            <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                         </div>
 
@@ -268,7 +272,7 @@ export default function About() {
                                         <div className="team__content-four bg-slate-200">
                                             <h2 className="title">Karthik K V</h2>
                                             <span className="text-black">Director</span>
-                                            <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                            <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                         </div>
                                     </div>
@@ -283,7 +287,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title">Anil Appukuttan</h2>
                                                 <span className="text-black">Director <br /> (North America)</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
@@ -297,7 +301,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Saritha N S</Link></h2>
                                                 <span className="text-black">Vice President <br />Software Engineering</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
@@ -311,7 +315,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Shebin Koshy</Link></h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
@@ -327,7 +331,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Pradeep M</Link></h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
@@ -341,7 +345,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Sathi Devi</Link></h2>
                                                 <span className="text-black">General Manager <br /> Finance</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
@@ -355,7 +359,7 @@ export default function About() {
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title"><Link href="/team-details">Arun Sankar</Link></h2>
                                                 <span className="text-black">Asst. Vice President <br /> Business Development</span>
-                                                <img src="/assets/img/icon/arrow2.png"  alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]"/>
+                                                <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
                                             </div>
                                         </div>
