@@ -83,7 +83,7 @@ function Breadcrumb({ breadcrumbTitle }) {
         {
             id: "Business Process Automation",
             backgroundImageUrl: "/assets/img/banner/BPA_banner.png",
-            backgroundMobile: "/assets/img/banner/ai_mobile.png",
+            backgroundMobile: "/assets/img/banner/BPA_banner_mobile.png",
             style: "text-white"
         },
 

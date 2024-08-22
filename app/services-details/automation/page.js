@@ -121,11 +121,11 @@ export default function AutoServices() {
                                                     <>
                                                         <div className="flex flex-col md:flex-row justify-center items-center mt-5">
                                                             <div className={`w-full`}>
-                                                            <h2 className="title text-3xl text-center">Business-specific RPA services</h2>
-                                                            <img src="/assets/img/images/bpa_main.gif" alt="" className="w-[300px] mx-auto -mt-5" />
-                                                            <p className="mt-3 text-center">Increase operational efficiency, reduce labor costs, and streamline your processes by automating repetitive and large-scale tasks with our advanced workflow automation services.
-                                                            Our bots will help improve productivity by preventing delays and removing workflow bottlenecks.
-                                                        </p>                                                            </div>
+                                                                <h2 className="title text-3xl text-center">Business-specific RPA services</h2>
+                                                                <img src="/assets/img/images/bpa_main.gif" alt="" className="w-[300px] mx-auto -mt-5" />
+                                                                <p className="mt-3 text-center">Increase operational efficiency, reduce labor costs, and streamline your processes by automating repetitive and large-scale tasks with our advanced workflow automation services.
+                                                                    Our bots will help improve productivity by preventing delays and removing workflow bottlenecks.
+                                                                </p>                                                            </div>
                                                         </div>
 
 
@@ -465,27 +465,32 @@ export default function AutoServices() {
                                             <div className="">
                                                 <h2 className="title text-2xl text-center">Benefits of Business Process Automation implementation with ECESIS</h2>
                                                 <div className="relative mt-5">
-                                                    <img src="/assets/img/images/automation_implement.png" alt="" className="w-full md:w-[750px] mx-auto rounded-xl" />
+                                                    {isMobile ? (<>
+                                                        <img src="/assets/img/images/bpa_implement_mobile.png" alt="" className="" />
+                                                    </>) : (<>
+                                                        <img src="/assets/img/images/automation_implement.png" alt="" className="w-full md:w-[750px] mx-auto rounded-xl" />
 
-                                                    <div className="absolute top-[28px] left-[100px] md:top-[70px] md:left-[490px]">
-                                                        <h2 className="text-[6px] md:text-sm">Time optimization</h2>
-                                                        <p className="text-[4px] md:text-xs w-[150px] md:w-[400px]">Spend up to 80% less time on repetitive and high-volume tasks by implementing automation solutions that work 24/7.</p>
-                                                    </div>
+                                                        <div className="absolute top-[28px] left-[100px] md:top-[70px] md:left-[490px]">
+                                                            <h2 className="text-[6px] md:text-sm">Time optimization</h2>
+                                                            <p className="text-[4px] md:text-xs w-[150px] md:w-[400px]">Spend up to 80% less time on repetitive and high-volume tasks by implementing automation solutions that work 24/7.</p>
+                                                        </div>
 
-                                                    <div className="absolute top-[195px] left-[490px]">
-                                                        <h2 className="text-sm">Increased data quality</h2>
-                                                        <p className="text-xs w-[400px]">Minimize human error and improve data quality and accuracy with a greater degree of automation best practices.</p>
-                                                    </div>
+                                                        <div className="absolute top-[195px] left-[490px]">
+                                                            <h2 className="text-sm">Increased data quality</h2>
+                                                            <p className="text-xs w-[400px]">Minimize human error and improve data quality and accuracy with a greater degree of automation best practices.</p>
+                                                        </div>
 
-                                                    <div className="absolute bottom-[175px] left-[490px]">
-                                                        <h2 className="text-sm">Enhanced business process performance</h2>
-                                                        <p className="text-xs w-[400px]">Improve your productivity and employee performance by implementing a custom automation solution.</p>
-                                                    </div>
+                                                        <div className="absolute bottom-[175px] left-[490px]">
+                                                            <h2 className="text-sm">Enhanced business process performance</h2>
+                                                            <p className="text-xs w-[400px]">Improve your productivity and employee performance by implementing a custom automation solution.</p>
+                                                        </div>
 
-                                                    <div className="absolute bottom-[50px] left-[490px]">
-                                                        <h2 className="text-sm">Quick adoption</h2>
-                                                        <p className="text-xs w-[400px]">Integrate an RPA solution with minimal onboarding effort and development costs.</p>
-                                                    </div>
+                                                        <div className="absolute bottom-[50px] left-[490px]">
+                                                            <h2 className="text-sm">Quick adoption</h2>
+                                                            <p className="text-xs w-[400px]">Integrate an RPA solution with minimal onboarding effort and development costs.</p>
+                                                        </div>
+                                                    </>)}
+
 
 
 
