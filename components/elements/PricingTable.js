@@ -13,7 +13,7 @@ export default function PricingTable() {
                 <span className={`pricing__tab-btn annual_tab_title ${isToggled ? "active" : ""}`}>Yearly</span>
             </div> */}
             <div className="row justify-content-center">
-                <div className="col-lg-6 col-md-6 col-sm-8">
+                <div className="col-lg-4 col-md-6 col-sm-8">
                     <div className="pricing__box">
                         <div className="pricing__head">
                             <h5 className="title">Basic Service Package</h5>
@@ -48,7 +48,7 @@ export default function PricingTable() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6 col-md-6 col-sm-8">
+                <div className="col-lg-4 col-md-6 col-sm-8">
                     <div className="pricing__box">
                         <div className="pricing__head">
                             <h5 className="title">Premium Service Package</h5>
