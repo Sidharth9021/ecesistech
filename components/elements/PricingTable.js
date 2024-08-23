@@ -107,7 +107,7 @@ export default function PricingTable() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="col-lg-4 col-md-6 col-sm-8">
+                <div className="col-lg-4 col-md-6 col-sm-8">
                     <div className="pricing__box">
                         <div className="pricing__head">
                             <h5 className="title">Corporate Plan</h5>
@@ -144,7 +144,7 @@ export default function PricingTable() {
                             <Link href="#" className="btn">Get this plan Now</Link>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </div>
         </>
     )

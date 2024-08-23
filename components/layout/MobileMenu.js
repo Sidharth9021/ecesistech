@@ -20,27 +20,27 @@ export default function MobileMenu({ handleMobileMenu }) {
 
                 </li>
                 <li className="menu-item-has-children" >
-                    <Link href="#" >Services</Link>
+                    <Link href="#" onClick={() => handleToggle('services')}>Services</Link>
                     <ul className="sub-menu" style={{ display: isActive['services'] ? "block" : "none" }}>
                         <li className="menu-item-has-children">
-                            <Link href="#" >Digital Solutions</Link>
+                            <Link href="#" onClick={(e) => { e.stopPropagation(); handleToggle('digital'); }}>Digital Solutions</Link>
                             <ul className="sub-menu" style={{ display: isActive['digital'] ? "block" : "none" }}>
                                 <li><Link href="/services-details/proptech">PropTech</Link></li>
                                 <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
                                 <li><Link href={`/services-details/automation`}>Business Process Automation</Link></li>
                             </ul>
-                            <div className={isActive['digital'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" onClick={(e) => { e.stopPropagation(); handleToggle('digital'); }}/></div>
+                            <div className={isActive['digital'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" /></div>
 
                         </li>
                         <li className="menu-item-has-children">
-                            <Link href="#" >Business Consulting</Link>
+                            <Link href="#" onClick={(e) => { e.stopPropagation(); handleToggle('business'); }}>Business Consulting</Link>
                             <ul className="sub-menu" style={{ display: isActive['business'] ? "block" : "none" }}>
                                 <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
                                 <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
                                 <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li>
                                 <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
                             </ul>
-                            <div className={isActive['business'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" onClick={(e) => { e.stopPropagation(); handleToggle('business'); }} /></div>
+                            <div className={isActive['business'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" /></div>
 
                         </li>
                         {/* <li><Link href={`/services-details/artificial-intelligence`}>Artificial Intelligence</Link></li>
@@ -52,7 +52,7 @@ export default function MobileMenu({ handleMobileMenu }) {
                         <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li> */}
                         {/* <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li> */}
                     </ul>
-                    <div className={isActive['services'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" onClick={() => handleToggle('services')}/></div>
+                    <div className={isActive['services'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" /></div>
 
                 </li>
                 {/* <li className="menu-item-has-children"><Link href="#">Products</Link>
