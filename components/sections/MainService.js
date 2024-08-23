@@ -134,20 +134,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/AI.webp" className="" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Artificial Intelligence                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
+                                                    <h2 className="title"><Link href="#">Artificial Intelligence</Link></h2>
                                                     <p>Harness the power of Artificial Intelligence (AI) to propel your business to new heights. Our data-driven approach leverages cutting-edge AI and machine learning to transform your business. Make smarter decisions, streamline processes, and craft personalized customer experiences that drive lasting success</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -166,21 +153,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Automation.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/automation">Business Process Automation</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Business Process Automation
-                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
+                                                    <h2 className="title"><Link href="#">Business Process Automation</Link></h2>
                                                     <p>Optimize your business operations with automation. Our strategic approach enhances efficiency, reduces costs, and streamlines processes, creating a solid foundation for sustained success.
                                                         <br /><br />
                                                         Crafted to fit your unique business requirements, our solutions enhance speed and accuracy while reducing costs and streamlining FTE management, keeping you ahead in the competitive landscape.                                                    </p>
@@ -201,20 +174,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Cloud.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/cloud-infrastructure">Cloud Infrastructure</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Cloud Infrastructure                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
+                                                    <h2 className="title"><Link href="#">Cloud Infrastructure</Link></h2>
                                                     <p>Drive substantial business growth through robust cloud infrastructure. Our comprehensive suite of services including VPN, VPS, and dedicated servers enhances your operational capabilities. These offerings ensure a secure, scalable, and highly available infrastructure, fostering a resilient environment for sustained expansion.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">
@@ -233,20 +193,6 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Web.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/software-development">Software Development</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Software Development                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
                                                     <h2 className="title"><Link href="#">Software Development</Link></h2>
                                                     <p>Tailored to meet the unique needs of your business, our web application solutions enhance online visibility and operational efficiency, ensuring you stay ahead in a competitive marketplace.</p>
                                                     <div className="about__list-box">
@@ -266,20 +212,6 @@ export default function MainService() {
                                                     <img src="/assets/img/services/RealEstate.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/real-estate-valuation">Real Estate Valuation</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Real Estate Valuation                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
                                                     <h2 className="title"><Link href="#">Real Estate Valuation</Link></h2>
                                                     <p>
                                                         For over a decade, we have partnered with realtors, brokers, and real estate companies with precise valuations and Comparative Market Analysis (CMA). Our commitment to high-quality, value-driven deliverables ensures that you remain proactive, decisive, and adaptable as your business evolves and expands.
@@ -300,20 +232,6 @@ export default function MainService() {
                                                     <img src="/assets/img/services/Accounting.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/accounting-finance">Accounting & Finance</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Accounting & Finance                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
                                                     <h2 className="title"><Link href="#">Accounting & Finance</Link></h2>
                                                     <p>We specialize in unlocking accounting gaps and navigating the complexities of tax compliance with confidence and ease. Our suite of services is designed to bring harmony, accuracy, and strategic insight to all your financial processes.</p>
                                                     <div className="about__list-box">
@@ -336,20 +254,6 @@ export default function MainService() {
                                                     <img src="/assets/img/services/ManpowerStaffing.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/manpower-staffing">Manpower Staffing</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Manpower Staffing                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
                                                     <h2 className="title"><Link href="#">Manpower Staffing</Link></h2>
                                                     <p>We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing <br /> end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
                                                     <div className="about__list-box">
@@ -369,21 +273,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/DigitalMarketing.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title">
-                                                        {isMobile ? (
-                                                            <>
-                                                                <Link href="/services-details/digital-marketing">Digital Marketing</Link>
-                                                            </>
-                                                        ) : (
-                                                            <>
-                                                                Digital Marketing                                                            </>
-                                                        )
-
-                                                        }
-
-
-                                                    </h2>
-                                                    <h2 className="title"><Link href="/services-details/digital-marketing">Digital Marketing</Link></h2>
+                                                    <h2 className="title"><Link href="#">Digital Marketing</Link></h2>
                                                     <p>
                                                         We help you in positioning and promoting your brand, bringing in new customers at optimum costs and helping you win new & exciting business deals that improve your brand value.
                                                         <br /><br />

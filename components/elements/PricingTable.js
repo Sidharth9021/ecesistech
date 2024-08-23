@@ -16,29 +16,29 @@ export default function PricingTable() {
                 <div className="col-lg-4 col-md-6 col-sm-8">
                     <div className="pricing__box">
                         <div className="pricing__head">
-                            <h5 className="title">Basic Service Package</h5>
+                            <h5 className="title mr-3">Basic Service Package</h5>
                         </div>
                         <div className={`pricing__price ${isToggled ? "change-subs-duration" : ""}`}>
                             <h5>
-                            Basic Order Acceptance
+                                Basic Order Acceptance
                             </h5>
-                            <h2 className="price monthly_price"><strong>$</strong> 2.00 <span>/ Order</span></h2>
+                            {/* <h2 className="price monthly_price"><strong>$</strong> 2.00 <span>/ Order</span></h2> */}
                             {/* <h2 className="price annual_price"><strong>$</strong> 149.00 <span>/ Month</span></h2> */}
                         </div>
                         <div className="pricing__list">
                             <ul className="list-wrap">
-                            <h5>
-                            Pricing:
-                            </h5>
+                                <h5 className="font-bold text-lg mb-3">
+                                    Pricing:
+                                </h5>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-6 mr-2' />
                                     Basic Order Acceptance: $2 per order
                                 </li>
-                                <h5>
-                                Services Included:
-                            </h5>
+                                <h5 className="font-bold text-lg mb-3">
+                                    Services Included:
+                                </h5>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-5'/>
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-[96px] mr-2' />
                                     This package offers straightforward order acceptance without data processing, ideal for clients who manage their own data entry and analysis.
                                 </li>
                             </ul>
@@ -54,51 +54,39 @@ export default function PricingTable() {
                             <h5 className="title">Premium Service Package</h5>
                         </div>
                         <div className={`pricing__price ${isToggled ? "change-subs-duration" : ""}`}>
-                        <h5>
-                        BPO Advantage Plus
+                            <h5>
+                                BPO Advantage Plus
                             </h5>
-                            <h2 className="price monthly_price"><strong>$</strong> Custom <span>/ Order</span></h2>
+                            {/* <h2 className="price monthly_price"><strong>$</strong> Custom <span>/ Order</span></h2> */}
                             {/* <h2 className="price annual_price"><strong>$</strong> 229.00 <span>/ Month</span></h2> */}
                         </div>
                         <div className="pricing__list">
                             <ul className="list-wrap">
-                            <h5>
-                            Pricing:
-                            </h5>
+                                <h5 className="font-bold text-lg mb-3">
+                                    Services Included:
+                                </h5>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4' />
-                                    Enhanced Order Acceptance (with data processing): $1 per order
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-6 mr-2' />
+                                    Full-scale order management, including advanced data processing.
                                 </li>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4'/>
-                                    Comprehensive BPO Services (Exterior/Interior/Rental): $8 - $10 per order
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4'/>
-                                    Property Condition Reports and Inspections: $4 per order
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    Full Account Management Services: $1 per order
-                                </li>
-                                <h5>
-                                Services Included:
-                            </h5>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4'/>
-                                    Full-scale order management including advanced data processing.
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4'/>
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-12 mr-2' />
                                     Detailed property evaluations covering exterior, interior, and rental assessments.
                                 </li>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='mb-4'/>
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-[50px] mr-2' />
                                     Comprehensive account management services from registration to final submission and follow-ups.
                                 </li>
                                 <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" style={{marginBottom: "70px"}}/>
-                                    Complimentary Trial Period: A 3-day free trial to evaluate the quality and impact of our services, showcasing our confidence in delivering exceptional results.
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-[50px] mr-2' />
+                                    Property condition reports and inspections to ensure thorough evaluations.
+                                </li>
+                                <h5 className="font-bold text-lg mb-3">
+                                    Additional Benefits:
+                                </h5>
+                                <li>
+                                    <img src="/assets/img/icon/check_icon.svg" alt="" className='-mt-[95px]' />
+                                    Complimentary Trial Period: Enjoy a 3-day free trial to evaluate the quality and impact of our services, demonstrating our confidence in delivering exceptional results.
                                 </li>
                             </ul>
                         </div>
@@ -110,36 +98,44 @@ export default function PricingTable() {
                 <div className="col-lg-4 col-md-6 col-sm-8">
                     <div className="pricing__box">
                         <div className="pricing__head">
-                            <h5 className="title">Corporate Plan</h5>
+                            <h5 className="title">Platinum Service Package</h5>
                         </div>
                         <div className={`pricing__price ${isToggled ? "change-subs-duration" : ""}`}>
-                            <h2 className="price monthly_price"><strong>$</strong> 89.00 <span>/ Month</span></h2>
-                            <h2 className="price annual_price"><strong>$</strong> 889.00 <span>/ Month</span></h2>
+                            <h5>
+                                BPO Advantage Plus
+                            </h5>
+                            {/* <h2 className="price monthly_price"><strong>$</strong> Custom <span>/ Order</span></h2> */}
                         </div>
                         <div className="pricing__list">
-                            <ul className="list-wrap">
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    5000 User Activities
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    Unlimited Access
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    No Hidden Charge
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    03 Time Updates
-                                </li>
-                                <li>
-                                    <img src="/assets/img/icon/check_icon.svg" alt="" />
-                                    Figma Source File
-                                </li>
-                            </ul>
+                            <div className="mb-6">
+                                <h5 className="font-bold text-lg mb-3">
+                                    Pricing:
+                                </h5>
+                                <ul className="list-wrap">
+                                    <li className="flex items-start">
+                                        <img src="/assets/img/icon/check_icon.svg" alt="" className="-mt-[95px] mr-2" />
+                                        <span>
+                                            <span className='font-bold'>Volume-Based Pricing:</span> Tailored pricing options available for high-volume orders. <span className='font-bold'>Contact us for more information</span> and to discuss a pricing plan that meets your specific needs.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 className="font-bold text-lg mb-3">
+                                    Additional Benefits:
+                                </h5>
+                                <ul className="list-wrap">
+                                    <li className="flex items-start">
+                                        <img src="/assets/img/icon/check_icon.svg" alt="" className="-mt-[95px] mr-2" />
+                                        <span>
+                                            Complimentary Trial Period: Enjoy a 3-day free trial to evaluate the quality and impact of our services, demonstrating our confidence in delivering exceptional results.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                         <div className="pricing__btn">
                             <Link href="#" className="btn">Get this plan Now</Link>
                         </div>
