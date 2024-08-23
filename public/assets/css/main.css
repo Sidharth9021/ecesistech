@@ -1694,7 +1694,7 @@ padding-left: 40px;
 .tgmenu__navbar-wrap > ul > li .sub-menu {
   position: absolute;
   left: 0;
-  top: 102%;
+  top: 99%;
   min-width: 230px;
   border: 1px solid #f5f5f5;
   background: var(--tg-color-white-default);
@@ -14900,8 +14900,8 @@ blockquote p {
 
 .tgmenu__navbar-wrap > ul > li .sub-menu > li .sub-menu {
   position: absolute;
-  top: -0.5px;
-  left: 107%;  /* Positioned to the right of the parent menu item */
+  top: 0px;
+  left: 100%;  /* Positioned to the right of the parent menu item */
   transform: translateX(0%);  /* Starts from its initial position, just off-screen */
   visibility: hidden;
   opacity: 0;
@@ -14940,4 +14940,23 @@ blockquote p {
 }
 .tgmenu__main-menu li.menu-item-has-children > .sub-menu > li.menu-item-has-children.active > a::after {
   color: var(--tg-theme-primary);
+}
+
+/* Add margin to each submenu item */
+.sub-menu > li {
+  margin-bottom: 0.5rem; /* adjust as needed */
+}
+
+/* Add CSS transitions for a delay */
+.sub-menu {
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block; /* Adjust display as necessary */
+
 }

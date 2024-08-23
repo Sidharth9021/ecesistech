@@ -8,6 +8,8 @@ import React, { useEffect, useState } from "react";
 export default function Menu() {
 
     const [activePath, setActivePath] = useState('');
+    const [hoverIndex, setHoverIndex] = useState(null);
+
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -15,17 +17,15 @@ export default function Menu() {
             setActivePath(window.location.pathname);
         }
     }, []);
-    // const testsentry = async () => {
-    //     try {
-    //         const response = await axios.post('http://192.168.2.159:8000/api/move_reject_folder/', { rejectedOptions, username: username });
-    //         if (response.data) {
-    //             navigatehome();
-    //         }
-    //     } catch (error) {
-    //         console.error('Error fetching data:', error);
-    //         Sentry.captureException(error);  // Capture the error with Sentry
-    //     }
-    // };
+
+    const handleMouseEnter = index => {
+        setHoverIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoverIndex(null);
+    };
+
 
     return (
         <>
@@ -36,29 +36,33 @@ export default function Menu() {
                 <li className={activePath === "/about" ? "active" : ""}>
                     <Link href="/about">About Us</Link>
                 </li>
-                <li className="menu-item-has-children"><Link href="#">Services</Link>
-                    <ul className="sub-menu">
-                        <li className="menu-item-has-children">
-                            <Link href="#">Digital Solutions</Link>
-                            <ul className="sub-menu">
-                                <li><Link href="/services-details/proptech">PropTech</Link></li>
-                                <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
-                                <li><Link href={`/services-details/automation`}>Business Process Automation</Link></li>
-                            </ul>
-                        </li>
-                        <li className="menu-item-has-children">
-                            <Link href="#">Business Consulting</Link>
-                            <ul className="sub-menu">
-                                <li><Link href={`/services-details/real-estate-valuation`}>Real Estate Valuation</Link></li>
-                                <li><Link href={`/services-details/accounting-finance`}>Accounting & Finance</Link></li>
-                                <li><Link href={`/services-details/manpower-staffing`}>Talent Acquisition</Link></li>
-                                <li><Link href={`/services-details/digital-marketing`}>Digital Marketing</Link></li>
-                            </ul>
-                        </li>
-
-
-
-                    </ul>
+                <li className="menu-item-has-children" onMouseLeave={handleMouseLeave}>
+                    <Link href="#">Services</Link>
+                    
+                        <ul className="sub-menu">
+                            <li className="menu-item-has-children" onMouseLeave={handleMouseLeave}>
+                                <Link href="#" onMouseEnter={() => handleMouseEnter(2)}>Digital Solutions</Link>
+                                {hoverIndex === 2 && (
+                                    <ul className="sub-menu">
+                                        <li><Link href="/services-details/proptech">PropTech</Link></li>
+                                        <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
+                                        <li><Link href="/services-details/automation">Business Process Automation</Link></li>
+                                    </ul>
+                                )}
+                            </li>
+                            <li className="menu-item-has-children" onMouseLeave={handleMouseLeave}>
+                                <Link href="#" onMouseEnter={() => handleMouseEnter(3)}>Business Consulting</Link>
+                                {hoverIndex === 3 && (
+                                    <ul className="sub-menu">
+                                        <li><Link href="/services-details/real-estate-valuation">Real Estate Valuation</Link></li>
+                                        <li><Link href="/services-details/accounting-finance">Accounting & Finance</Link></li>
+                                        <li><Link href="/services-details/manpower-staffing">Talent Acquisition</Link></li>
+                                        <li><Link href="/services-details/digital-marketing">Digital Marketing</Link></li>
+                                    </ul>
+                                )}
+                            </li>
+                        </ul>
+                   
                 </li>
                 {/* <li className="menu-item-has-children">
                     <Link href="#">Products</Link>
