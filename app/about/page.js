@@ -50,7 +50,7 @@ export default function About() {
                     He also sits on advisory boards and consults for various businesses in North America and South-East Asia. Electronics & Communication Engineer by qualification and Certified Scrum Coach, holds Postgrad.Dip in Computer Applications, Engineering Diploma in Electronics & Avionics, and Diploma in Embedded Systems.
                 </p>
             ),
-            imageUrl: '/assets/img/team/h4_team_img01.jpg',
+            imageUrl: '/assets/img/team/Anil.png',
             linkedInUrl: 'https://www.linkedin.com/in/anil-ar-001/'
         },
         {
@@ -282,7 +282,7 @@ export default function About() {
                                     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8 z-0 relative" onClick={() => { handlePageClick(2) }}>
                                         <div className="team__item-four shine-animate-item">
                                             <div className="team__thumb-four shine-animate">
-                                                <img src="/assets/img/team/h4_team_img01.jpg" alt="" />
+                                                <img src="/assets/img/team/Anil.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
                                                 <h2 className="title">Anil Appukuttan</h2>
@@ -299,7 +299,7 @@ export default function About() {
                                                 <img src="/assets/img/team/Saritha.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
-                                                <h2 className="title"><Link href="/team-details">Saritha N S</Link></h2>
+                                                <h2 className="title">Saritha N S</h2>
                                                 <span className="text-black">Vice President <br />Software Engineering</span>
                                                 <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
@@ -313,7 +313,7 @@ export default function About() {
                                                 <img src="/assets/img/team/Shebin.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
-                                                <h2 className="title"><Link href="/team-details">Shebin Koshy</Link></h2>
+                                                <h2 className="title">Shebin Koshy</h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
                                                 <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
@@ -329,7 +329,7 @@ export default function About() {
                                                 <img src="/assets/img/team/Pradeep.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
-                                                <h2 className="title"><Link href="/team-details">Pradeep M</Link></h2>
+                                                <h2 className="title">Pradeep M</h2>
                                                 <span className="text-black">Asst. General Manager <br /> Operations</span>
                                                 <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
@@ -343,7 +343,7 @@ export default function About() {
                                                 <img src="/assets/img/team/Sathi.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
-                                                <h2 className="title"><Link href="/team-details">Sathi Devi</Link></h2>
+                                                <h2 className="title">Sathi Devi</h2>
                                                 <span className="text-black">General Manager <br /> Finance</span>
                                                 <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
@@ -357,7 +357,7 @@ export default function About() {
                                                 <img src="/assets/img/team/Arun.png" alt="" />
                                             </div>
                                             <div className="team__content-four bg-slate-200">
-                                                <h2 className="title"><Link href="/team-details">Arun Sankar</Link></h2>
+                                                <h2 className="title">Arun Sankar</h2>
                                                 <span className="text-black">Asst. Vice President <br /> Business Development</span>
                                                 <img src="/assets/img/icon/arrow2.png" alt="" className=" w-7 h-7 bottom-[-14px] absolute left-[45%]" />
 
