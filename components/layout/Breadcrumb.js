@@ -120,7 +120,7 @@ function Breadcrumb({ breadcrumbTitle }) {
                         <div className="col-lg-6">
                             <div className="breadcrumb__content">
                                 {isSpecialTitle ? (
-                                    <h2 className={`title absolute  ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: isMobile ? "16px" :`${calculatedWidth}px`, left: '3%', top: '40%' }}><span className="text-ly">From Complexity to Clarity:</span> <br />How a Single Website Drove<br /> <span className="text-ly">3X</span> Revenue Growth</h2>
+                                    <h2 className={`title absolute  ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: isMobile ? "15px" :`${calculatedWidth}px`, left: isMobile ? '2%' : '10%', top: '40%' }}><span className="text-ly">From Complexity to Clarity:</span> <br />How a Single Website Drove<br /> <span className="text-ly">3X</span> Revenue Growth</h2>
 
                                 ) : (
                                     isMobile ? (

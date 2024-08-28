@@ -72,10 +72,10 @@ function CaseStudy() {
                                         <div className="absolute top-[40%] right-[10%]">
                                             <p className="text-center text-sm font-bold">Multiple<br /> Tech Stacks</p>
                                         </div>
-                                        <div className="absolute -bottom-[10%] left-[5%]">
+                                        <div className="absolute -bottom-[17%] left-[5%]">
                                             <p className="text-center text-sm font-bold">Distinct Resource<br /> Requirements</p>
                                         </div>
-                                        <div className="absolute -bottom-[10%] right-[3%]">
+                                        <div className="absolute -bottom-[17%] right-[3%]">
                                             <p className="text-center text-sm font-bold">Increased Costs and<br /> Inefficiencies</p>
                                         </div>
                                     </div>
