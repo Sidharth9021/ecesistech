@@ -64,21 +64,20 @@ function CaseStudy() {
                                 <p className="title text-2xl font-bold text-black">Challenges</p>
                                 <p>The primary challenge was to unify these separate websites into a single, cohesive platform that would allow users to explore all services in one place. The new website needed to:</p>
                                 {isMobile ? (
-                                    <div className="relative">
-                                        <img src="/assets/img/icon/case_challenges_mobile.png" alt="" className="w-[300px] justify-center mx-auto" />
-                                        <div className="absolute top-[130px] left-[60px]">
-                                            <p className="text-center text-sm font-bold">Three Seperate <br/> Websites</p>
+                                    <div className="relative max-w-xs mx-auto">
+                                        <img src="/assets/img/icon/case_challenges_mobile.png" alt="" className="w-full justify-center mx-auto" />
+                                        <div className="absolute top-[40%] left-[7%]">
+                                            <p className="text-center text-sm font-bold">Three Separate <br /> Websites</p>
                                         </div>
-                                        <div className="absolute top-[130px] right-[70px]">
-                                            <p className="text-center text-sm font-bold">Mutiple<br/> Tech Stacks</p>
+                                        <div className="absolute top-[40%] right-[10%]">
+                                            <p className="text-center text-sm font-bold">Multiple<br /> Tech Stacks</p>
                                         </div>
-                                        <div className="absolute -bottom-[50px] left-[50px]">
+                                        <div className="absolute -bottom-[13%] left-[5%]">
                                             <p className="text-center text-sm font-bold">Distinct Resource<br /> Requirements</p>
                                         </div>
-                                        <div className="absolute -bottom-[50px] right-[40px]">
+                                        <div className="absolute -bottom-[13%] right-[3%]">
                                             <p className="text-center text-sm font-bold">Increased Costs and<br /> Inefficiencies</p>
                                         </div>
-
                                     </div>
 
                                 ) : (
@@ -193,18 +192,18 @@ function CaseStudy() {
                             <div>
                                 <p className="title text-2xl font-bold text-black mt-12">Results</p>
                                 {isMobile ? (
-                                    <div className="relative w-fit mx-auto">
-                                        <img src="/assets/img/icon/case_results_mobile.png" alt="" className="w-[800px] mx-auto" />
-                                        <div className="absolute top-[180px] left-[70px] ">
+                                    <div className="relative max-w-xs mx-auto">
+                                        <img src="/assets/img/icon/case_results_mobile.png" alt="" className="w-full justify-center mx-auto" />
+                                        <div className="absolute top-[40%] left-[16%]">
                                             <p className="text-center text-sm font-bold">3X<br /> Revenue<br /> Growth</p>
                                         </div>
-                                        <div className="absolute top-[180px] right-[70px]">
+                                        <div className="absolute top-[40%] right-[16%]">
                                             <p className="text-center text-sm font-bold">Increased <br /> Website <br /> Traffic</p>
                                         </div>
-                                        <div className="absolute -bottom-[30px] left-[70px]">
+                                        <div className="absolute -bottom-[10%] left-[16%]">
                                             <p className="text-center text-sm font-bold">FTE <br /> Savings</p>
                                         </div>
-                                        <div className="absolute -bottom-[50px] right-[70px]">
+                                        <div className="absolute -bottom-[15%] right-[15%]">
                                             <p className="text-center text-sm font-bold">5X Boost <br /> in User <br />Engagement</p>
                                         </div>
                                     </div>
