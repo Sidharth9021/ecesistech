@@ -53,16 +53,20 @@ function CaseStudy() {
                         <div className="services__details-wrap">
                             <div className="flex flex-col">
                                 <Link href="/case-study/horse-and-barn">
-                                <div className="w-full rounded-3xl md:rounded-md bg-slate-300 flex flex-row border-2">
-                                    <div className={`${isMobile ? '' : 'w-[30%]'}`}>
-                                        <img src="/assets/img/case/horse_barn.png" alt="" className="rounded-l-3xl h-full md:rounded-l-md object-cover" />
+                                    <div className="w-full rounded-3xl md:rounded-md bg-slate-300 flex flex-row border-2">
+                                        <div className={`${isMobile ? 'w-full' : 'w-[30%]'}`}>
+                                            <img src="/assets/img/case/horse_barn.png" alt="" className="rounded-3xl md:rounded-l-md object-cover" />
+
+                                        </div>
+                                        {isMobile ? null : (
+                                            <div className="content-center ml-4 p-2">
+                                                <h2 className="md:text-3xl text-base">From Complexity to Clarity: How a Single Website Drove 3X Revenue Growth</h2>
+                                            </div>
+
+                                        )}
+
 
                                     </div>
-
-                                    <div className="content-center ml-4 p-2">
-                                        <h2 className="md:text-3xl text-base">From Complexity to Clarity: How a Single Website Drove 3X Revenue Growth</h2>
-                                    </div>
-                                </div>
                                 </Link>
 
                             </div>
