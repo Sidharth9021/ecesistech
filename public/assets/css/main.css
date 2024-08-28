@@ -89,6 +89,11 @@
 /*=============================
 	Typography css start
 ===============================*/
+.main-font{
+  font-family: var(--tg-body-font-family);
+}
+
+
 body {
   font-family: var(--tg-body-font-family);
   font-size: var(--tg-body-font-size);
@@ -4011,18 +4016,7 @@ padding-left: 40px;
   margin-bottom: 10px;
 }
 
-.soft__list-box .list-wrap li {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: flex-start;
-  font-weight: 500;
-  font-family: var(--tg-heading-font-family);
-  gap: 12px;
-  margin-bottom: 10px;
-}
+
 .about__list-box .list-wrap li i {
   width: 26px;
   height: 26px;
@@ -4060,6 +4054,64 @@ padding-left: 40px;
     border: none;
     padding: 0;
   }
+}
+
+.about__list-box-custom .list-wrap li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  color: var(--tg-theme-secondary);
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+
+.about__list-box-custom .list-wrap li i {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background: var(--tg-theme-primary);
+  color: var(--tg-color-white-default);
+  line-height: 0;
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -o-transform: translateY(3px);
+  transform: translateY(3px);
+}
+.about__list-box-custom .list-wrap li:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.soft__list-box .list-wrap li {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  font-family: var(--tg-heading-font-family);
+  gap: 12px;
+  margin-bottom: 10px;
 }
 .about__list-img {
   width: 184px;
@@ -14961,3 +15013,20 @@ blockquote p {
 
 }
 
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-4px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-shake {
+  display: inline-block;
+  animation: shake 0.5s infinite;
+  animation-delay: 0.5s; /* Delay might be adjusted based on preference */
+}

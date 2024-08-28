@@ -7,7 +7,6 @@ export default function Marquee2() {
 
             <Marquee className="marquee__wrap max-h-40 overflow-hidden" gradient={false} speed={100}>
                 <img src="/assets/img/brand/Papa John.png" className="w-32 h-24 object-contain mr-16 mb-3" alt="Papa John" />
-                <img src="/assets/img/brand/Claruz.png" className="w-32 h-24 object-contain mr-16 mb-3" alt="Claruz" />
                 <img src="/assets/img/brand/BPO.png" className="w-32 h-24 object-contain mr-16" alt="BPO" />
                 <img src="/assets/img/brand/Cracs.png" className="w-32 h-24 object-contain mr-16" alt="Cracs" />
                 <img src="/assets/img/brand/Cyqurex.png" className="w-32 h-24 object-contain mr-16" alt="Cyqurex" />
@@ -23,6 +22,8 @@ export default function Marquee2() {
                 <img src="/assets/img/brand/TBDC.png" className="w-32 h-24 object-contain mr-16" alt="TBDC" />
                 <img src="/assets/img/brand/Trek.png" className="w-60 h-24 object-contain mr-16" alt="Trek" />
                 <img src="/assets/img/brand/UAQ.png" className="w-24 h-20 object-contain mr-16 mb_19" alt="UAQ" />
+                <img src="/assets/img/brand/Mad.png" className="w-24 h-20 object-contain mr-16 mb_19" alt="Mad" />
+
             </Marquee>
         </div>
     );

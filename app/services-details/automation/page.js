@@ -50,27 +50,39 @@ export default function AutoServices() {
     const coreValues = [
         {
             title: "Automate",
-            description: "Automate rules-based tasks to eliminate manual work."
+            description: "Automate rules-based tasks to eliminate manual work.",
+            icon: "/assets/img/icon/Automate_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
         {
             title: "Enhance",
-            description: "Enhance decision-making with streamlined report generation."
+            description: "Enhance decision-making with streamlined report generation.",
+            icon: "/assets/img/icon/Enhance_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
         {
             title: "Optimize",
-            description: "Optimize ETL operations with automated processes."
+            description: "Optimize ETL operations with automated processes.",
+            icon: "/assets/img/icon/Optimize_icon.png",
+            icon_style: "-top-16 left-[25%] w-32 h-32",
         },
         {
             title: "Expand",
-            description: "Expand business capacity and service offerings using multiple RPA bots."
+            description: "Expand business capacity and service offerings using multiple RPA bots.",
+            icon: "/assets/img/icon/Expand_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
         {
             title: "Accelerate",
-            description: "Accelerate service delivery by automating data processing."
+            description: "Accelerate service delivery by automating data processing.",
+            icon: "/assets/img/icon/Accelerate_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
         {
             title: "Maintain",
-            description: "Maintain business continuity during peak periods by offloading tasks to RPA software."
+            description: "Maintain business continuity during peak periods by offloading tasks to RPA software.",
+            icon: "/assets/img/icon/Maintain_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
     ];
 
@@ -158,14 +170,19 @@ export default function AutoServices() {
                                                         infiniteLoop={true}
                                                         showStatus={false}
                                                         useKeyboardArrows={true}
-                                                        dynamicHeight={true}
+                                                        showThumbs={false}
                                                     >
                                                         {coreValues.map((value, index) => (
-                                                            <div key={index} className="ebt p-2 flex justify-center items-center">
-                                                                <div className="title bg-purple-600 border-purple-600 px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
-                                                                    style={{ width: '250px', height: '250px' }}>
+                                                            <div key={index} className={`ebt ${isMobile ? "" : "p-2"} flex justify-center items-center `}>
+
+                                                                <div className="title bg-[#00235f] border-[#00235f] p-3 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
+                                                                    style={{ width: '275px', height: '275px' }}>
+                                                                    <img src={value.icon} alt="Icon" style={{ maxWidth: '80px', maxHeight: 'auto' }} />
+
+
                                                                     <h4 className="mt-3 text-2xl text-ly">{value.title}</h4>
                                                                     <h6 className="mt-3 text-white font-medium">{value.description}</h6>
+
                                                                 </div>
                                                             </div>
                                                         ))}
@@ -174,24 +191,25 @@ export default function AutoServices() {
 
                                                 ) : (
                                                     <div className='px-3 w-full mt-16 mb-12 flex justify-center items-center'>
-                                                        <div className={`grid grid-cols-3 flex-row flex-wrap gap-x-4 gap-y-4`}>
-                                                            {coreValues.map((value, index) => (
-                                                                <div key={index} className="ebt">
-                                                                    <div className="title bg-violet-800 border-violet-800 px-3 py-5 border-2 text-center justify-center rounded-2xl"
-                                                                        style={{ width: '250px', height: '250px' }}>
-                                                                        <h4 className="mt-3 text-2xl text-ly">{value.title}</h4>
-                                                                        <h6 className="mt-3 text-white font-medium">{value.description}</h6>
-                                                                    </div>
+                                                    <div className={`grid grid-cols-3 flex-row flex-wrap gap-x-4 gap-y-24`}>
+                                                        {coreValues.map((value, index) => (
+                                                            <div key={index} className="ebt relative transition duration-300 ease-in-out transform hover:scale-110">
+                                                                <img src={value.icon} alt="Icon" className={`absolute ${value.icon_style} hover:animate-shake`} />
+                                                                <div className="title bg-[#00235f] border-[#00235f] px-3 py-5 border-2 text-center justify-center rounded-2xl"
+                                                                    style={{ width: '250px', height: '250px' }}>
+                                                                    <h4 className="mt-3 text-2xl text-ly">{value.title}</h4>
+                                                                    <h6 className="mt-3 text-white font-medium">{value.description}</h6>
                                                                 </div>
-                                                            ))}
-                                                        </div>
+                                                            </div>
+                                                        ))}
                                                     </div>
+                                                </div>
                                                 )}
 
                                             </section>
 
 
-                                            <div className={`flex flex-col justify-center items-center ${isMobile ? 'w-full' : 'h-full w-[800px]'}   mx-auto`}>
+                                            <div className={`flex flex-col justify-center items-center ${isMobile ? 'w-full' : 'h-full max-w-[100vw] w-[800px]'}   mx-auto`}>
                                                 <h2 className="title text-center text-2xl">Services We Offer In Workflow Automation</h2>
                                                 <p className="text-base text-center">Leverage our workflow automation services to increase productivity and enhance accessibility, utilization, sharing, communication, and collaboration over automated workflows.
                                                 </p>
@@ -234,7 +252,7 @@ export default function AutoServices() {
                                                             <div className="flex flex-col md:flex-row justify-center items-center mt-5">
                                                                 <div className={`w-full`}>
                                                                     <h3 className="text-2xl text-center">Process Mapping and Analysis</h3>
-                                                                    <img src="/assets/img/services/Process_Mapping.png" alt="" className="w-[300px] mx-auto" />
+                                                                    <img src="/assets/img/services/Process_Mapping.png" alt="" className="w-[275px] mx-auto" />
                                                                     <p className="mt-3">Our experienced workflow automation developers collaborate closely with you to plan and design strategies that simplify and automate enterprise workflows across various departments using the latest tools and technologies.</p>
 
                                                                 </div>
@@ -244,7 +262,7 @@ export default function AutoServices() {
                                                         </>
                                                     ) : (<>
                                                         <div className={`flex flex-row justify-around items-center `}>
-                                                            <img src="/assets/img/services/Process_Mapping.png" alt="" className="w-[300px]" />
+                                                            <img src="/assets/img/services/Process_Mapping.png" alt="" className="w-[275px]" />
 
                                                             <div className={`${isMobile ? '' : 'mt-2'} `} style={{ width: "45vw" }}>
                                                                 <h3 className="text-2xl">Process Mapping and Analysis</h3>
@@ -334,7 +352,7 @@ export default function AutoServices() {
                                                             <div className="flex flex-col md:flex-row justify-center items-center mt-5">
                                                                 <div className={`w-full`}>
                                                                     <h3 className="text-2xl text-center">Integration Services</h3>
-                                                                    <img src="/assets/img/services/Integration.png" alt="" className="w-[300px] mx-auto" />
+                                                                    <img src="/assets/img/services/Integration.png" alt="" className="w-[275px] mx-auto" />
                                                                     <p className="mt-3">Leverage our expertise in seamlessly integrating workflows with other systems and applications. We offer design and configuration services using APIs, middleware, or custom code to ensure smooth integration.</p>
 
                                                                 </div>
@@ -352,7 +370,7 @@ export default function AutoServices() {
 
                                                             </div>
 
-                                                            <img src="/assets/img/services/Integration.png" alt="" className="w-[300px]" />
+                                                            <img src="/assets/img/services/Integration.png" alt="" className="w-[275px]" />
 
 
                                                         </div>
@@ -369,7 +387,7 @@ export default function AutoServices() {
                                                             <div className="flex flex-col md:flex-row justify-center items-center mt-5">
                                                                 <div className={`w-full`}>
                                                                     <h3 className="text-2xl text-center">Data Management Services</h3>
-                                                                    <img src="/assets/img/services/Data_Management.png" alt="" className="w-[300px] mx-auto" />
+                                                                    <img src="/assets/img/services/Data_Management.png" alt="" className="w-[275px] mx-auto" />
                                                                     <p className="mt-3">Our workflow management experts specialize in handling data within workflows, including validation, cleansing, and migration. We design and implement robust data management processes and tools to maintain high data quality.</p>
 
                                                                 </div>
@@ -379,7 +397,7 @@ export default function AutoServices() {
                                                         </>
                                                     ) : (<>
                                                         <div className={`flex flex-row justify-around items-center `}>
-                                                            <img src="/assets/img/services/Data_Management.png" alt="" className="w-[300px]" />
+                                                            <img src="/assets/img/services/Data_Management.png" alt="" className="w-[275px]" />
 
                                                             <div className={`${isMobile ? '' : 'mt-2'} `} style={{ width: "45vw" }}>
                                                                 <h3 className="text-2xl">Data Management Services</h3>
@@ -462,7 +480,7 @@ export default function AutoServices() {
 
                                             </div>
 
-                                            <div className="">
+                                            <div className="mt-[50px]">
                                                 <h2 className="title text-2xl text-center">Benefits of Business Process Automation implementation with ECESIS</h2>
                                                 <div className="relative mt-5">
                                                     {isMobile ? (<>
@@ -516,16 +534,19 @@ export default function AutoServices() {
                                 <span className="text-2xl text-lb font-bold ">Frequently Asked Questions</span>
                                 {/* <h2 className="title w-full">Meet the visionary leaders driving Ecesis' success, each bringing a wealth of experience, innovation, and dedication to our mission of excellence.</h2> */}
                             </div>
-                            <div className="container mx-auto mt-5 p-5 rounded-2xl" style={{ maxWidth: '1000px' }}>
-                                {faqData.map((faq, index) => (
-                                    <AccordionItem
-                                        key={index}
-                                        title={faq.question}
-                                        content={faq.answer}
-                                        isOpen={openIndex === index}
-                                        onClick={() => handleToggle(index)}
-                                    />
-                                ))}
+                            <div className="container mx-auto mt-5 p-5 rounded-2xl " style={{ maxWidth: '1000px' }}>
+                                <div className="border-2">
+                                    {faqData.map((faq, index) => (
+                                        <AccordionItem
+                                            key={index}
+                                            title={faq.question}
+                                            content={faq.answer}
+                                            isOpen={openIndex === index}
+                                            onClick={() => handleToggle(index)}
+                                        />
+                                    ))}
+                                </div>
+
                             </div>
                         </div>
 

@@ -75,7 +75,7 @@ function Breadcrumb({ breadcrumbTitle }) {
             style: "text-white multiple-shadows"
         },
         {
-            id: "Software Development",
+            id: "Enterprise Software Solutions",
             backgroundImageUrl: "/assets/img/banner/software_banner.png",
             backgroundMobile: "/assets/img/banner/ai_mobile.png",
             style: "text-sky-900"
@@ -84,6 +84,18 @@ function Breadcrumb({ breadcrumbTitle }) {
             id: "Business Process Automation",
             backgroundImageUrl: "/assets/img/banner/BPA_banner.png",
             backgroundMobile: "/assets/img/banner/BPA_banner_mobile.png",
+            style: "text-white"
+        },
+        {
+            id: "From Complexity to Clarity: How a Single Website Drove 3X Revenue Growth",
+            backgroundImageUrl: "/assets/img/banner/case_study.png",
+            backgroundMobile: "/assets/img/banner/case_study_mobile.png",
+            style: "text-white"
+        },
+        {
+            id: "Case Studies",
+            backgroundImageUrl: "/assets/img/banner/case_studies_banner.jpg",
+            backgroundMobile: "/assets/img/banner/case_studies_banner_mobile.png",
             style: "text-white"
         },
 
@@ -95,27 +107,36 @@ function Breadcrumb({ breadcrumbTitle }) {
 
     ]
     const matchingBanner = banner.find(item => item.id === breadcrumbTitle);
+    const specialTitle = "From Complexity to Clarity: How a Single Website Drove 3X Revenue Growth";
+    const isSpecialTitle = breadcrumbTitle === specialTitle;
 
     return (
         <>
             <section className={`breadcrumb__area breadcrumb__bg_real_estate`}>
+                {console.log("mb", matchingBanner)}
                 <img src={matchingBanner ? (isMobile && !isTab ? matchingBanner.backgroundMobile : matchingBanner.backgroundImageUrl) : "/assets/img/bg/breadcrumb_bg.jpg"} alt="" className={`${matchingBanner ? matchingBanner.img_style : ""} ${isMobile ? "h-full object-cover" : "object-fill"}  w-full -z-1 top-0`} style={{ maxHeight: isWide ? '' : '400px' }} />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="breadcrumb__content">
-                                {
+                                {isSpecialTitle ? (
+                                    <h2 className={`title absolute ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px`, left: '10%', top: '40%' }}><span className="text-ly">From Complexity to Clarity:</span> <br />How a Single Website Drove<br /> <span className="text-ly">3X</span> Revenue Growth</h2>
+
+                                ) : (
                                     isMobile ? (
-                                        <></>
+                                        null
                                     ) : (
                                         <h2 className={`title absolute ${matchingBanner ? matchingBanner.style : ""} ml-3 text-left`} style={{ fontSize: `${calculatedWidth}px`, left: '10%', top: '40%' }}>{breadcrumbTitle}</h2>
+
                                     )
-                                }
+
+                                )}
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
         </>
     );
 }

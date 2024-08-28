@@ -55,10 +55,10 @@ export default function Footer3() {
                                     <div className="footer__social-three">
                                         <span className="title">Follow Us on:</span>
                                         <ul className="list-wrap">
-                                            <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                            <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                            <li><Link href="https://www.facebook.com/ecesisservices/"><i className="fab fa-facebook-f" /></Link></li>
+                                            <li><Link href="https://x.com/ecesisservices?s=21"><i className="fab fa-twitter" /></Link></li>
+                                            <li><Link href="https://www.instagram.com/ecesistech/profilecard/?igsh=MTVvcnFramdhenJzNA=="><i className="fab fa-instagram" /></Link></li>
+                                            <li><Link href="https://in.linkedin.com/company/ecesis"><i className="fab fa-linkedin-in" /></Link></li>
                                             {/* <li><Link href="#"><i className="fab fa-youtube" /></Link></li> */}
                                         </ul>
                                     </div>

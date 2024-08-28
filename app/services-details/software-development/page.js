@@ -6,6 +6,7 @@ import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
+import React, { useState, useEffect } from "react";
 
 
 
@@ -14,7 +15,17 @@ function SoftwareServices() {
 
     const [isMobile, setIsMobile] = useState(false);
     const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
-
+    const hstyle = {
+        fontSize: isMobile ? '44px' : '48px',
+        lineHeight: isMobile ? '2.85rem' : '3.25rem'
+    }
+    const tstyle = {
+        fontSize: isMobile ? '28px' : '32px',
+        lineHeight: isMobile ? '2.25rem' : '2.5rem'
+    }
+    const space = {
+        marginTop: isMobile ? '-70px' : ''
+    }
 
     useEffect(() => {
         const handleResize = () => {
@@ -36,7 +47,40 @@ function SoftwareServices() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Software Development" Nothome={Nothome}>
+            <Layout headerStyle={3} footerStyle={3} Nothome={Nothome}>
+                <section className={`banner__area-two  banner__bg-two ${isMobile ? "object-right h-full" : "object-fill]"} w-full`} style={{
+                    backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/software_banner.png"})`, maxHeight: '600px'
+                }}>
+                    <div className="container">
+                        <div className={`row`} style={space}>
+                            <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
+                                <div className={`banner__content-two ${isMobile ? "mt-12" : "mb-24"} `}>
+                                    <h2 className={`font-bold mb-6`} data-aos="fade-up" data-aos-delay={100} style={hstyle}>Enterprise Software Solutions</h2>
+                                    <h4 className={`font-medium mb-6 text-xl`} data-aos="fade-up" data-aos-delay={100}>Delivering <span className="text-blue-400 font-bold">WOW-Worthy</span> Experiences</h4>
+
+                                    {/* {isMobile ?
+                                    <Link href="#" className="btn border-btn mt-40" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                    :
+                                    <Link href="#" className="btn border-btn mt-10" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                } */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="banner-social banner-social-two">
+                    <h5 className="title">Follow us</h5>
+                    <ul className="list-wrap">
+                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-pinterest-p" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                    </ul>
+                </div> */}
+                    <div className="banner__shape-two">
+                        <img src="/assets/img/banner/h3_banner_shape01.png" alt="" className="heartbeat mt-14" />
+                    </div>
+                </section>
                 <div className="" >
                     {/* Content */}
                     <section className="services__details-area">
@@ -67,7 +111,7 @@ function SoftwareServices() {
                     </section>
 
                     {/* Core Services */}
-                    <section className="services__details-area" style={{ backgroundColor: '#251047', minHeight: '800px' }}>
+                    <section className="services__details-area md:text-base" style={{ backgroundColor: '#251047', minHeight: '800px' }}>
                         <div className="services__details-wrap m-auto w-full" style={{ maxWidth: '2160px' }}>
                             <div className="relative">
                                 <p className="font-bold absolute text-right text-white" style={{ fontSize: '4rem', lineHeight: '4rem', left: '300px', top: '25px' }}>Core  <br /><span className="text-pink-600">Services</span></p>
@@ -268,14 +312,14 @@ function SoftwareServices() {
                                     <p className="" style={{ marginTop: '42px' }}>Proactive Progress Monitoring</p>
                                     <p className="" style={{ marginTop: '42px' }}>Project Completion</p>
 
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </section>
 
 
                     {/* Business Models */}
-                    <section className="services__details-area " style={{ backgroundColor: '#0F1EAF', minHeight: '800px'}}>
+                    <section className="services__details-area " style={{ backgroundColor: '#0F1EAF', minHeight: '800px' }}>
                         <div className="services__details-wrap  m-auto w-full" style={{ maxWidth: '2160px' }}>
                             <div className="relative">
                                 <div className="flex flex-row" style={{ height: '50%' }}>
@@ -284,7 +328,7 @@ function SoftwareServices() {
                                         <p className="font-bold ml-12" style={{ color: '#42B677', left: '50px', fontSize: '5rem', lineHeight: '4.75rem' }}>Models</p>
                                         <span className="flex items-center mt-2">
                                             <div className="h-20 w-1 bg-green-600"></div>
-                                            <p className="text-white ml-4 mt-2" style={{ fontSize: '2.25rem', lineHeight: '2.75rem' }}>Creating value, <br/>delivering excellence.</p>
+                                            <p className="text-white ml-4 mt-2" style={{ fontSize: '2.25rem', lineHeight: '2.75rem' }}>Creating value, <br />delivering excellence.</p>
                                         </span>
                                     </div>
                                     <div>

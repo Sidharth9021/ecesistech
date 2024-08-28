@@ -16,6 +16,18 @@ export default function Proptech() {
     const [isMobile, setIsMobile] = useState(false);
     const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
 
+    const hstyle = {
+        fontSize: isMobile ? '44px' : '48px',
+        lineHeight: isMobile ? '2.85rem' : '3.25rem'
+    }
+    const tstyle = {
+        fontSize: isMobile ? '28px' : '32px',
+        lineHeight: isMobile ? '2.25rem' : '2.5rem'
+    }
+    const space = {
+        marginTop: isMobile ? '-70px' : ''
+    }
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -51,19 +63,27 @@ export default function Proptech() {
     const coreValues = [
         {
             title: "Innovation",
-            description: "Embracing new technologies to deliver groundbreaking solutions."
+            description: "Embracing new technologies to deliver groundbreaking solutions.",
+            icon: "/assets/img/icon/Innovation_icon.png",
+            icon_style: "-top-12 left-[31%] w-24 h-24",
         },
         {
             title: "Client-Centricity",
-            description: "Building strong partnerships based on trust and collaboration."
+            description: "Building strong partnerships based on trust and collaboration.",
+            icon: "/assets/img/icon/Client_icon.png",
+            icon_style: "-top-12 left-[31%] w-24 h-24",
         },
         {
             title: "Expertise",
-            description: "Leveraging our deep industry knowledge to drive results."
+            description: "Leveraging our deep industry knowledge to drive results.",
+            icon: "/assets/img/icon/Expertise_icon.png",
+            icon_style: "-top-12 left-[33%] w-24 h-24",
         },
         {
             title: "Excellence",
-            description: "Delivering exceptional products and services that exceed expectations."
+            description: "Delivering exceptional products and services that exceed expectations.",
+            icon: "/assets/img/icon/Excellence_icon.png",
+            icon_style: "-top-12 left-[31%] w-24 h-24",
         },
     ];
 
@@ -74,7 +94,39 @@ export default function Proptech() {
     return (
         <>
             <Layout headerStyle={3} footerStyle={3} Nothome={Nothome}>
-                <Banner_prop />
+                <section className={`banner__area-two  banner__bg-two object-cover ${isMobile ? "object-right h-full" : "h-full="}`} style={{
+                    backgroundImage: `url(${isMobile ? "" : "/assets/img/banner/Proptech.png"})`
+                }}>
+                    <div className="container">
+                        <div className={`row`} style={space}>
+                            <div className={`col-lg-8 ${isMobile ? "mt-5" : ""}`}>
+                                <div className={`banner__content-two ${isMobile ? "mt-12" : "mb-24"} `}>
+                                    <h2 className={`font-bold mb-6`} data-aos="fade-up" data-aos-delay={100} style={hstyle}><span className='text-pink-500'> AI </span> & <span className='text-blue-400'> PropTech</span> Solutions For<br /> <span className='text-ly'> Real Estate</span> Industry </h2>
+                                    <h4 className={`font-medium mb-6 text-xl`} data-aos="fade-up" data-aos-delay={100}>Empowering Real Estate with 14+ Years of Technological Excellence</h4>
+
+                                    {/* {isMobile ?
+                                    <Link href="#" className="btn border-btn mt-40" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                    :
+                                    <Link href="#" className="btn border-btn mt-10" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>
+                                } */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="banner-social banner-social-two">
+                    <h5 className="title">Follow us</h5>
+                    <ul className="list-wrap">
+                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-pinterest-p" /></Link></li>
+                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                    </ul>
+                </div> */}
+                    <div className="banner__shape-two">
+                        <img src="/assets/img/banner/h3_banner_shape01.png" alt="" className="heartbeat mt-14" />
+                    </div>
+                </section>
 
                 {/* <Marquee2 /> */}
                 {/* Hero Section */}
@@ -88,7 +140,7 @@ export default function Proptech() {
                                 With our expertise in AI, custom software development, and web design, we deliver tailored solutions that address your unique challenges.
                             </p>
 
-                            <Link href="/services-details/proptech " className={`but2 text-lg ${isMobile ? 'w-full' : 'w-fit'} `}>Contact us for a free consultation</Link>
+                            <Link href="/schedule" className={`btn text-lg ${isMobile ? 'w-full' : 'w-fit'} `}>Contact us for a free consultation</Link>
 
 
 
@@ -106,47 +158,52 @@ export default function Proptech() {
 
                 {/* Core Values */}
                 <section className="mt-12 mb-16">
-                    <h3 className="text-4xl font-bold text-center">Core Values</h3>
-                    
-                        {isMobile ? (
-                            <Carousel
-                                showArrows={false}
-                                autoPlay={false}
-                                infiniteLoop={true}
-                                showStatus={false}
-                                useKeyboardArrows={true}
-                                dynamicHeight={true}
-                            >
-                                {coreValues.map((value, index) => (
-                                    <div key={index} className="ebt p-2 flex justify-center items-center">
-                                        <div className="title bg-[#f9ba00] border-[#f9ba00] px-3 py-5 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
-                                            style={{ width: '250px', height: '250px' }}>
-                                            <h4 className="mt-3 text-2xl">{value.title}</h4>
-                                            <h6 className="mt-3 text-black font-medium">{value.description}</h6>
-                                        </div>
-                                    </div>
-                                ))}
-                            </Carousel>
+                    {/* <h3 className="text-4xl font-bold text-center">Core Values</h3> */}
 
-
-                    ) : (
-                    <div className='px-3 w-full mt-16 mb-12 flex justify-center items-center'>
-                        <div className={`flex flex-row gap-x-4 gap-y-4`}>
+                    {isMobile ? (
+                        <Carousel
+                            showArrows={false}
+                            autoPlay={false}
+                            infiniteLoop={true}
+                            showStatus={false}
+                            useKeyboardArrows={true}
+                            showThumbs={false}
+                        >
                             {coreValues.map((value, index) => (
-                                <div key={index} className="ebt">
-                                    <div className="title bg-[#f9ba00] border-[#f9ba00] px-3 py-5 border-2 text-center justify-center rounded-2xl"
-                                        style={{ width: '250px', height: '250px' }}>
-                                        <h4 className="mt-3 text-2xl">{value.title}</h4>
-                                        <h6 className="mt-3 text-black font-medium">{value.description}</h6>
+                                <div key={index} className={`ebt ${isMobile ? "" : "p-2"} flex justify-center items-center `}>
+
+                                    <div className="title bg-[#00235f] border-[#00235f] p-3 border-2 text-center justify-center rounded-2xl bg-gradient-to-br"
+                                        style={{ width: '275px', height: '275px' }}>
+                                        <img src={value.icon} alt="Icon" style={{ maxWidth: '80px', maxHeight: 'auto' }} />
+
+
+                                        <h4 className="mt-3 text-2xl text-ly">{value.title}</h4>
+                                        <h6 className="mt-3 text-white font-medium">{value.description}</h6>
+
                                     </div>
                                 </div>
                             ))}
+                        </Carousel>
+
+
+                    ) : (
+                        <div className='px-3 w-full mt-16 mb-12 flex justify-center items-center'>
+                            <div className={`flex flex-row flex-wrap gap-x-4 gap-y-24`}>
+                                {coreValues.map((value, index) => (
+                                    <div key={index} className="ebt relative transition duration-300 ease-in-out transform hover:scale-110">
+                                        <img src={value.icon} alt="Icon" className={`absolute ${value.icon_style} hover:animate-shake`} />
+                                        <div className="title bg-[#00235f] border-[#00235f] px-3 py-5 border-2 text-center justify-center rounded-2xl"
+                                            style={{ width: '250px', height: '250px' }}>
+                                            <h4 className="mt-3 text-2xl text-ly">{value.title}</h4>
+                                            <h6 className="mt-3 text-white font-medium">{value.description}</h6>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
                     )}
 
                 </section>
-
 
 
 
@@ -158,7 +215,7 @@ export default function Proptech() {
                             <div className='flex flex-col justify-center' style={{ width: '700px' }}>
                                 <h2 className={`text-3xl font-bold ${isMobile ? "text-center" : "text-left"} mb-6`}>About Us</h2>
                                 <h4 className={` ${isMobile ? 'text-center' : ''} text-2xl`}>
-                                    Propelling<span className='text-blue-400'> Real Estate</span> Forward with <span className='text-pink-400'>Artificial Intelligence</span>
+                                    Propelling<span className='text-blue-400'> Real Estate</span> With <span className='text-pink-400'>Artificial Intelligence</span>
                                 </h4>
                                 <p className={`mt-4 ${isMobile ? 'text-center' : ''}`}>
                                     We are a visionary PropTech company dedicated to revolutionizing the real estate industry through cutting-edge technology. With a proven track record of delivering innovative solutions, we empower clients to achieve unprecedented success.
@@ -166,7 +223,7 @@ export default function Proptech() {
                             </div>
 
                             <div className={`${isMobile ? '' : ' flex-col'} flex justify-center items-center mt-6`}>
-                                <img src="/assets/img/images/proptech_about.png" className={`${isMobile ? 'w-[175px] h-[175px] ml-[21vw]' : 'ml-[175px] w-[300px] h-[300px]'}`} alt="About ECESIS" />
+                                <img src="/assets/img/images/proptech_about.png" className={`${isMobile ? 'w-[175px] h-[175px] ml-[21vw]' : 'ml-[175px] w-[250px] h-[250px]'}`} alt="About ECESIS" />
                             </div>
                         </div>
 
@@ -212,7 +269,7 @@ export default function Proptech() {
                                             <p className={`text-center  ${isMobile ? 'text-[13px] mt-2' : 'mt-4'} text-black`}>Every real estate business is unique. ECESIS delivers
                                                 tailored software solutions to meet your specific needs.</p>
                                             <ul className={`list-disc ${isMobile ? 'text-[13px]' : ''} ml-4 text-black`}>
-                                                <li className=''><span className='font-bold'>Property Management Systems:</span> Streamline operations with custom-built property managementsoftware.</li>
+                                                <li className=''><span className='font-bold'>Property Management Systems:</span> Streamline operations with custom-built property management software.</li>
                                                 <li className=''><span className='font-bold'>CRM Integration:</span> Enhance customer relationships with seamless CRM integration.</li>
                                                 <li className=''><span className='font-bold'>Custom Applications:</span> Develop specialized tools to solve your business challenges.</li>
                                             </ul>
@@ -335,7 +392,7 @@ export default function Proptech() {
                                     <div className="section-title white-title tg-heading-subheading animation-style3 text-center">
                                         <h2 className="mb-0 text-4xl text-white tg-element-title">Get a <span className="text-ly">30-minute</span>,<br /> No-cost consulting session with our <span className="text-ly">Proptech expert</span>
                                         </h2>
-                                        <Link href="/contact" className="btn mt-5">Let's Talk</Link>
+                                        <Link href="/schedule" className="btn mt-5">Let's Talk</Link>
                                     </div>
 
 

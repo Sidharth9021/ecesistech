@@ -77,17 +77,76 @@ export default function MainService() {
                                             </div>
                                         </div>
                                         <li className="nav-item" onClick={() => handleOnClick(1)}>
-                                            <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true">Artificial Intelligence</button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/proptech">
+                                                        <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true">PropTech</button>
+                                                    </Link>
+
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 1 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="true">PropTech</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(2)}>
-                                            <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Business Process Automation </button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/artificial-intelligence">
+                                                        <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="false">Artificial Intelligence</button>
+                                                    </Link>
+
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 2 ? "nav-link active" : "nav-link"} id="health-tab" data-bs-toggle="tab" data-bs-target="#health-tab-pane" type="button" role="tab" aria-controls="health-tab-pane" aria-selected="false">Artificial Intelligence</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(3)}>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/automation">
+                                                        <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Business Process Automation </button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="travel-tab" data-bs-toggle="tab" data-bs-target="#travel-tab-pane" type="button" role="tab" aria-controls="travel-tab-pane" aria-selected="false">Business Process Automation </button>
+
+                                                </>
+                                            )
+                                            }
+
+                                        </li>
+                                        {/* <li className="nav-item" onClick={() => handleOnClick(3)}>
                                             <button className={activeIndex == 3 ? "nav-link active" : "nav-link"} id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="false">Cloud Infrastructure</button>
-                                        </li>
-                                        <li className="nav-item" onClick={() => handleOnClick(4)}>
-                                            <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Web & App Solutions</button>
-                                        </li>
+                                        </li> */}
+                                        {/* <li className="nav-item" onClick={() => handleOnClick(4)}>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/software-development">
+                                                        <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Enterprise Software Solutions</button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Enterprise Software Solutions</button>
+
+                                                </>
+                                            )
+                                            }
+
+                                        </li> */}
                                         {/* <li className="nav-item" onClick={() => handleOnClick(5)}>
                                             <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-controls="fire-tab-pane" aria-selected="false"><i className="flaticon-house" />Fire Insurance</button>
                                         </li>
@@ -113,22 +172,98 @@ export default function MainService() {
                                             <button className={activeIndex == 4 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false"><i className="flaticon-ship" />Cargo Insurance</button>
                                         </li> */}
                                         <li className="nav-item" onClick={() => handleOnClick(5)}>
-                                            <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-controls="fire-tab-pane" aria-selected="false">Real Estate Valuation</button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/real-estate-valuation">
+                                                        <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-controls="fire-tab-pane" aria-selected="false">Real Estate Valuation</button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 5 ? "nav-link active" : "nav-link"} id="fire-tab" data-bs-toggle="tab" data-bs-target="#fire-tab-pane" type="button" role="tab" aria-controls="fire-tab-pane" aria-selected="false">Real Estate Valuation</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(6)}>
-                                            <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab" aria-controls="bike-tab-pane" aria-selected="false">Accounting & Finance</button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/accounting-finance">
+                                                        <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab" aria-controls="bike-tab-pane" aria-selected="false">Accounting & Finance</button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 6 ? "nav-link active" : "nav-link"} id="bike-tab" data-bs-toggle="tab" data-bs-target="#bike-tab-pane" type="button" role="tab" aria-controls="bike-tab-pane" aria-selected="false">Accounting & Finance</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(7)}>
-                                            <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Manpower Staffing</button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/manpower-staffing">
+                                                        <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Manpower Staffing</button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Manpower Staffing</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                         <li className="nav-item" onClick={() => handleOnClick(8)}>
-                                            <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Digital Marketing</button>
+                                            {isMobile ? (
+                                                <>
+                                                    <Link href="/services-details/digital-marketing">
+                                                        <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Digital Marketing</button>
+
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <button className={activeIndex == 8 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Digital Marketing</button>
+
+                                                </>
+                                            )
+                                            }
+
                                         </li>
                                     </ul>
 
 
                                     <div className={`tab-content ${isMobile ? "hidden" : ""}`} id="myTabContent">
-                                        <div className={activeIndex == 1 ? "tab-pane fade show active" : "tab-pane fade"} id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabIndex={0}>
+                                    <div className={activeIndex == 1 ? "tab-pane fade show active" : "tab-pane fade"} id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabIndex={0}>
+                                            <div className="services__item-four  shine-animate-item">
+                                                <div className="services__thumb-four shine-animate">
+                                                    <img src="/assets/img/services/Proptech.jpeg" className="" alt="" />
+                                                </div>
+                                                <div className="services__content-four">
+                                                    <h2 className="title"><Link href="#">PropTech</Link></h2>
+                                                    <p>Empowering Real Estate with 14+ Years of Technological Excellence. We are a visionary PropTech company dedicated to revolutionizing the real estate industry through cutting-edge technology. With a proven track record of delivering innovative solutions, we empower clients to achieve unprecedented success.</p>
+                                                    <div className="about__list-box">
+                                                        <ul className="list-wrap">
+                                                            <li><i className="fas fa-check" /> Artificial Intelligence in Real Estate </li>
+                                                            <li><i className="fas fa-check" /> Tailored Software for Real Estate</li>
+                                                            <li><i className="fas fa-check" /> Web Development </li>
+                                                            <li><i className="fas fa-check" /> Comprehensive PropTech Solutions </li>
+                                                        </ul>
+                                                    </div>
+                                                    <Link href="/services-details/artificial-intelligence" className="btn">Read More</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className={activeIndex == 2 ? "tab-pane fade show active" : "tab-pane fade"} id="health-tab-pane" role="tabpanel" aria-labelledby="health-tab" tabIndex={0}>
                                             <div className="services__item-four  shine-animate-item">
                                                 <div className="services__thumb-four shine-animate">
                                                     <img src="/assets/img/services/AI.webp" className="" alt="" />
@@ -147,7 +282,7 @@ export default function MainService() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={activeIndex == 2 ? "tab-pane fade show active" : "tab-pane fade"} id="travel-tab-pane" role="tabpanel" aria-labelledby="travel-tab" tabIndex={0}>
+                                        <div className={activeIndex == 3 ? "tab-pane fade show active" : "tab-pane fade"} id="travel-tab-pane" role="tabpanel" aria-labelledby="travel-tab" tabIndex={0}>
                                             <div className="services__item-four shine-animate-item">
                                                 <div className="services__thumb-four shine-animate">
                                                     <img src="/assets/img/services/Automation.webp" alt="" />
@@ -168,7 +303,7 @@ export default function MainService() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className={activeIndex == 3 ? "tab-pane fade show active" : "tab-pane fade"} id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabIndex={0}>
+                                        {/* <div className={activeIndex == 3 ? "tab-pane fade show active" : "tab-pane fade"} id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabIndex={0}>
                                             <div className="services__item-four shine-animate-item">
                                                 <div className="services__thumb-four shine-animate">
                                                     <img src="/assets/img/services/Cloud.webp" alt="" />
@@ -186,14 +321,14 @@ export default function MainService() {
                                                     <Link href="/services-details/cloud-infrastructure" className="btn">Read More</Link>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                         <div className={activeIndex == 4 ? "tab-pane fade show active" : "tab-pane fade"} id="cargo-tab-pane" role="tabpanel" aria-labelledby="cargo-tab" tabIndex={0}>
                                             <div className="services__item-four shine-animate-item">
                                                 <div className="services__thumb-four shine-animate">
                                                     <img src="/assets/img/services/Web.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="#">Software Development</Link></h2>
+                                                    <h2 className="title"><Link href="#">Enterprise Software Solutions</Link></h2>
                                                     <p>Tailored to meet the unique needs of your business, our web application solutions enhance online visibility and operational efficiency, ensuring you stay ahead in a competitive marketplace.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">

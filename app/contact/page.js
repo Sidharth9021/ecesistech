@@ -19,14 +19,14 @@ export default function Contact() {
             comment: formData.message
         };
 
-        try{
+        try {
             const response = await axios.post('https://www.ecesistech.com/contact-form-submit.php', payload)
             console.log("Response from backened", response.data)
         }
-       catch(error){
-        console.error('Error from backend:', error); 
-       }
-          
+        catch (error) {
+            console.error('Error from backend:', error);
+        }
+
     }
 
     const [formData, setFormData] = useState({
@@ -88,34 +88,34 @@ export default function Contact() {
                                             <div className="row">
                                                 <div className="form-grp">
                                                     <h6 className="ml-2">Name <span className="text-red-600">*</span></h6>
-                                                    <input type="text" name="name" value={formData.name} onChange={handleChange}  required />
+                                                    <input type="text" name="name" value={formData.name} onChange={handleChange} required />
                                                 </div>
                                                 <div className="form-grp">
                                                     <h6 className="ml-2">E-mail <span className="text-red-600">*</span></h6>
-                                                    <input type="email" name="email" value={formData.email} onChange={handleChange}  required />
+                                                    <input type="email" name="email" value={formData.email} onChange={handleChange} required />
                                                 </div>
                                                 <div className="form-grp">
-                                                <h6 className="ml-2">Phone <span className="text-red-600">*</span></h6>
+                                                    <h6 className="ml-2">Phone <span className="text-red-600">*</span></h6>
                                                     <input type="text" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
                                                 </div>
                                             </div>
                                             <div className="form-grp">
-                                            <h6 className="ml-2">Message <span className="text-red-600">*</span></h6>
-                                                <textarea name="message" value={formData.message} onChange={handleChange}  required />
+                                                <h6 className="ml-2">Message <span className="text-red-600">*</span></h6>
+                                                <textarea name="message" value={formData.message} onChange={handleChange} required />
                                             </div>
                                             <div className="flex">
-                                            <ReCAPTCHA
-                                                sitekey="6LfzngEqAAAAALa1FOWlzb6YRIcSCisl1gB-mlk-"
-                                                onChange={handleRecaptcha}
-                                            />
-                                            {captchaError && <div className="w-fit h-fit ml-10 mt-3 rounded-lg bg-red-200  px-2 " style={{paddingTop: '1px',paddingBottom: '1px'}}> 
+                                                <ReCAPTCHA
+                                                    sitekey="6LfzngEqAAAAALa1FOWlzb6YRIcSCisl1gB-mlk-"
+                                                    onChange={handleRecaptcha}
+                                                />
+                                                {captchaError && <div className="w-fit h-fit ml-10 mt-3 rounded-lg bg-red-200  px-2 " style={{ paddingTop: '1px', paddingBottom: '1px' }}>
 
-                                                <p className="text-red-500 mt-2" >Please complete the reCAPTCHA.</p>
+                                                    <p className="text-red-500 mt-2" >Please complete the reCAPTCHA.</p>
                                                 </div>
                                                 }
 
                                             </div>
-                                           
+
                                             <button type="submit" className="btn mt-3">Submit</button>
                                         </form>
                                         <p className="ajax-response mb-0" />
@@ -159,11 +159,12 @@ export default function Contact() {
                                         </div>
                                     </div>
                                 </div>
-
+                                
                             </div>
+                            
                         </div>
                     </section>
-                    
+
                 </div>
             </Layout>
         </>

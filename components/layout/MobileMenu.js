@@ -28,6 +28,8 @@ export default function MobileMenu({ handleMobileMenu }) {
                                 <li><Link href="/services-details/proptech">PropTech</Link></li>
                                 <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
                                 <li><Link href={`/services-details/automation`}>Business Process Automation</Link></li>
+                                {/* <li><Link href="/services-details/software-development">Enterprise Software Solutions</Link></li> */}
+
                             </ul>
                             <div className={isActive['digital'] ? "dropdown-btn open" : "dropdown-btn"} ><span className="plus-line" /></div>
 

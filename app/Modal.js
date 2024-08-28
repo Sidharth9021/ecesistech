@@ -41,8 +41,8 @@ const Modal = ({ showModal, setShowModal, title, description, imageUrl, linkedIn
               <div className='flex flex-col w-full mt-4 md:mt-0 md:ml-3 overflow-y-auto' style={{ maxHeight: '70vh' }}>
                   <h1 className="text-xl text-center sm:text-left sm:text-2xl font-bold">{title}</h1>
                   <p className="text-sm mt-2 md:mt-0 md:ml-4" style={{ textOverflow: 'ellipsis' }}>{description}</p>
-                  <a href={linkedInUrl} className="text-blue-500 mt-2 md:ml-4" target="_blank" rel="noopener noreferrer">
-                      LinkedIn Profile
+                  <a href={linkedInUrl} className="text-blue-500 mt-2 md:ml-4 fab fa-linkedin-in" target="_blank" rel="noopener noreferrer">
+                      
                   </a>
               </div>
 

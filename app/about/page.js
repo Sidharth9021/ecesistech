@@ -18,11 +18,11 @@ export default function About() {
             designation: 'CEO',
             description: (
                 <p className="text-sm">
-                    T.K. Velayudham is a visionary leader with over 35 years of expertise in creating and steering successful ventures across the globe. His career began at Keltron, where he was instrumental in the Metro Railway AFC project in Kolkata, a pioneering initiative in automated fare collection. He then led the medical equipment division at Terumo Penpol, establishing the company as a prominent player in healthcare.<br /><br />
+                   T.K. Velayudham is a visionary leader with over 35 years of expertise in creating and steering successful ventures across the globe. His career began at Keltron, where he was instrumental in the Metro Railway AFC project in Kolkata, a pioneering initiative in automated fare collection. He then led the medical equipment division at Terumo Penpol, establishing the company as a prominent player in healthcare.<br/><br/>
 
-                    In 1999, he founded Enter Technologies in Technopark, where he transformed the company into a successful healthcare BPO serving U.S. clients. He continued his entrepreneurial journey by promoting Wins Infotek, guiding its growth and eventual acquisition by GES, after which it became Kimball Electronics. As Senior Vice President at Accentia Technologies, he spearheaded business development in healthcare services.<br /><br />
+He started his career leading the country's first Metro Railway fare collection and passenger control system. He was instrumental in establishing India's first Cable TV Network (Asianet) with PANASIA Ltd., Taiwan. He also set up and led Terumo PENPOL's Medical Equipment Division. Additionally, he promoted Wins Ltd, India, in collaboration with a Japanese semiconductor manufacturer.<br/><br/>
 
-                    In 2010, he founded ECESIS, a venture that has since thrived under his leadership, becoming a leader in its field and reflecting his ongoing commitment to innovation and excellence.
+In 2010, he founded ECESIS, a venture that has since thrived under his leadership, becoming a leader in its field and reflecting his ongoing commitment to innovation and excellence.
                 </p>
             ),
             imageUrl: '/assets/img/team/TKV.png',
@@ -192,21 +192,21 @@ export default function About() {
                                 <div className="col-lg-6">
                                     <div className="about__content-four">
                                         <div className="section-title mb-30">
-                                            <h2 className="title">Pioneering Business Solutions for Tomorrow’s Markets</h2>
+                                            <h2 className="title">Pioneering Business Solutions For Tomorrow’s Markets</h2>
                                         </div>
                                         <div className="about__content-inner-three mt-2">
                                             <div className="about__list-box">
                                                 <ul className="list-wrap">
                                                     <li><i className="flaticon-arrow-button" />Extensive Industry Knowledge</li>
                                                     <li><i className="flaticon-arrow-button" />Innovative and Adaptive Culture</li>
-                                                    <li><i className="flaticon-arrow-button" />Strategic Vision for Long-Term Growth</li>
+                                                    <li><i className="flaticon-arrow-button" />Strategic Vision For Long-Term Growth</li>
                                                 </ul>
                                             </div>
                                             {/* <div className="about__list-img-two">
                                                 <img src="/assets/img/images/about_list_img02.png" alt="" />
                                             </div> */}
                                         </div>
-                                        <p>We’ve transformed from a BPO provider into a global leader, offering a diverse portfolio of services including software development, digital marketing, and staffing solutions. Our evolution is guided by a forward-thinking approach that anticipates the needs of tomorrow’s markets.
+                                        <p className="w-[600px]">We have transformed from a BPO provider into a global leader, offering a diverse portfolio of services including software development, digital marketing, and staffing solutions. Our evolution is guided by a forward-thinking approach that anticipates the needs of tomorrow’s markets.
                                             <br /><br />Driven by our dedication to client success, we continuously innovate to stay ahead of industry trends. Our strategic agility and commitment to excellence make us the trusted partner for companies navigating transformative journeys in a rapidly changing world.</p>
                                         {/* <Link href="/services" className="btn">Know More</Link> */}
                                     </div>

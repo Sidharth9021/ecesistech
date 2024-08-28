@@ -47,7 +47,10 @@ export default function Menu() {
                                         <li><Link href="/services-details/proptech">PropTech</Link></li>
                                         <li><Link href="/services-details/artificial-intelligence">Artificial Intelligence</Link></li>
                                         <li><Link href="/services-details/automation">Business Process Automation</Link></li>
-                                    </ul>
+                                        {/* <li><Link href="/services-details/software-development">Enterprise Software Solutions</Link></li> */}
+                                        
+                                        </ul>
+                               
                                 )}
                             </li>
                             <li className="menu-item-has-children" onMouseLeave={handleMouseLeave}>
@@ -58,6 +61,8 @@ export default function Menu() {
                                         <li><Link href="/services-details/accounting-finance">Accounting & Finance</Link></li>
                                         <li><Link href="/services-details/manpower-staffing">Talent Acquisition</Link></li>
                                         <li><Link href="/services-details/digital-marketing">Digital Marketing</Link></li>
+                                        <li><Link href="/case-study">Case study</Link></li>
+
                                     </ul>
                                 )}
                             </li>
@@ -85,6 +90,15 @@ export default function Menu() {
 
                     </ul>
                 </li> */}
+                <li className="menu-item-has-children">
+                    <Link href="#">Resources</Link>
+
+                    <ul className="sub-menu">
+                     
+                        <li><Link href={`/case-study`}>Case Studies</Link></li>
+
+                    </ul>
+                </li>
                 <li>
                     <Link href="/contact">Contact Us</Link>
                 </li>

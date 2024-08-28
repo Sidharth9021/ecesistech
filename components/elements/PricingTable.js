@@ -102,7 +102,7 @@ export default function PricingTable() {
                         </div>
                         <div className={`pricing__price ${isToggled ? "change-subs-duration" : ""}`}>
                             <h5>
-                                BPO Advantage Plus
+                                BPO Volume Advantage
                             </h5>
                             {/* <h2 className="price monthly_price"><strong>$</strong> Custom <span>/ Order</span></h2> */}
                         </div>
