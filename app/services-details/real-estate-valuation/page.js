@@ -5,6 +5,7 @@ import BrandActiveSlider from "@/components/slider/BrandActiveSlider"
 import Link from "next/link"
 import PricingTable from "@/components/elements/PricingTable"
 import React, { useEffect, useState } from 'react';
+import { MoonLoader } from "react-spinners"
 
 
 
@@ -30,7 +31,9 @@ export default function ServicesDetails() {
     }, []);
 
     if (!allLoaded) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div>
+            <MoonLoader/>
+        </div>; // Or any other loading indicator
     }
 
     return (
@@ -100,7 +103,7 @@ export default function ServicesDetails() {
                                                     <div className="">
                                                         <div className="services__details-inner-img justify-center flex" >
                                                             <img src="/assets/img/services/services_details_inner01.jpg" className="object-cover object-top" style={{ height: "350px", width: "60%" }} alt="" />
-                                                            <VideoPopup />
+                                                            <VideoPopup url={"jRHkw8liWLQ"} />
 
                                                         </div>
                                                         <div>

@@ -61,7 +61,6 @@ export default function Menu() {
                                         <li><Link href="/services-details/accounting-finance">Accounting & Finance</Link></li>
                                         <li><Link href="/services-details/manpower-staffing">Talent Acquisition</Link></li>
                                         <li><Link href="/services-details/digital-marketing">Digital Marketing</Link></li>
-                                        <li><Link href="/case-study">Case study</Link></li>
 
                                     </ul>
                                 )}

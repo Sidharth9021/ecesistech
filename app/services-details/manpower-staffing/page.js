@@ -6,6 +6,7 @@ import Link from "next/link"
 import React, { useEffect, useState } from 'react';
 import RadialCardGrid from './radial';
 import withLoading from "@/app/withLoading"
+import { MoonLoader } from "react-spinners"
 
 
 
@@ -83,7 +84,9 @@ function TalentServices() {
     }, []);
 
     if (!allLoaded) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div className="flexc justify-center items-center">
+            <MoonLoader/>
+        </div>; // Or any other loading indicator
     }
 
     return (

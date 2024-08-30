@@ -8,6 +8,7 @@ import Counter3 from '@/components/sections/Counter3';
 import Marquee2 from '@/components/sections/Marquee2';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import default styles
+import { MoonLoader } from 'react-spinners';
 
 
 export default function Proptech() {
@@ -88,7 +89,10 @@ export default function Proptech() {
     ];
 
     if (!allLoaded) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div className='flex justify-center items-center'>
+<MoonLoader/>
+
+        </div>; // Or any other loading indicator
     }
 
     return (
@@ -337,7 +341,7 @@ export default function Proptech() {
                                         <h1 className='title text-center text-2xl'>Real Estate Firms Embracing AI Transformation</h1>
                                         <p className='text-center mt-4 text-black'>Struggling with manual workflows and disjointed data? Ecesis can streamline your processes with innovative AI-powered real estate software. We specialize in developing custom solutions that enhance efficiency, boost customer loyalty, and open up new revenue opportunities.</p>
                                         <div className='flex justify-center items-center mt-[45px]'>
-                                            <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
+                                            <Link href="/schedule" className="btn">Know More</Link>
 
                                         </div>
                                     </div>
@@ -346,7 +350,7 @@ export default function Proptech() {
                                         <h1 className='title text-center text-2xl'>Proptech Startups</h1>
                                         <p className='text-center mt-4 text-black'>Have a groundbreaking idea that could revolutionize real estate? Let’s turn it into reality. Ecesis will help you build a cutting-edge MVP that will help you secure funding. We conduct in-depth workshops to understand your target audience, identify trends, oversee development, and provide ongoing support to ensure your solution’s financial and operational success.</p>
                                         <div className='flex justify-center items-center mt-[22px]'>
-                                            <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
+                                        <Link href="/schedule" className="btn">Know More</Link>
 
                                         </div>
                                     </div>
@@ -354,7 +358,7 @@ export default function Proptech() {
                                         <h1 className='title text-center text-2xl'>Established Proptechs Expanding Market Presence</h1>
                                         <p className='text-center mt-4 text-black'>Passionate about advancing real estate technology but need industry expertise or tech support? Ecesis is here to help. Whether you’re launching new software or enhancing existing solutions, we offer code audits, team augmentation, and full-cycle development to deliver custom real estate software that drives business growth.</p>
                                         <div className='flex justify-center items-center mt-[45px]'>
-                                            <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
+                                        <Link href="/schedule" className="btn">Know More</Link>
 
                                         </div>
                                     </div>
@@ -362,7 +366,7 @@ export default function Proptech() {
                                         <h1 className='title text-center text-2xl'>Venture Capital Firms Investing in Proptech</h1>
                                         <p className='text-center mt-4 text-black'>Ecesis partners with venture capital firms to ensure the long-term success of their proptech investments. From due diligence to technology implementation, we provide comprehensive support to assess MVPs, oversee development, and maintain the scalability and performance of your portfolio companies.</p>
                                         <div className='flex justify-center items-center mt-[45px]'>
-                                            <Link href="/services-details/manpower-staffing" className="btn">Know More</Link>
+                                        <Link href="/schedule" className="btn">Know More</Link>
 
                                         </div>
                                     </div>

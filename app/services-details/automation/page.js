@@ -8,12 +8,16 @@ import Link from "next/link"
 import React, { useState, useEffect } from "react"
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { MoonLoader } from "react-spinners"
 
 
 
 export default function AutoServices() {
 
     const [openIndex, setOpenIndex] = useState(null);  // No item is open by default
+    const [allLoaded, setAllLoaded] = useState(false); // New state to track if all components have loaded
+
+
 
     const faqData = [
         {
@@ -112,10 +116,15 @@ export default function AutoServices() {
         };
 
         handleResize();
+        setAllLoaded(true);
         window.addEventListener('resize', handleResize);
 
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    if (!allLoaded) {
+        return <div className="flex justify-center items-center"><MoonLoader/></div>; // Or any other loading indicator
+    }
 
 
     return (

@@ -259,7 +259,7 @@ export default function MainService() {
                                                             <li><i className="fas fa-check" /> Comprehensive PropTech Solutions </li>
                                                         </ul>
                                                     </div>
-                                                    <Link href="/services-details/artificial-intelligence" className="btn">Read More</Link>
+                                                    <Link href="/services-details/proptech" className="btn">Read More</Link>
                                                 </div>
                                             </div>
                                         </div>

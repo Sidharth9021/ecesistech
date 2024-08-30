@@ -6,6 +6,8 @@ import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import Callback2 from "@/components/sections/Callback2"
 import withLoading from "@/app/withLoading";
+import MoonLoader from "react-spinners/MoonLoader";
+
 
 
 
@@ -32,7 +34,7 @@ function AIServices() {
     }, []);
 
     if (!allLoaded) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div className="flex justify-center items-center"><MoonLoader/></div>; // Or any other loading indicator
     }
 
 

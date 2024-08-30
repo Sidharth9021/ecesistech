@@ -7,6 +7,7 @@ import Link from "next/link"
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import React, { useState, useEffect } from "react";
+import { MoonLoader } from "react-spinners";
 
 
 
@@ -41,7 +42,9 @@ function SoftwareServices() {
     }, []);
 
     if (!allLoaded) {
-        return <div>Loading...</div>; // Or any other loading indicator
+        return <div className="flex justify-center items-center">
+            <MoonLoader/>
+        </div>; // Or any other loading indicator
     }
 
 

@@ -31,7 +31,7 @@ export default function Request3() {
                                         <i className="flaticon-phone-call" />
                                     </div> */}
                                     <div className="content">
-                                        <Link href="/schedule" className='but'>Let's Connect</Link>
+                                        <Link href="/contact" className='but'>Let's Connect</Link>
                                     </div>
                                 </div>
                                 {/* <Link href="tel:0123456789" className="btn">Request a Free Call</Link> */}
