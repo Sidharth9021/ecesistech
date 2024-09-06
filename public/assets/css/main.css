@@ -15030,3 +15030,31 @@ blockquote p {
   animation: shake 0.5s infinite;
   animation-delay: 0.5s; /* Delay might be adjusted based on preference */
 }
+
+.gap-list > a {
+  display: block; /* Ensures the link takes up the full block, better for clicking */
+  margin-bottom: 30px; /* Adds space between the links */
+}
+
+.nav-container {
+  position: relative;
+  height: auto; /* Adjust based on content or desired height */
+}
+
+/* Navigation UL styling, initially relative */
+.priv-nav {
+  position: sticky;
+  top: 0; /* Aligns to the top of the container */
+  height: 90vh; /* Slightly less than the container to ensure it fits within */
+  overflow-y: auto; /* Allows scrolling within the nav */
+  padding-right: 20px;
+}
+
+.gap-list li {
+  transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.gap-list li:hover {
+  color: #f9ba00; /* Changes text color to blue on hover */
+}

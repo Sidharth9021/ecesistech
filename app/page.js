@@ -10,6 +10,8 @@ import withLoading from "./withLoading"
 import LazyLoad from "react-lazyload"
 
 function Home() {
+
+    
     return (
         <>
 

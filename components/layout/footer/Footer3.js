@@ -64,7 +64,7 @@ export default function Footer3() {
                                     </div>
                                     <div className='footer-link-list w-fit flex' style={{marginTop: '41px'}}>
                                         <ul className='list-wrap'>
-                                            <li className=''><Link href="#"><p className='normal-text font-bold'>Privacy & Cookies Policy</p></Link></li>
+                                            <li className=''><Link href="/privacy-policy"><p className='normal-text font-bold'>Privacy & Cookies Policy</p></Link></li>
                                         </ul>
                                     </div>
                                 </div>
