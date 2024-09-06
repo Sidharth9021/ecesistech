@@ -209,13 +209,13 @@ export default function MainService() {
                                             {isMobile ? (
                                                 <>
                                                     <Link href="/services-details/manpower-staffing">
-                                                        <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Manpower Staffing</button>
+                                                        <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Talent Acquisition</button>
 
                                                     </Link>
                                                 </>
                                             ) : (
                                                 <>
-                                                    <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Manpower Staffing</button>
+                                                    <button className={activeIndex == 7 ? "nav-link active" : "nav-link"} id="cargo-tab" data-bs-toggle="tab" data-bs-target="#cargo-tab-pane" type="button" role="tab" aria-controls="cargo-tab-pane" aria-selected="false">Talent Acquisition</button>
 
                                                 </>
                                             )
@@ -389,7 +389,7 @@ export default function MainService() {
                                                     <img src="/assets/img/services/ManpowerStaffing.webp" alt="" />
                                                 </div>
                                                 <div className="services__content-four">
-                                                    <h2 className="title"><Link href="#">Manpower Staffing</Link></h2>
+                                                    <h2 className="title"><Link href="#">Talent Acquisition</Link></h2>
                                                     <p>We specialize in placing trained precision and assembly line engineers and other skilled manpower for various sectors. Choose us for a staffing strategy that goes beyond conventional solutions, delivering unparalleled results tailored to your organizational goals. We offer sophisticated solutions encompassing <br /> end-to-end recruitment, general staffing, executive hiring, and various other services to meet contractual or permanent hiring needs.</p>
                                                     <div className="about__list-box">
                                                         <ul className="list-wrap">

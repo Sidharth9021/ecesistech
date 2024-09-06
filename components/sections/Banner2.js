@@ -3,8 +3,12 @@ import Link from 'next/link'
 import Banner from '../../public/assets/img/banner/banner.png'
 import React, { useEffect, useState } from 'react';
 
-export default function Banner2() {
+export default function Banner2({ scrollRef }) {
     const [isMobile, setIsMobile] = useState(null);
+
+    const executeScroll = () => {
+        scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,8 +47,8 @@ export default function Banner2() {
                             <div className="banner__content-two mb-24">
                                 <h2 className={`font-bold mb-6`}  data-aos="fade-up" data-aos-delay={100} style={hstyle}>Empowering Global Innovation</h2>
                                 <h3 className={`text-black col-lg-10`} data-aos="fade-up" data-aos-delay={200} style={tstyle}>Your Partner in <span className="text-pink-400">Technology Transformation </span> and Sustainable <span className='text-blue-400'>Growth</span></h3>
-                                <div>
-                                    <Link href="/schedule" className="btn border-btn mt-1" data-aos="fade-up" data-aos-delay={200}>Get Started</Link>
+                                <div onClick={executeScroll}>
+                                    <Link href="#" className="btn border-btn mt-1" data-aos="fade-up" data-aos-delay={200}>Get Started</Link>
                                 </div>
                                 {/* {isMobile ?
                                     <Link href="#" className="btn border-btn mt-40" data-aos="fade-up" data-aos-delay={600}>Get Started</Link>

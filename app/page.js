@@ -8,30 +8,27 @@ import MainService from "@/components/sections/MainService"
 import Marquee2 from "@/components/sections/Marquee2"
 import withLoading from "./withLoading"
 import LazyLoad from "react-lazyload"
+import React, { useRef } from 'react';
+
+
 
 function Home() {
 
-    
+    const mainServiceRef = useRef(null); // Create a ref
+
+
+
     return (
         <>
 
             <Layout headerStyle={3} footerStyle={3}>
-                <Banner2 />
+                <Banner2 scrollRef={mainServiceRef} />
                 <Marquee2 />
-                {/* <Brand3 /> */}
                 <About3 />
                 <LazyLoad height={100} offset={250} once>
                     <Counter3 />
                 </LazyLoad>
-                <MainService />
-                {/* <Services4/> */}
-                {/* <Choose3 /> */}
-                {/* <Project3 /> */}
-                {/* <Request3 /> */}
-                {/* <Team3 />
-                <Testimonial3 />
-                <Callback2 /> */}
-                {/* <BlogPost3 /> */}
+                <div ref={mainServiceRef}><MainService /></div>
             </Layout>
         </>
     )

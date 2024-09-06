@@ -129,8 +129,8 @@ export default function Contact() {
                                         <div className="contact__info">
                                             <ul className="list-wrap">
                                                 <li className="mt-6">
-                                                    <div className="icon mb-16">
-                                                        <i className="flaticon-pin" />
+                                                    <div className="mb-[77px]">
+                                                       <img src="/assets/img/icon/india.png" alt="" className="w-12"/>
                                                     </div>
                                                     <div className="content">
                                                         <h4 className="title">INDIA</h4>
@@ -138,8 +138,8 @@ export default function Contact() {
                                                     </div>
                                                 </li>
                                                 <li className="mt-6">
-                                                    <div className="icon mb-16">
-                                                        <i className="flaticon-pin" />
+                                                    <div className="mb-[30px]">
+                                                    <img src="/assets/img/icon/usa.png" alt="" className="w-12"/>
                                                     </div>
                                                     <div className="content">
                                                         <h4 className="title">US</h4>
