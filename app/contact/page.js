@@ -133,8 +133,18 @@ export default function Contact() {
                                                         <i className="flaticon-pin" />
                                                     </div>
                                                     <div className="content">
-                                                        <h4 className="title">Head Office - Thiruvananthapuram</h4>
+                                                        <h4 className="title">INDIA</h4>
                                                         <p>2nd Floor, Temple Square - PPD <br /> Ambalamukku Junction,<br /> Kowdiar P.0 Trivandrum. 695003 <br />Kerala, India</p>
+                                                    </div>
+                                                </li>
+                                                <li className="mt-6">
+                                                    <div className="icon mb-16">
+                                                        <i className="flaticon-pin" />
+                                                    </div>
+                                                    <div className="content">
+                                                        <h4 className="title">US</h4>
+                                                        <p>4830 West Kennedy Boulevard, Tampa<br/>
+                                                        Florida - 33609<br /> </p>
                                                     </div>
                                                 </li>
                                                 <li>
