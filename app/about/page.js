@@ -173,7 +173,7 @@ In 2010, he founded ECESIS, a venture that has since thrived under his leadershi
                                     <div className="about__img-wrap-four">
                                         <img src="/assets/img/images/inner_about01.jpg" alt="" />
                                         {/* <img src="/assets/img/images/inner_about02.jpg" alt="" /> */}
-                                        <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{ marginLeft: isMobile ? '50px' : '', }} alt="" />
+                                        <img src="/assets/img/bg/bg_about_photos.png" className={`${isMobile ? 'scale-150 mt-20' : ''} about_photo_bg`} style={{ marginLeft: isMobile ? '50px' : '' }} alt="" />
 
                                         {/* <div className="about__award-box">
                                             <div className="icon">
